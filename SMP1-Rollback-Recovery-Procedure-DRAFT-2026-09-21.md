@@ -50,14 +50,18 @@ This part IS mechanically straightforward given how this system is deployed — 
 
 ## 3. Decision authority
 
-**Not specified — needs the operator to confirm.** Given the small operator footprint observed in this system, this is likely just "whoever has Render/Neon dashboard access decides," but that should be stated explicitly rather than assumed, especially for the destructive step in §2.2 (restoring to an earlier point loses intervening data).
+**Confirmed, 2026-09-21: Hitendra Chug.** As the sole operator (see `SMP1-Support-Escalation-Ownership-DRAFT-2026-09-21.md`), decision authority for a destructive database-level restore — including the intervening-data-loss call in §2.5 — rests with him. No delegation or secondary approver exists.
+
+## 4. The 6-hour recovery window — accepted, 2026-09-21
+
+**Operator decision: the 6-hour Neon PITR window is acceptable as-is.** No change to the Neon plan or configuration of the (currently unused) snapshot feature was requested. This means, explicitly: if a data-level failure isn't caught and acted on within 6 hours of it happening, there is no database-level recovery path — only manual re-entry of whatever was lost. That's now a known, accepted risk, not an oversight.
 
 ## Recommended before this procedure is trusted for real
 
 1. ~~Run an actual restore drill against a Neon branch~~ — **done, 2026-09-21.** See above.
 2. ~~Confirm whether the current Neon plan supports point-in-time recovery/branching, and the actual retention window~~ — **done, 2026-09-21: Free plan, 6 hours, boundary confirmed exactly.**
-3. **Still open**: rehearse actually promoting a restored branch to production (§2.4) — the one part of this procedure that remains genuinely untested.
-4. **Still open**: fill in §3's decision authority explicitly.
-5. **New, from this drill**: decide whether the 6-hour recovery window is acceptable for this system as-is, or whether Neon's snapshot feature (currently unconfigured) should be set up to extend it. That's a real business/risk decision, not a technical one — this draft doesn't make it.
+3. **Scheduled, 2026-09-21**: rehearse actually promoting a restored branch to production (§2.4) — operator said go; see execution notes below.
+4. ~~Fill in §3's decision authority explicitly~~ — **done, 2026-09-21: Hitendra Chug.**
+5. ~~Decide whether the 6-hour recovery window is acceptable~~ — **done, 2026-09-21: accepted as-is.** See §4.
 
-**Corrections needed from the operator**: confirm §3 (decision authority); decide on the 6-hour-window risk-acceptance question above; and ideally rehearse the still-untested production cutover step (§2.4) before relying on this procedure for real.
+**All corrections from the operator are now in.** The one remaining piece before this procedure can be considered fully trustworthy is the production-cutover rehearsal itself (§2.4) — scheduled, not yet performed as of this update.

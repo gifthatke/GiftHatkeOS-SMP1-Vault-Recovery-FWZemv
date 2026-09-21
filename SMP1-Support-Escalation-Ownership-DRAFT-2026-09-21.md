@@ -6,7 +6,7 @@
 
 ## What's actually known vs. assumed
 
-Known directly from the system itself (Users workspace, 2026-09-16): there is exactly one confirmed user, **Hitendra Chug (`support.gifthatke@gmail.com`), role Super Administrator**. Whether there are other employees who use this system but don't yet have accounts, or whether this genuinely is a one-operator business at this stage, is not something the system itself can answer — **this draft assumes a small operation and should be told otherwise if that's wrong.**
+Known directly from the system itself (Users workspace, 2026-09-16): there is exactly one confirmed user, **Hitendra Chug (`support.gifthatke@gmail.com`), role Super Administrator**. **Confirmed directly by the operator, 2026-09-21: this is correct — he is the only operator right now.** The single-operator assumption below is no longer a guess.
 
 ## Proposed tiers (adjust freely — this is a starting shape, not a fixed structure)
 
@@ -14,7 +14,7 @@ Known directly from the system itself (Users workspace, 2026-09-16): there is ex
 
 **Tier 1 — operator-level issues.** Things the Super Administrator can fix directly: permission grants, data corrections through the UI, Settings changes, re-running a stuck workflow. Proposed owner: Hitendra Chug, as the only confirmed administrator today.
 
-**Tier 2 — issues requiring code, deployment, or database changes.** Anything Tier 1 can't fix without touching the actual system — a bug, a deploy, a migration, a data-integrity problem beyond what the UI can correct. **This is the biggest open question**: is there an ongoing relationship with whoever built/maintains this system (this Claude Code session's own work, or a human developer/agency), or does Tier 2 currently have no defined owner at all? If the latter, that's a real handover risk worth surfacing plainly rather than leaving implicit.
+**Tier 2 — issues requiring code, deployment, or database changes.** Anything Tier 1 can't fix without touching the actual system — a bug, a deploy, a migration, a data-integrity problem beyond what the UI can correct. **Status, 2026-09-21: no dedicated Tier 2 owner beyond the operator himself.** The operator confirmed he's the sole operator without separately naming anyone else for this tier — read together, that means Tier 2 currently has no owner distinct from Tier 1. This is a real, named handover risk, not an oversight: if a problem needs a code fix, migration, or deployment action, there is currently no one but Hitendra Chug to do it, and no evidence he has the tooling/access this session used (this Claude Code environment, direct database migrator access, etc.) as an ongoing arrangement rather than a one-time engagement.
 
 **Tier 3 — infrastructure/platform issues.** Render or Neon outages, DNS/domain issues (`erp.gifthatke.in`), Google OAuth configuration problems. Owner would be whoever holds the Render/Neon/domain-registrar/Google Cloud Console credentials — likely the same person as Tier 1 today, but worth stating explicitly since these are different skill sets and different account access than day-to-day operation. Concrete service identifiers this tier would need are now on record in `smp1-standalone-v1-render-neon-production-topology-2026-09-21.md` (Standalone repo) — API service ID, region, migration-seam variable name — rather than needing to be rediscovered during an actual incident.
 
@@ -36,4 +36,6 @@ Carried over directly from this session's own findings, so whoever's supporting 
 - Whether a formal ticketing/issue-tracking system is wanted, or whether direct contact is sufficient for the current scale.
 - Budget/cost for any paid support arrangement.
 
-**Corrections needed from the operator**: confirm or correct the assumed one-operator scale; name a Tier 2 owner (or explicitly accept there isn't one yet); confirm Tier 3 credential ownership; decide whether any of the "what this draft cannot decide" items actually need deciding now versus later.
+**Resolved, 2026-09-21**: one-operator scale confirmed; Tier 2 confirmed as unowned beyond the operator (see above), accepted as a known risk rather than something to solve right now.
+
+**Still open**: Tier 3 credential ownership (assumed same as Tier 1, not separately confirmed); response-time expectations; whether a formal ticketing system is wanted; budget for any future paid support arrangement. None of these were raised as urgent — left for whenever the operator wants to revisit them.

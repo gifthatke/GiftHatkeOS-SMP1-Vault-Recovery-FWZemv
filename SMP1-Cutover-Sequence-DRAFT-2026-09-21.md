@@ -1,7 +1,7 @@
 # SMP1 Standalone — Cutover Sequence
 
-**Date:** 2026-09-21
-**Status:** DRAFT PROPOSAL — NOT AUTHORIZED, NOT CERTIFIED. Written to close a genuine gap in Phase 4's evidence pack (no cutover sequence existed anywhere in the corpus). This is a starting point for the operator to correct, not a governance record to be relied on as-is.
+**Date:** 2026-09-21 (all open questions resolved same day)
+**Status:** All scenario/scope questions the original draft raised have been answered directly by the operator. The remaining content is now the operative go-live plan, not an unresolved proposal — the one thing not yet done is executing "What's actually needed now" below (creating employee accounts).
 **Origin:** `Phase-4-Handover-Readiness-Evidence-Pack-2026-09-16.md` §4, one of six categories that pass identified as unresearched.
 
 ## An open question this draft can't answer on its own
@@ -12,33 +12,32 @@ The operator confirmed (2026-09-21) that the frozen Apps Script tool is **not** 
 - **(b)** Frozen was retired from use before Standalone was fully adopted, and some employees or workflows aren't fully on Standalone yet — in which case this is a **forward plan** for finishing the switch.
 - **(c)** Frozen was never in real day-to-day production use to begin with (e.g., this was built before full operational rollout) — in which case "cutover" is really "first go-live," not a switch from one system to another.
 
-**Confirm which of these applies before treating anything below as settled** — the sequence is written to be usable in all three cases, but the framing changes what "done" means.
+**Resolved, 2026-09-21: scenario (c).** The operator confirmed frozen's data was never real production data, and the explicit goal is to hand Standalone over completely new to employees, live and ready to use as soon as possible. This is a **first go-live, not a switch from an established system** — there is no real historical continuity to protect, no meaningful "cutover" moment where employees stop using one system and start another, and (per the operator's separate decision, recorded in "What this draft does not cover" below) no historical data migration. Everything below is rewritten with that in mind: the priority is getting employees actually able to sign in and use the system, not managing a transition away from something that was never really in use.
 
-## Pre-cutover readiness gate
+## Go-live readiness gate
 
-Before any employee is told to rely on Standalone (retroactively: before confirming this gate was actually satisfied):
+Before employees are told to start using Standalone:
 
-- [ ] Production deployment current — confirmed 2026-09-16: `smp1/production-parity` at commit `14bf97e`, deployed to Render (`gifthatkeos-standalone-v1-api`/`-web`), Neon Postgres, live at `https://erp.gifthatke.in`.
-- [ ] Database migrations applied — confirmed 2026-09-16: all migrations current, including the five from this session's own implementation wave.
-- [ ] Read-only acceptance pass across every employee workspace — confirmed 2026-09-16: all 12 workspaces (`Phase-3-Fresh-Authenticated-ERP-Acceptance-2026-09-16.md`) load and function with real data.
-- [ ] Every employee who needs access has a working, authorized Google account for sign-in, and knows the URL (`https://erp.gifthatke.in`).
-- [ ] **Not yet satisfied**: a tested, verified backup/restore procedure exists for the production database. `PACK_2_11F` certifies the backup/recovery *metadata model* as closed, but explicitly leaves live backup execution, verified restore, RPO, and RTO as open. **Recommend testing this before treating cutover as irreversible in practice**, even if the formal switch has already happened socially.
-- [ ] GAP-002 (secret custody) and GAP-011 (operator attestation) remain fully open. GAP-009 (topology/operational-ownership certificate) is now half-closed: its documentation half closed 2026-09-21 (`smp1-standalone-v1-render-neon-production-topology-2026-09-21.md`, Standalone repo); its operational half — live backup/restore, monitoring — remains open, same gap as the backup/restore point immediately above. None of these three block day-to-day employee use, but all should be tracked to closure independent of cutover itself.
+- [x] Production deployment current — confirmed 2026-09-21: `smp1/production-parity` at commit `15db3e9`, both Render services (`gifthatkeos-standalone-v1-api`/`-web`) live, Neon Postgres, live at `https://erp.gifthatke.in`.
+- [x] Database migrations applied — confirmed current.
+- [x] Read-only acceptance pass across every employee workspace — confirmed 2026-09-16 (`Phase-3-Fresh-Authenticated-ERP-Acceptance-2026-09-16.md`), all 12 workspaces load and function.
+- [x] Backup/restore mechanism verified — confirmed 2026-09-21 (drill against a disposable Neon branch); 6-hour recovery window explicitly accepted by the operator as sufficient for now.
+- [x] GAP-002 (secret custody) — closed 2026-09-21, Render's own environment-variable storage accepted as-is.
+- [ ] **The one real open item: employee accounts.** Only one confirmed user exists in the system today (Hitendra Chug, Super Administrator). Every other employee who needs to use Standalone needs an account created and a role assigned before they can sign in — see "What's actually needed now" below.
+- GAP-009's operational half (monitoring beyond Render's basic dashboard) and GAP-011 (operator attestation) remain open but don't block day-to-day employee use — tracked separately, not a go-live blocker.
 
-## Sequence
+## What's actually needed now
 
-Given the small operator footprint observed directly in this system (one confirmed Super Administrator, `support.gifthatke@gmail.com`/Hitendra Chug, one active order as of 2026-09-16) — a phased, module-by-module or employee-by-employee rollout is likely unnecessary overhead. **Proposed default: a single-step cutover**, not a phased one, unless the operator knows of a larger employee base this document isn't accounting for.
+Given this is a first go-live, not a migration away from a real system, the sequence is much shorter than a traditional cutover:
 
-1. **Confirm the readiness gate above.**
-2. **Freeze new data entry in frozen Apps Script**, if it isn't already — stop anyone from creating new orders/records there, even if it's still reachable for reference.
-3. **Announce the switch** — every employee who used the frozen tool is told, as of a specific date/time, to use `https://erp.gifthatke.in` exclusively for new work.
-4. **Leave frozen reachable but inert** for a reference/lookback period (proposed: 30 days, adjust to what's actually useful) — readable for historical lookup, not written to. This matches the existing TITAN LOCK principle that frozen remains a read-only reference and must not be mutated, just extends it from "the code" to "the live deployed tool" too, if one still exists.
-5. **After the reference period, formally decommission** whatever's left of the live frozen deployment (revoke any remaining write triggers/webhooks, but do not delete the underlying Sheets/Script project — TITAN LOCK's frozen-reference preservation still applies to the artifact itself).
-6. **Record the cutover date** in this document or a successor, so "when did this actually happen" isn't lost to memory.
+1. **Create accounts for every employee who needs access**, via the Users workspace (Settings → Users, or wherever the live UI currently exposes it), assigning each the correct role. This is the one concrete remaining step between "system is ready" and "employees can actually use it."
+2. **Give each employee the URL** (`https://erp.gifthatke.in`) and confirm they can sign in with their Google account.
+3. **No freeze/decommission step is needed** — frozen was never carrying real production data, so there's nothing to protect a transition away from. It stays exactly as TITAN LOCK already requires (permanently preserved, read-only, never mutated) with no special go-live-related action needed on it.
+4. **Record the go-live date** here once employees actually start using it, so "when did this happen" isn't lost to memory.
 
 ## What this draft does not cover
 
-- Data migration/reconciliation between frozen and Standalone (a separate, still-open Phase 4 category — `data and business reconciliation`). If any historical frozen data needs to exist in Standalone and doesn't yet, that's a distinct piece of work this sequence assumes is either already done or not needed.
-- Training/change-management for employees — not something this document can propose without knowing the team.
+- Data migration between frozen and Standalone. **Operator decision, 2026-09-21 (superseding an earlier same-day answer): no — frozen's data was never real production data, so there's nothing worth migrating.** This closes the "data and business reconciliation" question that Phase 4's evidence pack had flagged as genuinely open — it's now resolved as "not applicable," not left outstanding.
+- Training/change-management for employees — not something this document can propose without knowing the team, beyond the bare account-creation step above.
 
-**Corrections needed from the operator**: which of scenarios (a)/(b)/(c) above actually applies; whether the single-step rollout assumption is right or there's a larger team to account for; the actual cutover date if one already happened; and the reference-period length in step 4.
+**All prior open questions in this draft are now resolved**: scenario is (c); no historical data migration; single-operator-scale confirmed elsewhere (`SMP1-Support-Escalation-Ownership-DRAFT-2026-09-21.md`). The one remaining action is employee account creation, above — not a correction to this document, but the actual next step.

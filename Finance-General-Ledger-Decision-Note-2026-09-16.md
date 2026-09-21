@@ -39,3 +39,7 @@ Nothing changes. The current transaction-log-plus-receivables/payables model kee
 ## What this document deliberately does not do
 
 It does not recommend building a general ledger. It does not recommend leaving the current model as-is. It does not scope, estimate, or plan an implementation for either answer. It exists only so that whoever can answer the actual business question — likely GiftHatke's ownership, together with whoever handles its accounting today — has a clear, accurate picture of what exists, what a "yes" would actually mean in scale, and what to ask before deciding. Once that question is answered, either outcome closes this item: "no" closes it exactly as it is; "yes" turns into its own, separately-authorized scope document, written only after the decision, not before.
+
+## Decision, 2026-09-21
+
+**The operator answered yes: build a general ledger.** Per this document's own stated process, that does not itself authorize implementation — it authorizes writing a separate, dedicated scope document (matching the pattern every PHB item followed: scope first, then its own separate implementation authorization), given the scale already described above (closer to a second Finance module than an enhancement, touching every module that currently posts a `FinanceTransaction`). That scope document has not been written yet as of this update.
