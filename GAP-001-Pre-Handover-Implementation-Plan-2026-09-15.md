@@ -27,6 +27,8 @@ Items are grouped by whether they block employees using Standalone for real work
 
 **Full scope:** `Finance-Write-Workflows-Pre-Handover-Scope-2026-09-15.md`, §2, §7 (independent-review corrections), and §8 (implementation record).
 
+**Correction, 2026-09-21:** "✅ IMPLEMENTED" above described the backend only. No frontend called any of these four routes until 2026-09-21 — Employee Web's Finance workspace was a read-only summary view with zero forms. See the 2026-09-21 status update below for the frontend closure and a real persistence defect it surfaced.
+
 ### 2. PHB-3 — Order Attachments — ✅ IMPLEMENTED, 2026-09-15 (not yet committed)
 
 **Status update:** authorized and implemented in this session. `GET`/`POST /orders/:orderId/attachments` are built, tested, and typecheck-clean in the working tree — attachment row and activity-log entry written in one shared transaction, https:// enforced at both the application layer and the database (a check constraint), and a new `orders.attachments.create`/`.read` permission pair. One necessary deviation: frozen's attachment-ID prefix (`"OA-"`) collides with an ID space Standalone's own `order_activities` table already uses, so attachments use `"ATT-"` instead — same generation method, different prefix, forced by a pre-existing Standalone naming choice, not a free design decision. Full record in `Order-Attachments-Pre-Handover-Scope-2026-09-15.md` §7. **Nothing has been committed or pushed.**
@@ -145,6 +147,8 @@ Items are grouped by whether they block employees using Standalone for real work
 
 **Full scope:** `Finance-Write-Workflows-Pre-Handover-Scope-2026-09-15.md`, §3 (original scope) and §9 (implementation record).
 
+**Correction, 2026-09-21:** same as item 1 — "✅ IMPLEMENTED" described the backend only; Save Budget, Refresh Budget Actuals, and Generate Forecast had no frontend caller until 2026-09-21. See the 2026-09-21 status update below, which also documents the write-direction counterpart of this item's own already-recorded Postgres-`Date`-normalization defect: the same generic mapper normalized dates correctly on read but not on write, which is exactly what crashed on first real use.
+
 ### 12. Reorder-queue staleness (frozen-internal only)
 
 A one-time migration moved Purchase Requisition data to a new Procurement sheet without updating the Inventory workspace's reorder-queue widget to match. This is a defect in the *frozen reference itself*, not in Standalone (Standalone's Inventory/Procurement code doesn't have the same file-level split that caused it) — nothing to implement in Standalone. Recorded for whoever owns the frozen reference, per Frozen Reference Non-Mutation; not actionable here.
@@ -225,3 +229,171 @@ where their record of record now lives. Domain-level Canon parity for the
 domains these items touch (Finance, Inventory/Procurement, Production,
 Orders, Shipping) remains governed by GAP-001's own broader open status and
 the 44-domain parity matrix, unchanged by this update.
+
+## Status update, 2026-09-21 (continued) — Finance and Inventory Materials employee-facing mutation UI, and a Finance persistence defect found and fixed
+
+**Trigger:** the operator asked directly why the Inventory and Finance
+workspaces were still read-only in Employee Web. Investigation (not
+assumption) found two different situations sharing one root cause:
+
+- **Finance** was a pure read-only summary view (`apps/web/src/finance.ts`
+  before this update): metric cards and record counts, zero forms, zero
+  mutation calls. All seven of PHB-1's and PHB-2's backend routes (item 1,
+  item 11 above) existed, were permission-gated and CSRF-protected, and had
+  no caller anywhere in the frontend.
+- **Inventory** was only partially read-only. Procurement (Purchase
+  Requisition → Purchase Order → Goods Receipt) was already fully built and
+  wired with real forms (`apps/web/src/inventory-procurement.ts`'s existing
+  modal infrastructure) — not a gap. Material create/update was the actual
+  gap: `POST /inventory/materials` and `PATCH /inventory/materials/:materialId`
+  (Slice 7C/7D, certified and live per this repository's own Inventory
+  Material certification series in `docs/governance/`) had no frontend
+  caller either, for the same reason as Finance — the backend shipped ahead
+  of any UI to reach it.
+
+Both are the same shape of gap items 1 and 11 already describe: "✅
+IMPLEMENTED" in this plan meant the backend was implemented, not that an
+employee could reach it. That distinction was accurate at the time (this
+plan's own scope was orchestration/HTTP, per item 1's "the orchestration
+layer and HTTP routes did not [exist]") but reads as a stronger completeness
+claim than intended once no frontend followed. Corrections were added to
+items 1 and 11 above pointing here.
+
+**What was built:**
+
+- **Inventory Materials** — a new CSRF-aware mutation client
+  (`apps/web/src/inventory-materials-mutation-api.ts`) and Create Material /
+  per-row Edit Material forms, wired into `inventory-procurement.ts`'s
+  existing Procurement modal (`openProcurementModal`/`data-procurement-kind`
+  submit-dispatch pattern already proven for PR/PO/GRN — reused, not
+  duplicated). Covers every field the backend's `InventoryMaterialMutation-
+  Fields` accepts (SKU, name, category, unit, supplier, size, color, base
+  price, GST%, transport charges, reorder level/quantity, location, active
+  status, opening stock on create only). Size and color are submitted as
+  opaque free text (`dimensionMode: "Custom"`) rather than reproducing the
+  backend's dimension-mode/unit composition logic client-side — a
+  deliberate simplification, not a missed requirement; the backend already
+  treats "Custom" mode as pass-through free text. The stale "Read only"
+  toolbar badge (inaccurate since Procurement was already writable) was
+  removed.
+- **Finance** — a new CSRF-aware mutation client
+  (`apps/web/src/finance-mutation-api.ts`) and a full rebuild of
+  `finance.ts`'s render path to add real forms for all seven actions: Record
+  Receipt, Record Expense, Pay Expense, Reverse Transaction, Save Budget,
+  Refresh Budget Actuals, Generate Forecast. Account ID / category / cost
+  center fields are plain text inputs with a "known values" hint line
+  sourced from the live workspace snapshot (e.g. `Known values: RAW_MATERIALS,
+  PACKAGING, SHIPPING, MARKETING, UTILITIES` for expense category) rather
+  than a dropdown bound to an assumed key name — the backend treats these as
+  free-form identifiers, and the read-side `FinanceWorkspaceResponse` type
+  is intentionally untyped per-section (`Record<string, readonly unknown[]>`),
+  so a rigid dropdown would have been guessing at a schema the code doesn't
+  actually commit to.
+
+**A real defect found during live verification, not in the original scope
+(same shape as item 1's period-lock mismatch and item 11's Postgres-`Date`
+read-normalization bug — a real, previously-untriggered defect surfaced by
+being the first real caller):** creating a brand-new expense or receivable
+sets `invoiceDate`/`dueDate` (payables, receivables) or `approvedAt`
+(expenses) to `""` — the domain layer's established "no value yet" sentinel,
+used consistently elsewhere. All three columns are Postgres `timestamp`
+columns (confirmed against `migration/20260911130000_finance_foundation.mjs`),
+and the generic Finance persistence mapper
+(`financeRecordToPersistence`/`createPlatformFinanceRepositoryAdapter` in
+`packages/platform/src/finance.ts` and `finance-repositories.ts`) wrote that
+`""` straight through with no translation. Postgres rejects an empty string
+for a `timestamp` column outright. `POST /finance/receipts` and `POST
+/finance/expenses` both 500'd on their very first real call — reachable
+because Finance had zero frontend callers until this update, exactly
+mirroring item 11's own already-recorded finding that the same shared
+mapper's *read*-direction Date-normalization gap "had already silently
+affected PHB-6's Executive Dashboard Finance KPIs" before being caught.
+Today's defect is that same mapper's *write*-direction counterpart, not a
+new class of bug.
+
+**Fix:** `createPlatformFinanceRepositoryAdapter` gained an optional
+`nullableTimestampColumns` list, applied in `save()`/`update()` immediately
+before every write — converts `""` to `null` for exactly the named columns,
+leaving every other field (including legitimate empty-string `TEXT` columns
+like `notes`) untouched, and leaving the domain layer's `string`-typed
+`invoiceDate`/`dueDate`/`approvedAt` fields and their `""` convention
+unchanged everywhere else. Wired for `finance_payables`/`finance_receivables`
+(`invoice_date`, `due_date`) and `finance_expenses` (`approved_at`), in both
+the transactional repository construction (`finance-money.ts`, the path the
+live 500s actually went through) and the non-transactional one
+(`finance-repositories.ts`). Matches the `nullableDateValue` precedent
+already established in `packages/platform/src/shipping.ts` — convert at the
+specific write call site, not by making the generic mapper guess at column
+types.
+
+**Explicitly out of scope, flagged rather than silently built or silently
+skipped:** manual inventory stock-movement/adjustment (correcting a stock
+count, writing off damaged/lost stock, recording a return outside
+Procurement). Confirmed by exhaustive route enumeration
+(`grep -rn '"/inventory' apps/api/src/routes/*.ts`) that no such route
+exists anywhere — stock only ever changes via Material creation's
+`openingStock` field (create-only, frozen behavior) or the Procurement
+receipt flow. This is a genuine backend capability gap, not a missing
+frontend, and was not built. The operator was informed directly and asked
+that it be tracked as a follow-up rather than implemented in this pass.
+
+**Verification:** full monorepo build and typecheck clean across all five
+workspaces. 4 new platform-layer tests added
+(`packages/platform/test/finance-repositories.test.mjs`) covering the new
+`nullableTimestampColumns` behavior directly, including one exercising
+`createPlatformFinanceRepositoryAdapter.save()` end-to-end against a mocked
+Kysely `insertInto`/`onConflict` chain. Full regression suite re-run: domain
+339/339, platform 237/237 (233 pre-existing + 4 new), web 103/103, api
+666/667, database 224/225 — the two failures are both pre-existing and
+unrelated to this work: the same `reports-routes.test.mjs` date-drift issue
+this plan's cross-reference section already tracks as GAP-004, and a stale
+expected-migration-list snapshot in `packages/database/test/migration-
+foundation.test.mjs` that has no connection to Finance or Inventory. One web
+test (`inventory-procurement-read-workspace.test.mjs`) initially failed
+after the Inventory change — not a real regression, but a local variable
+named `createMaterialButton` incidentally containing the literal substring
+`"createMaterial"`, which a frozen-scope guard test checks for by design;
+renamed to `newMaterialButton` and the test passed cleanly on its own terms
+(the guard's actual purpose — keeping `postMovement`/production-consumption
+wiring out of this workspace — remains correctly enforced, since neither was
+built here).
+
+Live-verified in the browser as `support.gifthatke@gmail.com` against
+`erp.gifthatke.in` after each deploy: created a Material end-to-end (SKU/
+name/pricing/opening stock all persisted correctly) and edited it (fields
+pre-filled correctly from the live record, edit saved). Record Expense with
+Payment Status "Paid" correctly hit a real business-rule 409 ("no financial
+period is configured [as Open] for the current month") rather than any kind
+of application error — an environment/data-setup matter for whoever owns
+Finance's period configuration, not a code defect. Record Expense with
+Payment Status "Pending" 500'd before the fix and saved successfully after
+it. Record Receipt against a deliberately fake order ID correctly hit a real
+404 ("order not found") after the fix, proving the request now reaches real
+business logic rather than crashing on the write path.
+
+**Commit and deploy record:** three commits on `smp1/production-parity`,
+pushed to `origin`:
+
+- `29074b2` — `feat(inventory): add Create/Edit Material forms to
+  Procurement workspace`
+- `bb2ce43` — `feat(finance): add employee mutation forms to Finance
+  workspace`
+- `6362245` — `fix(finance): stop empty-date sentinels from crashing new
+  payables/receivables/expenses`
+
+Both Render services were redeployed and confirmed live: the static Web
+service (`srv-da4ev9rncjis73fcrmhg`) after the first two commits, the API
+service (`srv-da4ev9rncjis73fcrmh0`) after the third.
+
+**Why this belongs in this document rather than a new one:** same reasoning
+`docs/governance/smp1-per-capability-certification-retirement-2026-09-21.md`
+already gave for the original eleven items — this is a direct continuation
+of items 1 and 11's own work, found and closed in one session, with full
+implementation detail and verification already recorded here. A separate
+document would restate this, not add to it.
+
+**What remains open after this update:** manual stock-movement/adjustment
+(above); GAP-001's own domain-by-domain Canon reconciliation, unchanged by
+this update; GAP-004 (Reports timezone sensitivity, unchanged, still the
+same failing test); item 10 above (Finance General Ledger / Chart of
+Accounts business decision, unchanged, still pending).
