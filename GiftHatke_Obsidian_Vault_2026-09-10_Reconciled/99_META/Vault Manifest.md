@@ -1,0 +1,111 @@
+---
+title: "Vault Manifest"
+status: "knowledge-snapshot"
+last_verified: "2026-08-25"
+source: "retained-conversation-knowledge"
+tags:
+  - gifthatke
+  - meta
+  - manifest
+---
+
+# Vault Manifest
+
+- Snapshot date: 2026-08-25
+- Files excluding this manifest: 94
+
+## Files
+- `.obsidian/app.json`
+- `.obsidian/appearance.json`
+- `.obsidian/core-plugins.json`
+- `00_HOME/AI Handoff - TITAN LOCK Context.md`
+- `00_HOME/Current Operating Snapshot.md`
+- `00_HOME/Home.md`
+- `01_GOVERNANCE/Authority Hierarchy.md`
+- `01_GOVERNANCE/Certification and Release Controls.md`
+- `01_GOVERNANCE/Enterprise Canon - 44 Domain Overview.md`
+- `01_GOVERNANCE/Frozen Reference Non-Mutation.md`
+- `01_GOVERNANCE/Roadmap - Locked Sequence.md`
+- `01_GOVERNANCE/TITAN LOCK - Master Governance.md`
+- `02_BUSINESS/Brand Visual System.md`
+- `02_BUSINESS/Business MOC.md`
+- `02_BUSINESS/Business Model and Channels.md`
+- `02_BUSINESS/Company and Brand Profile.md`
+- `02_BUSINESS/Corporate and Retailer Business.md`
+- `02_BUSINESS/Customer Segments and Gifting Occasions.md`
+- `02_BUSINESS/Economics and Commercial Notes.md`
+- `03_PRODUCTS/Acrylic LED Lamps.md`
+- `03_PRODUCTS/Baby 12 Months Milestone Clock.md`
+- `03_PRODUCTS/Couple Wedding and Anniversary Products.md`
+- `03_PRODUCTS/Keychains and Small Keepsakes.md`
+- `03_PRODUCTS/Personalized Product Asset Privacy Standard.md`
+- `03_PRODUCTS/Product MOC.md`
+- `03_PRODUCTS/Product Portfolio.md`
+- `03_PRODUCTS/Rakhi Hamper.md`
+- `03_PRODUCTS/Wooden Engraved Photo Frames.md`
+- `04_COMMERCE_MARKETING/Amazon Flipkart and Marketplaces.md`
+- `04_COMMERCE_MARKETING/Checkout and Partial COD.md`
+- `04_COMMERCE_MARKETING/Commerce and Marketing MOC.md`
+- `04_COMMERCE_MARKETING/Customer Email Templates.md`
+- `04_COMMERCE_MARKETING/Flipkart Personalized Returns Problem.md`
+- `04_COMMERCE_MARKETING/Meta Ads and Creative Strategy.md`
+- `04_COMMERCE_MARKETING/Rakhi Campaign - Aug 2026.md`
+- `04_COMMERCE_MARKETING/SEO Content and Policy Pages.md`
+- `04_COMMERCE_MARKETING/Shopify Store.md`
+- `04_COMMERCE_MARKETING/WhatsApp AI Automation.md`
+- `05_OPERATIONS/Customer Success.md`
+- `05_OPERATIONS/Finance and Margin Control.md`
+- `05_OPERATIONS/Inventory and Procurement.md`
+- `05_OPERATIONS/Marketplace Operations.md`
+- `05_OPERATIONS/Operations MOC.md`
+- `05_OPERATIONS/Order to Delivery Lifecycle.md`
+- `05_OPERATIONS/Personalization Intake and Digital Assets.md`
+- `05_OPERATIONS/Production.md`
+- `05_OPERATIONS/Shipping and Returns.md`
+- `06_PEOPLE/Customer Success Executive - Hiring.md`
+- `07_GIFTHATKEOS/00_MOC/GiftHatkeOS MOC.md`
+- `07_GIFTHATKEOS/01_ARCHITECTURE/Runtime Independent Platform.md`
+- `07_GIFTHATKEOS/01_ARCHITECTURE/Security and RBAC.md`
+- `07_GIFTHATKEOS/01_ARCHITECTURE/Standalone Production Architecture.md`
+- `07_GIFTHATKEOS/02_APPS_SCRIPT_REFERENCE/Apps Script V1 Reference.md`
+- `07_GIFTHATKEOS/02_APPS_SCRIPT_REFERENCE/V1 Permanent Reference Freeze.md`
+- `07_GIFTHATKEOS/03_ERP_HISTORY/ERP Evolution Summary.md`
+- `07_GIFTHATKEOS/03_ERP_HISTORY/ERP7.md`
+- `07_GIFTHATKEOS/03_ERP_HISTORY/ERP8.md`
+- `07_GIFTHATKEOS/04_GLP1_GO_LIVE/GLP1 Programme.md`
+- `07_GIFTHATKEOS/04_GLP1_GO_LIVE/Production Deployment History.md`
+- `07_GIFTHATKEOS/05_SMP1_STANDALONE/CRM Production Parity Certification.md`
+- `07_GIFTHATKEOS/05_SMP1_STANDALONE/Customers Production Parity.md`
+- `07_GIFTHATKEOS/05_SMP1_STANDALONE/Dashboard Wave 1.1.md`
+- `07_GIFTHATKEOS/05_SMP1_STANDALONE/Production Parity Programme.md`
+- `07_GIFTHATKEOS/05_SMP1_STANDALONE/SMP1 Programme.md`
+- `07_GIFTHATKEOS/05_SMP1_STANDALONE/SMP1 Stage 2 Pack History.md`
+- `07_GIFTHATKEOS/06_MODULES/CRM.md`
+- `07_GIFTHATKEOS/06_MODULES/Customers.md`
+- `07_GIFTHATKEOS/06_MODULES/Dashboard.md`
+- `07_GIFTHATKEOS/06_MODULES/Finance.md`
+- `07_GIFTHATKEOS/06_MODULES/Inventory.md`
+- `07_GIFTHATKEOS/06_MODULES/Orders.md`
+- `07_GIFTHATKEOS/06_MODULES/Production.md`
+- `07_GIFTHATKEOS/06_MODULES/Settings.md`
+- `07_GIFTHATKEOS/06_MODULES/Users Roles and Permissions.md`
+- `07_GIFTHATKEOS/07_INCIDENTS/Executive Dashboard PH1 Incident.md`
+- `07_GIFTHATKEOS/07_INCIDENTS/Standalone Google OAuth Origin Incident.md`
+- `08_KNOWLEDGE_BASE/Knowledge Base Charter.md`
+- `08_KNOWLEDGE_BASE/Recommended Documentation Architecture.md`
+- `09_TIMELINE/Gift Hatke Timeline.md`
+- `10_REGISTERS/Branches Commits Tags and Certifications.md`
+- `10_REGISTERS/Decision Register.md`
+- `10_REGISTERS/Key URLs and Paths.md`
+- `10_REGISTERS/Open Issues Risks and Unknowns.md`
+- `10_REGISTERS/Production Environments and Deployments.md`
+- `10_REGISTERS/Terminology and Acronyms.md`
+- `90_TEMPLATES/Certification Template.md`
+- `90_TEMPLATES/Decision Template.md`
+- `90_TEMPLATES/Incident Template.md`
+- `90_TEMPLATES/Product Template.md`
+- `90_TEMPLATES/SOP Template.md`
+- `99_META/Missing Authoritative Artifacts to Import.md`
+- `99_META/Status and Evidence Model.md`
+- `99_META/Vault Maintenance Rules.md`
+- `README_FIRST.md`

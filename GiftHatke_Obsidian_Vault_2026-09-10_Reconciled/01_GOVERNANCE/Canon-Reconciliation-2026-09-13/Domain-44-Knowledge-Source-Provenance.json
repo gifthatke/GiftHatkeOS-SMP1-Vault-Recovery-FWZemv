@@ -1,0 +1,14 @@
+{
+  "domain": 44,
+  "canonical_title": "Enterprise Knowledge Operating System & Organizational Memory Canon",
+  "stage": 10,
+  "source_message_id": "78e53575-41c1-475d-abfe-2c087ee0c3fa",
+  "source_sha256": "850161dd9816b1b1f55335f61be035b606ad8f593a8354d4ba7aabc029e27472",
+  "source_file": "Domain-44-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "dedicated_knowledge_platform_required_for_smp1": false,
+  "live_authenticated_acceptance": false
+}

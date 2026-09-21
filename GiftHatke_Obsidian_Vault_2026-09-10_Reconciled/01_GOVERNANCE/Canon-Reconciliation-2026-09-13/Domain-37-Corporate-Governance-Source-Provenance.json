@@ -1,0 +1,14 @@
+{
+  "domain": 37,
+  "canonical_title": "Enterprise Corporate Governance, Board Management & Executive Office Canon",
+  "stage": 10,
+  "source_message_id": "8cb11d69-4deb-414c-95f8-5b1b78f4d36f",
+  "source_sha256": "da8590a6b0cf8974dda34af1dd287ddf8dfbbaef83dd643e16415a2772951def",
+  "source_file": "Domain-37-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "dedicated_corporate_governance_implementation_recovered": false,
+  "live_authenticated_acceptance": false
+}

@@ -1,0 +1,14 @@
+{
+  "domain": 21,
+  "canonical_title": "Enterprise Product Lifecycle, Catalog & Merchandising Management Canon",
+  "stage": 10,
+  "source_message_id": "89b75e7c-ef7b-4768-b10f-94b722b6ac4f",
+  "source_sha256": "6ddb9de0dfb0192cde2f06bfb80f5d97e91e2271cef4e8bafb550fcc47f1f355",
+  "source_file": "Domain-21-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "dedicated_product_implementation_recovered": false,
+  "live_authenticated_acceptance": false
+}

@@ -1,0 +1,469 @@
+{
+  "schema_version": 1,
+  "recovery_decision": "RECOVERED",
+  "source": {
+    "public_share_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+    "conversation_id": "6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+    "title": "Order Management Canon Stage 3",
+    "is_public": true,
+    "retrieved_at_utc": "2026-09-12T20:35:00.858253+00:00",
+    "raw_source_sha256": "30d77719c00a710337c91e8f2fdf9d98ac98fb9a81cb9aaddfc4085ca75479f4",
+    "raw_source_size_bytes": 19735230,
+    "mapping_node_count": 1187,
+    "active_chain_node_count": 1187,
+    "visible_export_message_count": 929,
+    "canon_domain_count": 44
+  },
+  "numbering_authority": {
+    "domains_1_to_28_message_id": "1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+    "domains_29_to_44": "Explicit Domain N labels in Stage 10 certification messages",
+    "domain_2_3_note": "Explicit registry numbering governs: Inventory & Procurement is Domain 2; Production & Manufacturing is Domain 3."
+  },
+  "domains": [
+    {
+      "domain_number": 1,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Order Management",
+      "canon_h1_title_exact": "ORDER MANAGEMENT ENTERPRISE CANON",
+      "message_id": "77476377-42e5-42f2-9709-ecb237fe821c",
+      "create_time_utc": "2026-08-06T18:53:35.332519+00:00",
+      "message_sha256": "c9fbbfff7a4e729b5d06e43689cbe224fca0bd314cfce3183fe4ec663966bcd9",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 2,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Inventory & Procurement",
+      "canon_h1_title_exact": "INVENTORY & PROCUREMENT ENTERPRISE CANON",
+      "message_id": "d28a6fbf-3b79-419f-b65f-8adcd47656e7",
+      "create_time_utc": "2026-08-06T19:05:35.382140+00:00",
+      "message_sha256": "9ca55ea221e5b567ff645ff19facca69d5e5fa6c24f63fdbfb898dbffb6c2a45",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 3,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Production & Manufacturing",
+      "canon_h1_title_exact": "PRODUCTION & MANUFACTURING ENTERPRISE CANON",
+      "message_id": "cffc8316-e52d-4e2f-861d-dd78684e7659",
+      "create_time_utc": "2026-08-06T19:00:29.193554+00:00",
+      "message_sha256": "fcd4617f892596b61b317a02026957bf637e781d09a1b511f3fd2d8d712ec032",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 4,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Quality Management",
+      "canon_h1_title_exact": "QUALITY MANAGEMENT ENTERPRISE CANON",
+      "message_id": "61a02b30-9175-4537-9c65-525acbd87310",
+      "create_time_utc": "2026-08-06T19:10:46.352764+00:00",
+      "message_sha256": "1dabb5976093b060c4970dd88b57072525636498eb0ee8f8ea62facb23f39731",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 5,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Shipping & Fulfillment",
+      "canon_h1_title_exact": "SHIPPING & FULFILLMENT ENTERPRISE CANON",
+      "message_id": "51cfcd8d-d066-4b80-b15e-15d3d8bbce2a",
+      "create_time_utc": "2026-08-06T19:15:45.164444+00:00",
+      "message_sha256": "bc5ed0b5d1422f5eaec0e5475c7dd16d06142548087b0f52b00bc8e1a6b35df5",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 6,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Finance & Accounting",
+      "canon_h1_title_exact": "FINANCE & ACCOUNTING ENTERPRISE CANON",
+      "message_id": "5d32afeb-df26-402a-8cce-4b661e17edeb",
+      "create_time_utc": "2026-08-06T19:21:28.997126+00:00",
+      "message_sha256": "88ce844f2a54bda7535680355e7fa9877681a9f1822fc33471d68e949ce7cffb",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 7,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Reporting & Business Intelligence",
+      "canon_h1_title_exact": "REPORTING & BUSINESS INTELLIGENCE ENTERPRISE CANON",
+      "message_id": "fdbb25ba-3a70-41c8-b0e3-6ad1da96e176",
+      "create_time_utc": "2026-08-06T19:26:21.461387+00:00",
+      "message_sha256": "27ef1d276b2a95b7be0d943ecbc9e32f362f63d1239ea7c8a557ebb7bb07e75e",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 8,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Identity, Security & Administration",
+      "canon_h1_title_exact": "IDENTITY, SECURITY & ADMINISTRATION ENTERPRISE CANON",
+      "message_id": "d018a383-672b-4657-968b-0f05531c2af4",
+      "create_time_utc": "2026-08-06T19:30:36.685761+00:00",
+      "message_sha256": "a004488b7129c190cc123e20ebdbd9d04dc6038d0185f323aa857ee438d3bc36",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 9,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Notification, Communication & Collaboration",
+      "canon_h1_title_exact": "NOTIFICATION, COMMUNICATION & COLLABORATION ENTERPRISE CANON",
+      "message_id": "9851b2e0-9557-436b-92cb-8ea03752ce64",
+      "create_time_utc": "2026-08-06T19:36:45.132219+00:00",
+      "message_sha256": "98a25a426c9908fd33e0213d8fd0eb933c762b0a0b8ffe837fef591300885563",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 10,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Document & Digital Asset Management",
+      "canon_h1_title_exact": "DOCUMENT & DIGITAL ASSET MANAGEMENT ENTERPRISE CANON",
+      "message_id": "c03d6185-4f57-48ba-88f4-ad20fa5706e8",
+      "create_time_utc": "2026-08-06T19:40:57.255365+00:00",
+      "message_sha256": "36fa8838d336442289f77b217d3c9d590f92ed92a0aaa5e86fcf6be1faa0e57b",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 11,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Workflow, Process Automation & Orchestration",
+      "canon_h1_title_exact": "WORKFLOW, PROCESS AUTOMATION & ORCHESTRATION ENTERPRISE CANON",
+      "message_id": "2d5fc0b7-8913-4ef7-8528-b9d030aa88fd",
+      "create_time_utc": "2026-08-06T19:45:12.690916+00:00",
+      "message_sha256": "53ae15ee2c130c9b7649cb72165d879e71fef908d8b569e26d20f149d9e5f587",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 12,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Master Data Management",
+      "canon_h1_title_exact": "MASTER DATA MANAGEMENT (MDM) ENTERPRISE CANON",
+      "message_id": "3cd68863-8e64-430e-990c-77945ee9de86",
+      "create_time_utc": "2026-08-06T19:55:06.865738+00:00",
+      "message_sha256": "101c40f5396251454ab53e59c8c75fa164af281785d7b89dd7210bb6019911a8",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 13,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Integration & Enterprise Connectivity",
+      "canon_h1_title_exact": "INTEGRATION, APIs & ENTERPRISE CONNECTIVITY CANON",
+      "message_id": "28bd6b06-da6e-4662-aaa2-2c3af0c1e526",
+      "create_time_utc": "2026-08-06T20:03:58.073796+00:00",
+      "message_sha256": "db9c4f7e25b4714b79c11299dd7143c0d0c5310f0a1972c7095eb26274bbae8a",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 14,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Monitoring & Operations",
+      "canon_h1_title_exact": "ENTERPRISE MONITORING, OBSERVABILITY & OPERATIONS CANON",
+      "message_id": "14563ada-450a-43d7-9afa-8f4993156468",
+      "create_time_utc": "2026-08-06T20:12:23.789908+00:00",
+      "message_sha256": "681c2f4ff17ac4f0eab9e550299406dcee439368ae433d020d1c0c54acf3a4df",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 15,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Scheduling & Resource Management",
+      "canon_h1_title_exact": "ENTERPRISE SCHEDULING, TIME & RESOURCE MANAGEMENT CANON",
+      "message_id": "138e525a-9b58-4514-85d6-ead82db79146",
+      "create_time_utc": "2026-08-06T20:21:24.548013+00:00",
+      "message_sha256": "c3177660104b8f645a243ec3ae4fc4004203d8892c7cb3c32aaa21b07a9e6e3f",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 16,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Configuration & Business Rules",
+      "canon_h1_title_exact": "ENTERPRISE CONFIGURATION, FEATURE MANAGEMENT & BUSINESS RULES CANON",
+      "message_id": "a5d2b492-ce69-4f77-9a2f-8b2679bd508e",
+      "create_time_utc": "2026-08-06T20:25:09.165066+00:00",
+      "message_sha256": "33e91823e2148a7150230488d81a5ddb31c08091bd0366d86b2ade7750698ea3",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 17,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Search & Knowledge Management",
+      "canon_h1_title_exact": "ENTERPRISE SEARCH, KNOWLEDGE & INFORMATION RETRIEVAL CANON",
+      "message_id": "9a590c5b-134c-4f60-b6ed-d7627d194f7e",
+      "create_time_utc": "2026-08-06T20:30:08.648760+00:00",
+      "message_sha256": "8f5d0a1701460b6b6746fd98538752e42075683ee73bed50da981fe1835879a1",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 18,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "AI & Decision Intelligence",
+      "canon_h1_title_exact": "ENTERPRISE ARTIFICIAL INTELLIGENCE, DECISION INTELLIGENCE & AUTONOMOUS OPERATIONS CANON",
+      "message_id": "0e511b4f-f54c-400d-962c-10fb6ced1b28",
+      "create_time_utc": "2026-08-06T20:35:53.023106+00:00",
+      "message_sha256": "a296b52571aa47c4fd4eb56ac65e05ccc4f3b60ca17c8baa8a2db0830d0ebe58",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 19,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Customer Experience & CRM",
+      "canon_h1_title_exact": "ENTERPRISE CUSTOMER EXPERIENCE, CRM & RELATIONSHIP MANAGEMENT CANON",
+      "message_id": "a5d1a4f0-7dbd-48d4-91b5-4a8c71c02277",
+      "create_time_utc": "2026-08-06T20:39:57.203967+00:00",
+      "message_sha256": "8c44c733bbf31953a36853ce1eec8e6680db13c42f88ae0b3b5d18502e8bd136",
+      "certification_status_exact": "**Certification Status:** ✅ **CERTIFIED**"
+    },
+    {
+      "domain_number": 20,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Sales & Revenue Operations",
+      "canon_h1_title_exact": "ENTERPRISE SALES, COMMERCIAL OPERATIONS & REVENUE MANAGEMENT CANON",
+      "message_id": "324f4b5c-e0ff-4d6d-882e-22aae4febbc0",
+      "create_time_utc": "2026-08-06T20:48:00.803049+00:00",
+      "message_sha256": "90338125283494f1564fc1562e629ba292e6b7ba6ea069468c7abb6b12776c35",
+      "certification_status_exact": "**Certification Status:** ✅ CERTIFIED"
+    },
+    {
+      "domain_number": 21,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Product Lifecycle & Merchandising",
+      "canon_h1_title_exact": "ENTERPRISE PRODUCT LIFECYCLE, CATALOG & MERCHANDISING MANAGEMENT CANON",
+      "message_id": "89b75e7c-ef7b-4768-b10f-94b722b6ac4f",
+      "create_time_utc": "2026-08-06T20:53:30.502873+00:00",
+      "message_sha256": "6ddb9de0dfb0192cde2f06bfb80f5d97e91e2271cef4e8bafb550fcc47f1f355",
+      "certification_status_exact": "**Certification Status:** ✅ CERTIFIED"
+    },
+    {
+      "domain_number": 22,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Marketing & Engagement",
+      "canon_h1_title_exact": "ENTERPRISE MARKETING, CAMPAIGN MANAGEMENT & CUSTOMER ENGAGEMENT CANON",
+      "message_id": "cb928c18-af7a-4aaf-810c-4beffe01575d",
+      "create_time_utc": "2026-08-06T20:56:40.598247+00:00",
+      "message_sha256": "68eec60119b3cd74f921749156669f2160aa27dd2183d626fc20ba8c982f957d",
+      "certification_status_exact": "**Certification Status:** ✅ CERTIFIED"
+    },
+    {
+      "domain_number": 23,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Partner & Supplier Ecosystem",
+      "canon_h1_title_exact": "ENTERPRISE PARTNER, SUPPLIER & ECOSYSTEM RELATIONSHIP MANAGEMENT CANON",
+      "message_id": "b86693a1-ac3f-4fc5-b76f-3a062a0f42fd",
+      "create_time_utc": "2026-08-06T21:02:14.872309+00:00",
+      "message_sha256": "b344f10af6eb7695b03ccccdffea470a5aee8b0f263ec0e43f50a2ce35457ad1",
+      "certification_status_exact": "**Certification Status:** ✅ CERTIFIED"
+    },
+    {
+      "domain_number": 24,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Legal & Regulatory Governance",
+      "canon_h1_title_exact": "ENTERPRISE LEGAL, COMPLIANCE, CONTRACT & REGULATORY GOVERNANCE CANON",
+      "message_id": "ec483b9a-6cf3-4b8d-830f-b20c941d08c2",
+      "create_time_utc": "2026-08-06T21:05:16.875360+00:00",
+      "message_sha256": "9e9823137afa96ae72600acf5b5d839d5d99e639e322b8d1a5b9f42b9c1b7a90",
+      "certification_status_exact": "**Certification Status:** ✅ CERTIFIED"
+    },
+    {
+      "domain_number": 25,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Human Capital & Workforce Management",
+      "canon_h1_title_exact": "ENTERPRISE HUMAN CAPITAL, WORKFORCE & ORGANIZATIONAL MANAGEMENT CANON",
+      "message_id": "b0c32b7c-c95c-42fe-ba1c-d112681a6310",
+      "create_time_utc": "2026-08-06T21:07:50.014447+00:00",
+      "message_sha256": "8ae3b972f4c76e291b06b22b396418dfe81f9f7dd51fd739507c4e6d0c42b9c5",
+      "certification_status_exact": "**Certification Status:** ✅ CERTIFIED"
+    },
+    {
+      "domain_number": 26,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Asset, Equipment, Facility & Physical Resource Management",
+      "canon_h1_title_exact": "ENTERPRISE ASSET, EQUIPMENT, FACILITY & PHYSICAL RESOURCE MANAGEMENT CANON",
+      "message_id": "ce1b3485-e68d-418f-bc18-4bde8e5fd03f",
+      "create_time_utc": "2026-08-06T21:11:45.235574+00:00",
+      "message_sha256": "66b463278a9e24f9c9828c2570743d463495a54822c7e18c3ca37971b7db6766",
+      "certification_status_exact": "**Certification Status:** ✅ CERTIFIED"
+    },
+    {
+      "domain_number": 27,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Sustainability, Environmental, Health & Safety Management",
+      "canon_h1_title_exact": "ENTERPRISE SUSTAINABILITY, ENVIRONMENTAL, HEALTH & SAFETY MANAGEMENT CANON",
+      "message_id": "0db1cb40-a97b-429b-abbb-e263dca883af",
+      "create_time_utc": "2026-08-06T21:16:44.543034+00:00",
+      "message_sha256": "c2be4f55b1da02cc5592e684c084e1dba596fda2d0381c005faa213bec68f5d2",
+      "certification_status_exact": "**Certification Status:** ✅ CERTIFIED"
+    },
+    {
+      "domain_number": 28,
+      "numbering_basis": "Explicit numbered 1–28 status list in message 1485ad86-77a9-40f4-a0aa-c81bd8af8166",
+      "numbered_summary_label_exact": "Security, Privacy, Identity & Trust Governance",
+      "canon_h1_title_exact": "ENTERPRISE SECURITY, PRIVACY, IDENTITY & TRUST GOVERNANCE CANON",
+      "message_id": "653b5ca8-eaf0-40b9-b073-b73d8031b0b6",
+      "create_time_utc": "2026-08-06T21:19:39.232025+00:00",
+      "message_sha256": "cef20c80769f0b852d1d8bd9a8fa3fbff2967877ce5237f4f8c6393f6007b194",
+      "certification_status_exact": "**Certification Status:** ✅ CERTIFIED"
+    },
+    {
+      "domain_number": 29,
+      "numbering_basis": "Explicit Domain 29 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE DATA GOVERNANCE, PRIVACY INTELLIGENCE & INFORMATION LIFECYCLE MANAGEMENT CANON",
+      "message_id": "1c8ba14a-8f87-4755-ac8a-1baf28355128",
+      "create_time_utc": "2026-08-07T06:37:43.717316+00:00",
+      "message_sha256": "a70c0a513693c994d35aa15ab7eaa5d61672b771132a0b96773b17c56a48a552",
+      "certification_status_exact": "**Certification Status:** ✅ **FULLY CERTIFIED**"
+    },
+    {
+      "domain_number": 30,
+      "numbering_basis": "Explicit Domain 30 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE ANALYTICS, REPORTING INTELLIGENCE & PERFORMANCE MANAGEMENT CANON",
+      "message_id": "a00ad9fe-79b5-4ff4-bc77-269d552fb43f",
+      "create_time_utc": "2026-08-07T07:26:05.921157+00:00",
+      "message_sha256": "d6f7fba6abc4cce557f49caf46c9b165c196d011e592981ca550e77f3710f340",
+      "certification_status_exact": "**Certification Status:** ✅ **FULLY CERTIFIED**"
+    },
+    {
+      "domain_number": 31,
+      "numbering_basis": "Explicit Domain 31 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE REVENUE MANAGEMENT, PRICING & COMMERCIAL INTELLIGENCE CANON",
+      "message_id": "e2dfd5e0-a251-4849-8fbe-d5317bfc1bed",
+      "create_time_utc": "2026-08-07T09:26:46.748091+00:00",
+      "message_sha256": "b9573636fd47a63aa59e9e9e3a6645a1c9ce6fcff069a3199e0493b12786df63",
+      "certification_status_exact": "**Certification Status:** ✅ **FULLY CERTIFIED**"
+    },
+    {
+      "domain_number": 32,
+      "numbering_basis": "Explicit Domain 32 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE CUSTOMER SUCCESS, SERVICE MANAGEMENT & SUPPORT OPERATIONS CANON",
+      "message_id": "f3c8dd2b-6f7a-4d4f-b214-87ca338134ab",
+      "create_time_utc": "2026-08-07T10:20:40.363740+00:00",
+      "message_sha256": "219e83372388879f019357a9d2fb9b0cd93b83add8e7a9b13701218742dbf6ea",
+      "certification_status_exact": "**Certification Status:** ✅ **FULLY CERTIFIED**"
+    },
+    {
+      "domain_number": 33,
+      "numbering_basis": "Explicit Domain 33 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE SUPPLY CHAIN PLANNING & DEMAND INTELLIGENCE CANON",
+      "message_id": "24fe171c-3a91-45ce-a4eb-c27f179d6a87",
+      "create_time_utc": "2026-08-07T11:24:43.663782+00:00",
+      "message_sha256": "0e860563b19307cb5463d53fb9181ff59dbea2b3a89d46948286b28124162be8",
+      "certification_status_exact": "**Certification Status:** ✅ **FULLY CERTIFIED**"
+    },
+    {
+      "domain_number": 34,
+      "numbering_basis": "Explicit Domain 34 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE MANUFACTURING EXCELLENCE & INDUSTRIAL OPERATIONS CANON",
+      "message_id": "a071b5d7-e648-40fc-a616-cf699ca9cb87",
+      "create_time_utc": "2026-08-07T12:18:21.007384+00:00",
+      "message_sha256": "403526daa3feb88714ffa174869ca6ef29a095990d208eef4c8f9c53a54d4599",
+      "certification_status_exact": "**Certification Status:** ✅ **FULLY CERTIFIED**"
+    },
+    {
+      "domain_number": 35,
+      "numbering_basis": "Explicit Domain 35 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE INNOVATION, RESEARCH & CONTINUOUS IMPROVEMENT CANON",
+      "message_id": "fabea75d-fa69-482a-9fd7-4e06600c39a0",
+      "create_time_utc": "2026-08-07T17:13:27.068349+00:00",
+      "message_sha256": "6cfa3f7c3d7263b8efe225cbd2848dc12dd3bcf5064eed4f723f2d6c7f4adcf1",
+      "certification_status_exact": "**Certification Status:** ✅ **FULLY CERTIFIED**"
+    },
+    {
+      "domain_number": 36,
+      "numbering_basis": "Explicit Domain 36 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE PROJECT, PORTFOLIO & STRATEGIC INITIATIVE MANAGEMENT CANON",
+      "message_id": "2bc55732-4687-4367-b28a-dac740ab492b",
+      "create_time_utc": "2026-08-08T08:27:18.379560+00:00",
+      "message_sha256": "d2ff9d16f8077e3cfb80feb2ec6e9f36c49522825964c221d96875cc55f79f93",
+      "certification_status_exact": "**Certification Status:** ✅ **FULLY CERTIFIED**"
+    },
+    {
+      "domain_number": 37,
+      "numbering_basis": "Explicit Domain 37 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE CORPORATE GOVERNANCE, BOARD MANAGEMENT & EXECUTIVE OFFICE CANON",
+      "message_id": "8cb11d69-4deb-414c-95f8-5b1b78f4d36f",
+      "create_time_utc": "2026-08-09T17:10:51.909360+00:00",
+      "message_sha256": "da8590a6b0cf8974dda34af1dd287ddf8dfbbaef83dd643e16415a2772951def",
+      "certification_status_exact": "**Certification Status:** ✅ FULLY CERTIFIED"
+    },
+    {
+      "domain_number": 38,
+      "numbering_basis": "Explicit Domain 38 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE BUSINESS CONTINUITY, DISASTER RECOVERY & OPERATIONAL RESILIENCE CANON",
+      "message_id": "20553da1-35af-4e08-b17d-6bef5a3c219d",
+      "create_time_utc": "2026-08-10T08:11:17.770834+00:00",
+      "message_sha256": "93671a4a582dbd294c7f9c5f594f7da45a281eb52dba64f6fce54b5969cc4875",
+      "certification_status_exact": "**Certification Status:** ✅ FULLY CERTIFIED"
+    },
+    {
+      "domain_number": 39,
+      "numbering_basis": "Explicit Domain 39 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE COMPLIANCE, AUDIT & GOVERNANCE INTELLIGENCE EXPANSION CANON",
+      "message_id": "5e0d11b4-a2af-46df-bba3-4e2fb70ddadf",
+      "create_time_utc": "2026-08-10T09:35:47.267587+00:00",
+      "message_sha256": "97a485bea4bc367bdb74aebab9e6d66d6e9d180d791c2488773e62e26b4b5c8a",
+      "certification_status_exact": "**Certification Status:** ✅ FULLY CERTIFIED"
+    },
+    {
+      "domain_number": 40,
+      "numbering_basis": "Explicit Domain 40 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE GLOBALIZATION, MULTI-COMPANY & MULTI-REGION OPERATIONS CANON",
+      "message_id": "7fad863d-ed1d-485b-938f-e13526bf4645",
+      "create_time_utc": "2026-08-10T11:24:42.879970+00:00",
+      "message_sha256": "6004f161c8f232e4e7f06ac77d92272dd91e6e66d4347e30016e06b689af3423",
+      "certification_status_exact": "**Certification Status:** ✅ FULLY CERTIFIED"
+    },
+    {
+      "domain_number": 41,
+      "numbering_basis": "Explicit Domain 41 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE PLATFORM ARCHITECTURE, CLOUD OPERATIONS & INFRASTRUCTURE GOVERNANCE CANON",
+      "message_id": "33a15f70-bec8-42c3-84ba-e8755c9f35a3",
+      "create_time_utc": "2026-08-10T12:28:47.040408+00:00",
+      "message_sha256": "789c212bcf7419ad3d3556b09763682a832728cb1bb9f128e8b012c67cec9010",
+      "certification_status_exact": "**Certification Status:** ✅ FULLY CERTIFIED"
+    },
+    {
+      "domain_number": 42,
+      "numbering_basis": "Explicit Domain 42 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE AI AGENTS, AUTONOMOUS OPERATIONS & DIGITAL WORKFORCE CANON",
+      "message_id": "be23e32d-519e-456a-a2eb-0cb32cdd8d08",
+      "create_time_utc": "2026-08-10T12:51:56.118236+00:00",
+      "message_sha256": "f79495683a2cefaa578376840557ac9dc9f46c1607304d80fde764989ddcce6d",
+      "certification_status_exact": "**Certification Status:** ✅ FULLY CERTIFIED"
+    },
+    {
+      "domain_number": 43,
+      "numbering_basis": "Explicit Domain 43 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE ECOSYSTEM MARKETPLACE, PARTNER NETWORK & PLATFORM EXPANSION CANON",
+      "message_id": "ed785f58-cad4-4676-b725-b8fcbde5e029",
+      "create_time_utc": "2026-08-10T13:51:17.228595+00:00",
+      "message_sha256": "26a7c589adba1ebc519c040d871eb63e7ba219fba9dbc96ff087f605b0a24ed0",
+      "certification_status_exact": "**Certification Status:** ✅ FULLY CERTIFIED"
+    },
+    {
+      "domain_number": 44,
+      "numbering_basis": "Explicit Domain 44 label in its Stage 10 certification message",
+      "numbered_summary_label_exact": null,
+      "canon_h1_title_exact": "ENTERPRISE KNOWLEDGE OPERATING SYSTEM & ORGANIZATIONAL MEMORY CANON",
+      "message_id": "78e53575-41c1-475d-abfe-2c087ee0c3fa",
+      "create_time_utc": "2026-08-10T16:11:14.427983+00:00",
+      "message_sha256": "850161dd9816b1b1f55335f61be035b606ad8f593a8354d4ba7aabc029e27472",
+      "certification_status_exact": "**Certification Status:** ✅ FULLY CERTIFIED"
+    }
+  ],
+  "exported_files": [
+    "GiftHatkeOS-Enterprise-Canon-Shared-Chat-Sanitized.json",
+    "GiftHatkeOS-Enterprise-Canon-Shared-Chat.md",
+    "GiftHatkeOS-Enterprise-Canon-44-Domain-Registry-Recovered.md"
+  ]
+}

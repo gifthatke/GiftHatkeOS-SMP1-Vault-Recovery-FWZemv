@@ -1,0 +1,14 @@
+{
+  "domain": 23,
+  "canonical_title": "Enterprise Partner, Supplier & Ecosystem Relationship Management Canon",
+  "stage": 10,
+  "source_message_id": "b86693a1-ac3f-4fc5-b76f-3a062a0f42fd",
+  "source_sha256": "b344f10af6eb7695b03ccccdffea470a5aee8b0f263ec0e43f50a2ce35457ad1",
+  "source_file": "Domain-23-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "dedicated_partner_implementation_recovered": false,
+  "live_authenticated_acceptance": false
+}

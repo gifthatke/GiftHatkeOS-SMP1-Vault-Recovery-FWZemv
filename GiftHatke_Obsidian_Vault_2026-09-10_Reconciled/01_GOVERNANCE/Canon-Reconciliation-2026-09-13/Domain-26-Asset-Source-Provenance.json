@@ -1,0 +1,14 @@
+{
+  "domain": 26,
+  "canonical_title": "Enterprise Asset, Equipment, Facility & Physical Resource Management Canon",
+  "stage": 10,
+  "source_message_id": "ce1b3485-e68d-418f-bc18-4bde8e5fd03f",
+  "source_sha256": "66b463278a9e24f9c9828c2570743d463495a54822c7e18c3ca37971b7db6766",
+  "source_file": "Domain-26-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "dedicated_asset_implementation_recovered": false,
+  "live_authenticated_acceptance": false
+}

@@ -1,0 +1,29 @@
+{
+  "ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "records": [
+    {
+      "filename": "Operational-Source-1-Original.md",
+      "source_path": "docs/certification/SMP1_STAGE_2_FINAL_CERTIFICATION_AND_CONTROLLED_CLOSURE.md",
+      "git_blob_sha": "1c89a4d04e0b4eb5037d6ffbbecbf40a1e49d713",
+      "sha256": "e05eb4ed3464e037ab7aa283d256006250f296b751b2ca99c9dc5365a8cd66d4"
+    },
+    {
+      "filename": "Operational-Source-2-Original.md",
+      "source_path": "docs/governance/smp1-standalone-v1-digitalocean-deployment-target-selection.md",
+      "git_blob_sha": "b96e64eac056e09aaabc5d25dd78b383acb8b8a0",
+      "sha256": "33ec546b98f84d78425d8afcf23e990192b7bb57711d5e39dd990ec9d417aa35"
+    },
+    {
+      "filename": "Operational-Source-3-Original.md",
+      "source_path": "GiftHatke_Obsidian_Vault_2026-09-10_Reconciled/10_REGISTERS/Production Environments and Deployments.md",
+      "git_blob_sha": "cce93e3d9c9708caecc47220e4399a6910ea8130",
+      "sha256": "2c09bc36f02d6622cb280c04ad8234d57ee33132e77bcac3073d51a2837beed8"
+    },
+    {
+      "filename": "Operational-Source-4-Original.md",
+      "source_path": "GiftHatke_Obsidian_Vault_2026-09-10_Reconciled/00_HOME/Current Operating Snapshot.md",
+      "git_blob_sha": "50792c0a6017ef61209f6347b53b4511c7a1c6d0",
+      "sha256": "9de17d62dbbc97374ee665720d38be3c08b4a37da0d4faf4609679c3cb4c7882"
+    }
+  ]
+}

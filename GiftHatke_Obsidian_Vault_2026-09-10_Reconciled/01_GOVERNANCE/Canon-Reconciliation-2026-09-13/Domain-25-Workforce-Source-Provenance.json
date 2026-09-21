@@ -1,0 +1,14 @@
+{
+  "domain": 25,
+  "canonical_title": "Enterprise Human Capital, Workforce & Organizational Management Canon",
+  "stage": 10,
+  "source_message_id": "b0c32b7c-c95c-42fe-ba1c-d112681a6310",
+  "source_sha256": "8ae3b972f4c76e291b06b22b396418dfe81f9f7dd51fd739507c4e6d0c42b9c5",
+  "source_file": "Domain-25-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "current_user_management_workspace": "read-only",
+  "live_authenticated_acceptance": false
+}

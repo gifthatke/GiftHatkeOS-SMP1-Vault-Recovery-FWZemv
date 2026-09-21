@@ -1,0 +1,66 @@
+{
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "records": [
+    {
+      "path": "packages/platform/src/backup-recovery.ts",
+      "repository": "gifthatke/GiftHatkeOS-Standalone",
+      "git_blob_sha": "10dabfd5837ad3536ec3cfad99186a95c14c05bb",
+      "sha256": "56b15deec52b508d32020206f71312c2308d2ed925e3cd0f2fec84f7dd4c1f0b"
+    },
+    {
+      "path": "apps/api/src/backup-recovery-service.ts",
+      "repository": "gifthatke/GiftHatkeOS-Standalone",
+      "git_blob_sha": "3612ccd5a10aeba52dedf358cb65868b6bab25b3",
+      "sha256": "d73dd586f9389cd07857362730b72204530d2b7684b40f0eed30a8418f1422a5"
+    },
+    {
+      "path": "apps/api/test/production-backup-recovery-composition.test.mjs",
+      "repository": "gifthatke/GiftHatkeOS-Standalone",
+      "git_blob_sha": "a954ae55030340538ed1dde0a3abbc55fcfc037f",
+      "sha256": "8ca9ea8571d1b51f80fabceb7a62c5833199f303e578eca45f1ef10be4186d2c"
+    },
+    {
+      "path": "packages/platform/test/backup-recovery.test.mjs",
+      "repository": "gifthatke/GiftHatkeOS-Standalone",
+      "git_blob_sha": "225a66712a8f60fb2c3bb3f5ce117f75e4c9a16f",
+      "sha256": "717012510684bcb79b77684cc9da507d05087ee615d7b8e1258b8c0d546d04d7"
+    },
+    {
+      "path": "docs/governance/smp1-standalone-v1-go-live-closure-certification.md",
+      "repository": "gifthatke/GiftHatkeOS-Standalone",
+      "git_blob_sha": "5d9483755fe7f3a5ff704fde95d65b24a1aa9134",
+      "sha256": "3ade962ac73737e266227da0cbaaf6f597a276ab29098641840b240a5c0f49aa"
+    },
+    {
+      "path": "docs/certification/PACK_2_11F_RECOVERY_READINESS_AND_S2_OP_01_CONTROLLED_CLOSURE.md",
+      "repository": "gifthatke/GiftHatkeOS-Standalone",
+      "git_blob_sha": "754574d6348e515174a20f2e777623098264def6",
+      "sha256": "8f042df92bd1a0ab01f064516a2666f5dbce9990e5eeb8adcdeef9245bde6a7e"
+    },
+    {
+      "path": "docs/certification/PACK_2_11_BACKUP_RECOVERY_OWNERSHIP_AND_PARITY_CONTRACT.md",
+      "repository": "gifthatke/GiftHatkeOS-Standalone",
+      "git_blob_sha": "71111d7f0cdf236119122b854c7fa19c00cefb28",
+      "sha256": "8cb80e4a31005ef39790e04ca83c7e3f5c3ca6bee1e02e992af5b3858370a0ad"
+    },
+    {
+      "path": "BackupService.js",
+      "repository": "gifthatke/GiftHatkeOS",
+      "git_blob_sha": "481e0f6f243d53a160f0c424b572a41bc63c34b3",
+      "sha256": "6fa05e6151519a8dace931a51601ab1fb65cf367afea85a044650f08b8f7fb61"
+    },
+    {
+      "path": "RecoveryService.js",
+      "repository": "gifthatke/GiftHatkeOS",
+      "git_blob_sha": "aaea3416c2a4b667bcb14b1ac4e392ea6aee45d1",
+      "sha256": "c30807504fa89b59688cbde8cbd18144cd7b357ee73627e70c933df3a6de788d"
+    },
+    {
+      "path": "packages/database/src/backup-recovery-metadata.ts",
+      "repository": "gifthatke/GiftHatkeOS-Standalone",
+      "git_blob_sha": "c48cc67616dabf968668042f593ecdddf91dea42",
+      "sha256": "be28abec551eefc3296bfcb6eea17db428db674e4efe5c017ae6a4e29c63e7c5"
+    }
+  ]
+}

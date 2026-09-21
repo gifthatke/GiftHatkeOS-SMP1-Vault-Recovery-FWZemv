@@ -1,0 +1,14 @@
+{
+  "domain": 43,
+  "canonical_title": "Enterprise Ecosystem Marketplace, Partner Network & Platform Expansion Canon",
+  "stage": 10,
+  "source_message_id": "ed785f58-cad4-4676-b725-b8fcbde5e029",
+  "source_sha256": "26a7c589adba1ebc519c040d871eb63e7ba219fba9dbc96ff087f605b0a24ed0",
+  "source_file": "Domain-43-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "public_partner_portals_required_for_smp1": false,
+  "live_authenticated_acceptance": false
+}

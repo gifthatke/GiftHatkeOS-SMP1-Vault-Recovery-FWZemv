@@ -1,0 +1,27 @@
+{
+  "source": "https://chatgpt.com/share/6aa5c2f3-9728-83ed-a27c-c56d89f8f8a7",
+  "source_title": "GLP1 Production Hotfix",
+  "recovered_at_utc": "2026-09-12T21:28:02.712136+00:00",
+  "raw_source_sha256": "a588d7ecc66e05707791426d3f1438e322ba8aa4a3f56a3359a29a7fb370f5de",
+  "extraction": "Exact UTF-8 user-visible assistant text; no added header or terminal newline. Original certification language preserved as historical source evidence, not new implementation certification.",
+  "records": [
+    {
+      "stage": 1,
+      "filename": "Order-Management-Canon-v1.0-Stage-1-Original.md",
+      "message_id": "6cbde3eb-f2fa-406e-b58a-03695514c01c",
+      "source_time_utc": "2026-08-06T18:43:13.624080+00:00",
+      "title": "### Domain Foundation and System Boundaries",
+      "sha256": "aea6567f48d49e7dbb6f1196b5dde5e0fb992a53a42d066d97f3247f16e8c82d",
+      "bytes": 14853
+    },
+    {
+      "stage": 2,
+      "filename": "Order-Management-Canon-v1.0-Stage-2-Original.md",
+      "message_id": "1abae742-803a-446e-8a82-16d6bcd6a934",
+      "source_time_utc": "2026-08-06T18:44:24.883491+00:00",
+      "title": "### Canonical Data Model and PostgreSQL-Ready Schema",
+      "sha256": "bf1a35be9de4dcd64f130c083bd9f8edaa4ce694a10bc0c5b9a67fc75cc99e00",
+      "bytes": 33240
+    }
+  ]
+}

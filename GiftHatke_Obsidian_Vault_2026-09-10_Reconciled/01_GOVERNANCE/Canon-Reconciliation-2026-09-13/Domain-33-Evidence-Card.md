@@ -1,0 +1,129 @@
+# Domain 33 — Evidence Card
+
+ENTERPRISE SUPPLY CHAIN PLANNING & DEMAND INTELLIGENCE CANON
+
+Provisional classification: **partial foundation**. Status: working evidence inventory; not a parity certificate.
+
+## Canon requirement
+
+[[Domain-33-Stage-10-Original]]; original certification state: **Certification Status:** ✅ **FULLY CERTIFIED**. Message `24fe171c-3a91-45ce-a4eb-c27f179d6a87`; SHA-256 `0e860563b19307cb5463d53fb9181ff59dbea2b3a89d46948286b28124162be8`. Stage 10 §10.162–166 requires operational reconciliation and prohibits fabricated planning history and uncontrolled dual writers.
+
+## Frozen Apps Script behavior
+
+[`CERTIFICATION-v3.6.2-ERP2-PRODUCTION-RC1.md`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/CERTIFICATION-v3.6.2-ERP2-PRODUCTION-RC1.md) (`d3d8c353f8922dd2f1d7935d7a1f1b76308719f4`); [`CERTIFICATION-v3.6.3-ERP3-INVENTORY-RC1.md`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/CERTIFICATION-v3.6.3-ERP3-INVENTORY-RC1.md) (`4c07c4943bad3b2c65c1c9ba5c40b87fabfb3216`); [`CHANGED_FILES-v3.6.2-ERP2-PRODUCTION-RC1.txt`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/CHANGED_FILES-v3.6.2-ERP2-PRODUCTION-RC1.txt) (`04dec3c8c8d32c2385cfefde26d6b0eb30c815af`); [`CHANGED_FILES-v3.6.3-ERP3-INVENTORY-RC1.txt`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/CHANGED_FILES-v3.6.3-ERP3-INVENTORY-RC1.txt) (`dd717a4b965ed2e2f5d81615510d428fe5bcde75`); [`CHECKSUMS-v3.9.10-GLP1-INVENTORY-MATERIAL-UX-HOTFIX2.txt`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/CHECKSUMS-v3.9.10-GLP1-INVENTORY-MATERIAL-UX-HOTFIX2.txt) (`7f1683862b34af94957a1ecfc115f2117afe5209`); [`CHECKSUMS-v3.9.10-GLP1-INVENTORY-REQUISITION-RECONCILIATION-HOTFIX1.txt`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/CHECKSUMS-v3.9.10-GLP1-INVENTORY-REQUISITION-RECONCILIATION-HOTFIX1.txt) (`a19f4449576c23ec986035004e28efe0f724ed13`); [`CONFIGURATION_INVENTORY.json`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/CONFIGURATION_INVENTORY.json) (`d2a67d4bc12e7258b4a1ad3038ff2f988d733a4b`); [`DEPLOYMENT-v3.6.2-ERP2-PRODUCTION-RC1.md`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/DEPLOYMENT-v3.6.2-ERP2-PRODUCTION-RC1.md) (`7bd73afafae90db33d40cce32e5863c776615681`); [`DEPLOYMENT-v3.6.3-ERP3-INVENTORY-RC1.md`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/DEPLOYMENT-v3.6.3-ERP3-INVENTORY-RC1.md) (`968dee68be8f81716174f53a5f2b38ebdb4710d7`); [`ERP2ProductionRegression.js`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/ERP2ProductionRegression.js) (`b10d042f58c42954391bcfc77160fba46b0e8088`); [`ERP3InventoryRegression.js`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/ERP3InventoryRegression.js) (`01690886f79e7db47f03745142bc0578d96f1c29`); [`ERP87ProductionAudit.gs`](https://github.com/gifthatke/GiftHatkeOS/blob/fd7c754fb1be380e6d3f9b01dd041b97b82f1d87/ERP87ProductionAudit.gs) (`87bf26e5d66150246d8d2ec60641121863b8b795`)
+
+These are candidate reference paths; their complete behavior has not been reconciled against every Canon requirement.
+
+## Repository domain implementation
+
+[`packages/domain/src/inventory-ports.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/inventory-ports.ts) (`ba2d26af4844919de676a44599d0b7d46b5e823b`); [`packages/domain/src/inventory.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/inventory.ts) (`9e9193dc5fa98f58a2f473ff1015f8e99f0ced38`); [`packages/domain/src/procurement-ports.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/procurement-ports.ts) (`bafb00fb9d51870507380d0f58036c8300d2c02c`); [`packages/domain/src/procurement.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/procurement.ts) (`3c614ab7fbb7e91fe0ae7b4940025e527d17bd81`); [`packages/domain/src/production-configuration.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/production-configuration.ts) (`17ff70ba86d706394eaea700115282aa8bbd4e27`); [`packages/domain/src/production.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/production.ts) (`366143285aa0316237e578cf1f2e462d3505c541`); [`packages/domain/src/settings-inventory-procurement-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/settings-inventory-procurement-service.ts) (`93b618aac6b6005f4388dd52adfb8f4d699ce975`); [`packages/domain/src/settings-production-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/settings-production-service.ts) (`4937840bc2660064d902da5ac8231d0a197b2d4a`)
+
+## Database and persistence
+
+[`packages/database/src/inventory-procurement-identity.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/database/src/inventory-procurement-identity.ts) (`e1c538a5f92f57f3d4a892dbaa063ecc3dfac055`); [`packages/database/src/inventory-procurement-persistence.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/database/src/inventory-procurement-persistence.ts) (`a38ff1c4940f6a9211d26f7b98a055fab4b9de6f`); [`packages/database/src/production-configuration-persistence.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/database/src/production-configuration-persistence.ts) (`0beee5eeb4c42ab9a70d0923d5619ddffb7f7c32`); [`packages/database/src/production-persistence.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/database/src/production-persistence.ts) (`410ee166e70c54965ebf7572f2c467bf70dda6fb`)
+
+Declared matching table candidates: inventory_warehouses, inventory_storage_locations, inventory_reorder_policies, inventory_valuation_preferences, procurement_supplier_rules, procurement_approval_thresholds, procurement_goods_receipt_defaults, inventory_units_dimensions, inventory_material_audit, inventory_material_activities, inventory_materials, inventory_movements, inventory_bom_lines, procurement_purchase_requisitions, procurement_purchase_orders, procurement_purchase_order_items, procurement_goods_receipts, procurement_goods_receipt_items, procurement_timeline, production_workshops, production_machines, production_stages, production_priorities, production_qc_rules, production_defaults, production_jobs, production_qc, production_activities. Schema declarations do not attest deployed data or migration success.
+
+## Ports
+
+[`packages/domain/src/inventory-ports.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/inventory-ports.ts) (`ba2d26af4844919de676a44599d0b7d46b5e823b`); [`packages/domain/src/procurement-ports.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/domain/src/procurement-ports.ts) (`bafb00fb9d51870507380d0f58036c8300d2c02c`)
+
+Shared application ports are also indexed at apps/api/src/ports.ts; exact method equivalence remains pending.
+
+## Platform adapters
+
+[`packages/platform/src/inventory-procurement-identity.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/platform/src/inventory-procurement-identity.ts) (`9609194b6bdbdb131bade3823ef2f738b6f0b234`); [`packages/platform/src/inventory-procurement.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/platform/src/inventory-procurement.ts) (`bb763e99e454239a623086d92ceda40273e9b7da`); [`packages/platform/src/production.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/packages/platform/src/production.ts) (`f6fb8cb51a2ea7ee5fa014f1e783c24ffeb5a119`)
+
+## Services and routes
+
+[`apps/api/src/inventory-material-requisition-refresh.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/inventory-material-requisition-refresh.ts) (`4a9e01f119aa5f428cc1ebaee4a7296415de6f0c`); [`apps/api/src/inventory-material-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/inventory-material-service.ts) (`e9cfd72ad102ee44814f75226c0439204f2b83af`); [`apps/api/src/inventory-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/inventory-service.ts) (`e1f8b02b408c20de850f323933354233adcaf6bf`); [`apps/api/src/order-production-mutation-coordinator.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/order-production-mutation-coordinator.ts) (`05905cada5e5f5dc2744f04a5355046bb2a702b7`); [`apps/api/src/order-production-status-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/order-production-status-service.ts) (`8c195ea29102b9ef37d8c98730499d547009562e`); [`apps/api/src/procurement-grn-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/procurement-grn-service.ts) (`0c3c7163c0d7b8a9399131ed4ad2cb7b278fb60c`); [`apps/api/src/procurement-po-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/procurement-po-service.ts) (`76c61864e9c0e98ddd781592fb7d2d1ccf02b696`); [`apps/api/src/procurement-pr-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/procurement-pr-service.ts) (`907ad1300f21766a76137bd0fbf7c098f186dcb7`); [`apps/api/src/production-inventory-consumption-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/production-inventory-consumption-service.ts) (`f335dfda2bb40b56ad5fb1b69f0a147294261ff6`); [`apps/api/src/production-order-synchronization-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/production-order-synchronization-service.ts) (`80201ced78b816e9c45aefcf1aca5b6b84e0c63b`); [`apps/api/src/production-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/production-service.ts) (`0dea3af412a1a2ba71e604ad62eeeb7756426cf0`); [`apps/api/src/production-static-web.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/production-static-web.ts) (`ca69028c31be1fee66ab2486651a4f447668fbec`); [`apps/api/src/production-synchronization-service.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/production-synchronization-service.ts) (`f60908383717b1767ebd90f7b68b6aae10b83684`); [`apps/api/src/routes/inventory-materials.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/routes/inventory-materials.ts) (`4c2892860a2ba441c68a91e7f76165a56e860a0b`); [`apps/api/src/routes/inventory-procurement.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/src/routes/inventory-procurement.ts) (`5a121297207be67627772884009baa0ddd5b79a8`)
+
+app.ts was read and registers the existing conditional service routes. Registration does not prove production composition or full Canon equivalence.
+
+## Permissions and authentication
+
+The existing overall analysis records Google sessions, CSRF, deny-by-default RBAC and 109 permission keys. This pass does not independently certify all permission-to-operation mappings. Fresh authenticated acceptance is blocked.
+
+## Workspace and UI
+
+[`apps/web/src/inventory-procurement-api.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/web/src/inventory-procurement-api.ts) (`e593186f40ad051f3e54337e27f28cd7e62ee786`); [`apps/web/src/inventory-procurement-mutation-api.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/web/src/inventory-procurement-mutation-api.ts) (`e3101cad329deef77e83d1accddd17f8511c36da`); [`apps/web/src/inventory-procurement.css`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/web/src/inventory-procurement.css) (`7eec9f1e04253b8286726147d573d500b0e1ff3f`); [`apps/web/src/inventory-procurement.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/web/src/inventory-procurement.ts) (`05ad1699ec28ab052508755f29410bd95cf8582a`); [`apps/web/src/production-api.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/web/src/production-api.ts) (`37b7b8b62091291c8744bc95fb6411dbe671096b`); [`apps/web/src/production-mutation-api.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/web/src/production-mutation-api.ts) (`a99dbd027e97f7715614ac2f59c5b42392aabc3b`); [`apps/web/src/production.css`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/web/src/production.css) (`16b4f682db99ab19bc4f6c6ba23249d7d25df0b5`); [`apps/web/src/production.ts`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/web/src/production.ts) (`ebbc5cac96bbb6b810f15f1ec5fc56595885d1a7`)
+
+All closed module-wave decisions remain intact. No new workspace is inferred from this Canon domain.
+
+## Deployment topology
+
+render.yaml declares Render API/static services, external Neon PostgreSQL and autoDeployTrigger: off for both services. This is source configuration, not fresh Render control-plane confirmation. GAP-009 remains open.
+
+## Authenticated live ERP acceptance
+
+2026-09-13 cloud check: ERP sign-in screen reachable; Google sign-in opened a 502 Bad Gateway page. No authenticated acceptance can be certified. Captured ERP-tab error was extension-origin only. The earlier 12/12 acceptance is historical evidence.
+
+## Tests
+
+[`apps/api/test/inventory-material-effects.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/inventory-material-effects.test.mjs) (`4c558f29ad999c964d46a3f69d94a81de02e3907`); [`apps/api/test/inventory-material-http.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/inventory-material-http.test.mjs) (`9373f4f6497ade0e01401ed23c7104115905b521`); [`apps/api/test/inventory-material-pr-transaction-scope-additive.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/inventory-material-pr-transaction-scope-additive.test.mjs) (`e0402d763655a73d3d954a8706c34e8b5654d9a1`); [`apps/api/test/inventory-material-requisition-refresh.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/inventory-material-requisition-refresh.test.mjs) (`4934b72bc7a0ebefa29347cd6a12782d8f4010fc`); [`apps/api/test/inventory-material-service.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/inventory-material-service.test.mjs) (`e9342c30ad2391481a9af69bf80ca0a0505ee230`); [`apps/api/test/inventory-procurement-routes.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/inventory-procurement-routes.test.mjs) (`73ce1d289dd15aa3c0ab43c20017707c1893e75b`); [`apps/api/test/inventory-service.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/inventory-service.test.mjs) (`e23a2bff11d8e371c62581734f7f00f7f91071ae`); [`apps/api/test/order-production-mutation-coordinator.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/order-production-mutation-coordinator.test.mjs) (`4583af19526fa886e4b3e6454d3272f43f9e5c63`); [`apps/api/test/order-production-status-service.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/order-production-status-service.test.mjs) (`e0106e751dc02cf3b8d5623ca9b2bef5593b9784`); [`apps/api/test/procurement-grn-service.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/procurement-grn-service.test.mjs) (`3fc691a2798f24895de51e65921f07375e10274f`); [`apps/api/test/procurement-po-service.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/procurement-po-service.test.mjs) (`0ebf44ddf77724694bb30e1335e1babad1579d44`); [`apps/api/test/procurement-pr-service.test.mjs`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/apps/api/test/procurement-pr-service.test.mjs) (`ffb3a8d024c40c7d7815357d416ea8958c151590`)
+
+No test execution in this evidence-only pass. Historical aggregate 1,251/1,252 and complete web 102/103 remain the recorded results (GAP-005).
+
+## Obsidian and governance evidence
+
+[`docs/governance/smp1-crm-production-certification.md`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/docs/governance/smp1-crm-production-certification.md) (`76cc5d4a29161ece5d9e8611836a2e3967fbd3f9`); [`docs/governance/smp1-customers-production-certification.md`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/docs/governance/smp1-customers-production-certification.md) (`576a2b70762577df1b6c99b313001654b8d78855`); [`docs/governance/smp1-inventory-material-identity-implementation-certification.md`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/docs/governance/smp1-inventory-material-identity-implementation-certification.md) (`9e6f447ead1db04d74bd662f206d14d3a749a18e`); [`docs/governance/smp1-inventory-material-identity-ownership.md`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/docs/governance/smp1-inventory-material-identity-ownership.md) (`eb0a9b533cbfb73568f034d5520460291c806210`); [`docs/governance/smp1-inventory-material-mutation-application-certification.md`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/docs/governance/smp1-inventory-material-mutation-application-certification.md) (`03b1a63d517fa381681bf19167b068811df8b4ee`); [`docs/governance/smp1-inventory-material-mutation-effects-ownership-certification.md`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/docs/governance/smp1-inventory-material-mutation-effects-ownership-certification.md) (`885e99d257ef4a32c72f16d85e3852856d70a5d1`); [`docs/governance/smp1-inventory-material-mutation-effects-ownership.md`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/docs/governance/smp1-inventory-material-mutation-effects-ownership.md) (`a05312ed3440984b32c2f32c83de6d3fe8994628`); [`docs/governance/smp1-inventory-material-mutation-http-certification.md`](https://github.com/gifthatke/GiftHatkeOS-Standalone/blob/06090ddcd8a68c6be6ef484d43b252547bf5ec55/docs/governance/smp1-inventory-material-mutation-http-certification.md) (`c20dab1fe4ac4e2a4391dd3a182f8d48f917443b`)
+
+See [[SMP1-Finding-Register-Recovery-Addendum-2026-09-13]] and [[Canon-Reconciliation-Checkpoint-2026-09-13]].
+
+## Original requirement excerpt
+
+The following section is reproduced from the linked original, without alteration. It is source evidence, not new implementation authority.
+
+# 10.1 Purpose
+
+The **Enterprise Supply Chain Planning & Demand Intelligence Domain** is hereby consolidated into one final authoritative enterprise specification.
+
+Stages 1–9 established:
+
+- Domain foundation and planning scope.
+- Demand, Supply, Inventory Planning, and Capacity entity architecture.
+- Demand Planning lifecycle and Supply Balancing operating model.
+- Planning services and execution architecture.
+- Forecast authority and Planning Governance.
+- planning events, synchronization, and orchestration.
+- Planner Workspaces and Supply Chain Command Center.
+- Demand Forecast Intelligence, predictive risk, and optimization.
+- migration, reconciliation, testing, and operational certification.
+
+Stage 10 formally certifies Domain 33 as the permanent GiftHatkeOS architecture for:
+
+- Demand Planning.
+- Demand Forecasting.
+- Supply Planning.
+- Inventory Planning.
+- Replenishment Planning.
+- Procurement Planning.
+- Material Requirements Planning.
+- Production Requirement Planning.
+- Capacity Planning.
+- Supplier Planning.
+- shortage management.
+- Surplus Management.
+- allocation planning.
+- Scenario Planning.
+- Seasonal Planning.
+- Promotional Planning.
+- B2B Demand Planning.
+- Supply Chain Intelligence.
+- Predictive Risk.
+- Prescriptive Planning.
+- optimization.
+
+The Domain exists to ensure that forward-looking enterprise decisions remain:
+
+- Evidence-based.
+- time-aware.
+- constraint-aware.
+- economically disciplined.
+- operationally feasible.
+- explainable.
+- governed.
+- auditable.
+- technically portable.
+
+---

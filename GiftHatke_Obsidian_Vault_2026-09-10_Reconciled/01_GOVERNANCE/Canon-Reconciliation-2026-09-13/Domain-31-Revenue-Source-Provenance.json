@@ -1,0 +1,14 @@
+{
+  "domain": 31,
+  "canonical_title": "Enterprise Revenue Management, Pricing & Commercial Intelligence Canon",
+  "stage": 10,
+  "source_message_id": "e2dfd5e0-a251-4849-8fbe-d5317bfc1bed",
+  "source_sha256": "b9573636fd47a63aa59e9e9e3a6645a1c9ce6fcff069a3199e0493b12786df63",
+  "source_file": "Domain-31-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "new_pricing_policies_authorized": false,
+  "live_authenticated_acceptance": false
+}

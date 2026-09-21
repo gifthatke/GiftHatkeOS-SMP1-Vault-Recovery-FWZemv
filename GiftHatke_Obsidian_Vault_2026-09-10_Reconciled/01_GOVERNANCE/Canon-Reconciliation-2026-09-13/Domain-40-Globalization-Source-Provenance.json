@@ -1,0 +1,14 @@
+{
+  "domain": 40,
+  "canonical_title": "Enterprise Globalization, Multi-Company & Multi-Region Operations Canon",
+  "stage": 10,
+  "source_message_id": "7fad863d-ed1d-485b-938f-e13526bf4645",
+  "source_sha256": "6004f161c8f232e4e7f06ac77d92272dd91e6e66d4347e30016e06b689af3423",
+  "source_file": "Domain-40-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "one_company_no_intercompany_allowance_preserved": true,
+  "live_authenticated_acceptance": false
+}

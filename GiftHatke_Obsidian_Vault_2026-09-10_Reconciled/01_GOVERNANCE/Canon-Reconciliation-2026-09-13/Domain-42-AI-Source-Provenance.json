@@ -1,0 +1,14 @@
+{
+  "domain": 42,
+  "canonical_title": "Enterprise AI Agents, Autonomous Operations & Digital Workforce Canon",
+  "stage": 10,
+  "source_message_id": "be23e32d-519e-456a-a2eb-0cb32cdd8d08",
+  "source_sha256": "f79495683a2cefaa578376840557ac9dc9f46c1607304d80fde764989ddcce6d",
+  "source_file": "Domain-42-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "post-SMP1 / ERP9 / ERP10 / Version 1.1",
+  "production_ai_in_smp1_authorized": false,
+  "live_authenticated_acceptance": false
+}

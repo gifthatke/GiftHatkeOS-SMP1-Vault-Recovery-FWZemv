@@ -1,0 +1,14 @@
+{
+  "domain": 34,
+  "canonical_title": "Enterprise Manufacturing Excellence & Industrial Operations Canon",
+  "stage": 10,
+  "source_message_id": "a071b5d7-e648-40fc-a616-cf699ca9cb87",
+  "source_sha256": "403526daa3feb88714ffa174869ca6ef29a095990d208eef4c8f9c53a54d4599",
+  "source_file": "Domain-34-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "machine_telemetry_fabricated": false,
+  "live_authenticated_acceptance": false
+}

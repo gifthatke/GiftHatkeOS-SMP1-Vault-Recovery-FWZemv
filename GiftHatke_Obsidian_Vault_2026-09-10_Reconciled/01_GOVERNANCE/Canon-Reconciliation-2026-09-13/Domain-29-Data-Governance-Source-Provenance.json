@@ -1,0 +1,15 @@
+{
+  "domain": 29,
+  "canonical_title": "Enterprise Data Governance, Privacy Intelligence & Information Lifecycle Management Canon",
+  "stage": 10,
+  "source_message_id": "1c8ba14a-8f87-4755-ac8a-1baf28355128",
+  "source_sha256": "a70c0a513693c994d35aa15ab7eaa5d61672b771132a0b96773b17c56a48a552",
+  "source_file": "Domain-29-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "smp1_mandatory_doctrine_preserved": true,
+  "source_target_reconciliation_proven": false,
+  "live_authenticated_acceptance": false
+}

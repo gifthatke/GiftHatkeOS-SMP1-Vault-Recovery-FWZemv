@@ -1,0 +1,14 @@
+{
+  "domain": 35,
+  "canonical_title": "Enterprise Innovation, Research & Continuous Improvement Canon",
+  "stage": 10,
+  "source_message_id": "fabea75d-fa69-482a-9fd7-4e06600c39a0",
+  "source_sha256": "6cfa3f7c3d7263b8efe225cbd2848dc12dd3bcf5064eed4f723f2d6c7f4adcf1",
+  "source_file": "Domain-35-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "conditional_migration_requirement_preserved": true,
+  "live_authenticated_acceptance": false
+}

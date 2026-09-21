@@ -1,0 +1,15 @@
+{
+  "domain": 33,
+  "canonical_title": "Enterprise Supply Chain Planning & Demand Intelligence Canon",
+  "stage": 10,
+  "source_message_id": "24fe171c-3a91-45ce-a4eb-c27f179d6a87",
+  "source_sha256": "0e860563b19307cb5463d53fb9181ff59dbea2b3a89d46948286b28124162be8",
+  "source_file": "Domain-33-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "planning_history_fabricated": false,
+  "uncontrolled_dual_writers_introduced": false,
+  "live_authenticated_acceptance": false
+}

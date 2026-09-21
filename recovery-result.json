@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-09-13T12:56:55.768Z",
+  "publicationFilesRestored": 133,
+  "missingNotesImported": 30,
+  "editedIndexesPreserved": 2,
+  "mergedVault": "/Users/honeychug/GiftHatkeOS-SMP1-Vault-Recovery-FWZemv/GiftHatke_Obsidian_Vault_2026-09-10_Reconciled",
+  "mergedVaultSnapshotSha256": "b0e7c326a32be2c083c9cf5969f9fbf53ad07f1366dda320b3f30197478fe799",
+  "provenanceSha256": "037fd37a8cf6d0e528125fbd61bf1341b0b99f7cdb2e038ca38fb7741dfc6340",
+  "activeRepositoryUnchanged": true,
+  "sourceVaultUnchanged": true,
+  "frozenRepositoryUnchanged": true,
+  "publicationHeadUnchanged": true,
+  "publicationWorktreeEntries": 0,
+  "gap011": "OPEN",
+  "overallSmp1": "LESS_THAN_100_PERCENT_HANDOVER_BLOCKED"
+}

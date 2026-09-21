@@ -1,0 +1,4 @@
+bedb0d6b514788327b0789568fed129bf49936e8f410b51ed4afcf15c0c79923  GiftHatkeOS-Enterprise-Canon-Shared-Chat-Sanitized.json
+a683d7e9f9fc51211d02a32977c504918be6fc3090ab183685a259d9cee27ad3  GiftHatkeOS-Enterprise-Canon-Shared-Chat.md
+dc996236782651c8994ff990a8b634fc1dbffa9ed6bb0b167ac5edd94a8d65ec  GiftHatkeOS-Enterprise-Canon-44-Domain-Registry-Recovered.md
+01070fb226bffe5f586fc70f11125d8829e0236dc4b6de4077e703ffc145895f  GiftHatkeOS-Enterprise-Canon-Recovery-Manifest.json

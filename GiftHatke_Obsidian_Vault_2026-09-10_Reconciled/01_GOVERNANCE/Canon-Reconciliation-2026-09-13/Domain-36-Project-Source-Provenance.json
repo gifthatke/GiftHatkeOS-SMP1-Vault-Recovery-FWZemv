@@ -1,0 +1,15 @@
+{
+  "domain": 36,
+  "canonical_title": "Enterprise Project, Portfolio & Strategic Initiative Management Canon",
+  "stage": 10,
+  "source_message_id": "2bc55732-4687-4367-b28a-dac740ab492b",
+  "source_sha256": "d2ff9d16f8077e3cfb80feb2ec6e9f36c49522825964c221d96875cc55f79f93",
+  "source_file": "Domain-36-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "smp1_programme_governance_preserved": true,
+  "dedicated_pm_implementation_recovered": false,
+  "live_authenticated_acceptance": false
+}

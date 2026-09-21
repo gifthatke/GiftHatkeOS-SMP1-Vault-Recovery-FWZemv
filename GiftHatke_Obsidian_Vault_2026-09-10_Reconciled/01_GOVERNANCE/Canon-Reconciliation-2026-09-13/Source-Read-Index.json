@@ -1,0 +1,37 @@
+[
+  {
+    "path": "docs/governance/smp1-final-finding-register.md",
+    "git_blob_sha": "6456f9096358fb96dd1bb25362af121037594fab",
+    "sha256": "86c3a19526c184f491db164529c1c788530819d1394bd40ae15ee721d953bdc0"
+  },
+  {
+    "path": "docs/governance/smp1-overall-production-parity-gap-analysis.md",
+    "git_blob_sha": "2df398020f1d399295a3877778ef94c608b162fe",
+    "sha256": "15aaf5f95866543f26f58e3fd548f032692493c09a3853fecc8be93e96992746"
+  },
+  {
+    "path": "docs/governance/smp1-canon-recovery-publication-record.md",
+    "git_blob_sha": "a47abb798354f14974968eaf5a5585e8c6454bfa",
+    "sha256": "5ea8fe5265063021fee4d36bc79ac72cc9461e4d6423bfa3b0929ecdf84346c4"
+  },
+  {
+    "path": "render.yaml",
+    "git_blob_sha": "d7404eff1b1c7ffcad8f3111caf48cc8943698d4",
+    "sha256": "a083c474eb87dffbaf20dc0fa0ea813f253fbdde972fcb942be9144af9d1cb5e"
+  },
+  {
+    "path": "packages/database/src/schema.ts",
+    "git_blob_sha": "18d78559836bdd4c52e1cef00f1533edee742066",
+    "sha256": "6a16f5d59c487119298b6a11863a756041f12dbc53b8ac34e2daf5fc1ce5e7ed"
+  },
+  {
+    "path": "apps/api/src/app.ts",
+    "git_blob_sha": "0a364a606b71d4eeaf56d28f2c22cab8d9be73fb",
+    "sha256": "33808cb4f4b3402a73b4dc6e5197f9f917eda3ea333ae6614cd9a3d0daed849c"
+  },
+  {
+    "path": "packages/domain/src/backup-recovery.ts",
+    "git_blob_sha": "595ac61c8c6a8db0646aa2086c8db584529291c7",
+    "sha256": "d0a529bee3db8841e08ecbdb5e8ca3819454c8ded6b39aedfcbb5d1ce6583d1a"
+  }
+]

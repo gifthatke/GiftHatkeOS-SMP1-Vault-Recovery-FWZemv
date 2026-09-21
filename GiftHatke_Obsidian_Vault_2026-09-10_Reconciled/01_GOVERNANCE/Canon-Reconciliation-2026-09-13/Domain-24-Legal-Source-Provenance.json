@@ -1,0 +1,14 @@
+{
+  "domain": 24,
+  "canonical_title": "Enterprise Legal, Compliance, Contract & Regulatory Governance Canon",
+  "stage": 10,
+  "source_message_id": "ec483b9a-6cf3-4b8d-830f-b20c941d08c2",
+  "source_sha256": "9e9823137afa96ae72600acf5b5d839d5d99e639e322b8d1a5b9f42b9c1b7a90",
+  "source_file": "Domain-24-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "dedicated_legal_implementation_recovered": false,
+  "live_authenticated_acceptance": false
+}

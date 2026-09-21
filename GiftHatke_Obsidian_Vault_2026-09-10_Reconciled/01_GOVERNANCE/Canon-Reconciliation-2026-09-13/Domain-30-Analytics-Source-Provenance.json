@@ -1,0 +1,14 @@
+{
+  "domain": 30,
+  "canonical_title": "Enterprise Analytics, Reporting Intelligence & Performance Management Canon",
+  "stage": 10,
+  "source_message_id": "a00ad9fe-79b5-4ff4-bc77-269d552fb43f",
+  "source_sha256": "d6f7fba6abc4cce557f49caf46c9b165c196d011e592981ca550e77f3710f340",
+  "source_file": "Domain-30-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "reports_closure_preserved": true,
+  "live_authenticated_acceptance": false
+}

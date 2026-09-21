@@ -1,0 +1,14 @@
+{
+  "domain": 28,
+  "canonical_title": "Enterprise Security, Privacy, Identity & Trust Governance Canon",
+  "stage": 10,
+  "source_message_id": "653b5ca8-eaf0-40b9-b073-b73d8031b0b6",
+  "source_sha256": "cef20c80769f0b852d1d8bd9a8fa3fbff2967877ce5237f4f8c6393f6007b194",
+  "source_file": "Domain-28-Stage-10-Original.md",
+  "source_url": "https://chatgpt.com/share/6aa585f5-ad14-83ed-aeeb-b26a3d71a41b",
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "classification": "partial foundation",
+  "open_findings_preserved": ["SMP1-GAP-002", "SMP1-GAP-006"],
+  "live_authenticated_acceptance": false
+}

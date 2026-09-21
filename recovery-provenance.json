@@ -1,0 +1,2266 @@
+{
+  "schema": "smp1-vault-recovery-v1",
+  "createdAt": "2026-09-13T12:56:54.857Z",
+  "scope": "Local governance evidence recovery; no certification or handover declaration",
+  "baselines": {
+    "active": "79210724227e53e36c4f1a7a3d8ab0f071837237",
+    "publication": "be75043bc4616114cad541fbc64583dff0333c3b",
+    "frozen": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87"
+  },
+  "sourceVault": "/Users/honeychug/GiftHatkeOS-Standalone/GiftHatke_Obsidian_Vault_2026-09-10_Reconciled 2",
+  "mergedVault": "/Users/honeychug/GiftHatkeOS-SMP1-Vault-Recovery-FWZemv/GiftHatke_Obsidian_Vault_2026-09-10_Reconciled",
+  "sourceSnapshotSha256": "f095a59da154134fd76af26095ce1fee81cff7e7c5140a73f670133ee80715d2",
+  "sourceFiles": [
+    {
+      "relative": ".DS_Store",
+      "sha256": "c59bac74b797d35b969b95b21c4fd229f4f9e88002fb67353cc8f9e5e607a059",
+      "mode": 420
+    },
+    {
+      "relative": ".obsidian/app.json",
+      "sha256": "2ca5f89a43f5bd6e8ea6fc9c85f841da87642fbcf97f4462e53dd0bbda5f373a",
+      "mode": 420
+    },
+    {
+      "relative": ".obsidian/appearance.json",
+      "sha256": "b5a92081906f1156588599f288276e42cc380381ac5565625b7ae060385b3025",
+      "mode": 420
+    },
+    {
+      "relative": ".obsidian/core-plugins.json",
+      "sha256": "5373b1000fc058e5079b06c8c9183fbbd30d8281e4a62190f7865ff954807fca",
+      "mode": 420
+    },
+    {
+      "relative": "00_HOME/AI Handoff - TITAN LOCK Context.md",
+      "sha256": "8a94ce3d1ff9345be55e56cb9b0c45f8d3c0bf85c17395fdd393ce0a274e5173",
+      "mode": 420
+    },
+    {
+      "relative": "00_HOME/Current Operating Snapshot.md",
+      "sha256": "9de17d62dbbc97374ee665720d38be3c08b4a37da0d4faf4609679c3cb4c7882",
+      "mode": 420
+    },
+    {
+      "relative": "00_HOME/Home.md",
+      "sha256": "b7617a6fed215dcc7595fc5083808e98661001f0df2cdaf2d107ea1aa021053d",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/.DS_Store",
+      "sha256": "52b7baf3d4a1257247896a0037b43bc59df12a2a4be963e92ec154b2d6b154d9",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Authority Hierarchy.md",
+      "sha256": "ec19fe7985134bad7254109cfa806b3cb545b64791ddcc6981109d290d39b23a",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/CHECKPOINT-SHA256SUMS.txt",
+      "sha256": "876c41d78c604e92c5bd99f7d2d8249e8503a9106a4e1275cf0baeb1e48c8567",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Canon-Reconciliation-Checkpoint-2026-09-13.md",
+      "sha256": "07fdc21678138eb622f28bd9afd55db074c1cecbdfa9e2571fdbb5ee25a28546",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-01-Evidence-Card.md",
+      "sha256": "a6f1796707da604511311ad79e72e73583bf4fb3195b554f1a3f197d10d395b0",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-01-Stage-10-Original.md",
+      "sha256": "c9fbbfff7a4e729b5d06e43689cbe224fca0bd314cfce3183fe4ec663966bcd9",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-02-Evidence-Card.md",
+      "sha256": "e428546cdd2cf1c9b62fd9baf3ec7726fa69c651c02327f00d6ca6069835e339",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-02-Stage-10-Original.md",
+      "sha256": "9ca55ea221e5b567ff645ff19facca69d5e5fa6c24f63fdbfb898dbffb6c2a45",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-03-Evidence-Card.md",
+      "sha256": "d153849e2b1f6282d16e9dfa74b2a3b51ac992a33e3b3242ea5ca208753885ea",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-03-Stage-10-Original.md",
+      "sha256": "fcd4617f892596b61b317a02026957bf637e781d09a1b511f3fd2d8d712ec032",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-04-Evidence-Card.md",
+      "sha256": "a69eb8f515fb395369ddfd2f113f9355308b518163fe33242e83d47110320998",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-04-Stage-10-Original.md",
+      "sha256": "1dabb5976093b060c4970dd88b57072525636498eb0ee8f8ea62facb23f39731",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-05-Evidence-Card.md",
+      "sha256": "bfd2dbf8e461a7843c72971039abdbd8539e87e46bcd03b5fba7083ef3beda80",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-05-Stage-10-Original.md",
+      "sha256": "bc5ed0b5d1422f5eaec0e5475c7dd16d06142548087b0f52b00bc8e1a6b35df5",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-06-Evidence-Card.md",
+      "sha256": "8a95dc57558b664e8536dc47bf2dec8033e7e3f5ba285a27b24e9c109a2ea28c",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-06-Stage-10-Original.md",
+      "sha256": "88ce844f2a54bda7535680355e7fa9877681a9f1822fc33471d68e949ce7cffb",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-07-Evidence-Card.md",
+      "sha256": "de5cff8ff65369c858678c1dcbcddfe116894e0ea501eba808dc600ab8266373",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-07-Stage-10-Original.md",
+      "sha256": "27ef1d276b2a95b7be0d943ecbc9e32f362f63d1239ea7c8a557ebb7bb07e75e",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-08-Evidence-Card.md",
+      "sha256": "4cd0c95ca91c337044980a1f15b66f34bcb32e52240264de016400935c03c06a",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-08-Stage-10-Original.md",
+      "sha256": "a004488b7129c190cc123e20ebdbd9d04dc6038d0185f323aa857ee438d3bc36",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-09-Evidence-Card.md",
+      "sha256": "c96c6e7d2ed2583583159cfd00e6508fb92e1d957331d5bbb726aa622fcfaaee",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-09-Stage-10-Original.md",
+      "sha256": "98a25a426c9908fd33e0213d8fd0eb933c762b0a0b8ffe837fef591300885563",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-10-Evidence-Card.md",
+      "sha256": "fb22ab02099a4b4cd3a0909f8ee20673b776ccdef76933ba9d02c9601150e059",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-10-Stage-10-Original.md",
+      "sha256": "36fa8838d336442289f77b217d3c9d590f92ed92a0aaa5e86fcf6be1faa0e57b",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-11-Evidence-Card.md",
+      "sha256": "0714d556808b2bde49242eb549a2773a462551735b62abd834400615abbffb90",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-11-Stage-10-Original.md",
+      "sha256": "53ae15ee2c130c9b7649cb72165d879e71fef908d8b569e26d20f149d9e5f587",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-12-Evidence-Card.md",
+      "sha256": "56ae94b5044063b0e2bc4c89f4786d5ed5d14dac42d6e5bd77ab8ccba84a1fdd",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-12-Stage-10-Original.md",
+      "sha256": "101c40f5396251454ab53e59c8c75fa164af281785d7b89dd7210bb6019911a8",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-13-Evidence-Card.md",
+      "sha256": "7745a55de0d4718a09a0f67f0a3b99ebad1ea1217a3e489bda4b48db91f39356",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-13-Stage-10-Original.md",
+      "sha256": "db9c4f7e25b4714b79c11299dd7143c0d0c5310f0a1972c7095eb26274bbae8a",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-14-Evidence-Card.md",
+      "sha256": "35f2d14c9edad8063e502bf7dd329263d9166232c19447c87174e858b34244cc",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-14-Stage-10-Original.md",
+      "sha256": "681c2f4ff17ac4f0eab9e550299406dcee439368ae433d020d1c0c54acf3a4df",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-15-Evidence-Card.md",
+      "sha256": "0cc9f4a7f584ba1746efb01068e08954eedeaca1865c1e79d3e0c47ce8a37c1d",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-15-Stage-10-Original.md",
+      "sha256": "c3177660104b8f645a243ec3ae4fc4004203d8892c7cb3c32aaa21b07a9e6e3f",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-16-Evidence-Card.md",
+      "sha256": "0c009ed3a8ddf07eb09313971931f7e4961190e3bc21accae3698fd89ff31b33",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-16-Stage-10-Original.md",
+      "sha256": "33e91823e2148a7150230488d81a5ddb31c08091bd0366d86b2ade7750698ea3",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-17-Evidence-Card.md",
+      "sha256": "ba5f01ccb1b49468e9b412b027316b12e13ed1aea28b89686d3d355f1d3bd690",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-17-Stage-10-Original.md",
+      "sha256": "8f5d0a1701460b6b6746fd98538752e42075683ee73bed50da981fe1835879a1",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-18-Evidence-Card.md",
+      "sha256": "5ea3af72303af01cf974d825129394b24c40feb7d3ea1321dece13441f9522f7",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-18-Stage-10-Original.md",
+      "sha256": "a296b52571aa47c4fd4eb56ac65e05ccc4f3b60ca17c8baa8a2db0830d0ebe58",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-19-Evidence-Card.md",
+      "sha256": "ca9af3f9cb81a6422fa4d46d383b2a2a853448eb1e234bf6abfcacb955d67563",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-19-Stage-10-Original.md",
+      "sha256": "8c44c733bbf31953a36853ce1eec8e6680db13c42f88ae0b3b5d18502e8bd136",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-20-Evidence-Card.md",
+      "sha256": "c0f7788480dfa8fe397a4a32ac72f05555e6890eb23f65907836e2dde7056c2a",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-20-Stage-10-Original.md",
+      "sha256": "90338125283494f1564fc1562e629ba292e6b7ba6ea069468c7abb6b12776c35",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-21-Evidence-Card.md",
+      "sha256": "4aad86c63d2f4860cfa19c1a10c7a719080feed50c39e67f0ee0986e959b0e5f",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-21-Product-Scope-Reconciliation.md",
+      "sha256": "216c9aa242204fe70a44a39618eb3ce272f0bb70eff36068632cb2e3af9e3168",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-21-Product-Source-Provenance.json",
+      "sha256": "f0280c477281e0816d3338a0ff2e42ca0928b3b4ecff13a5d74cd121ddc005d1",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-21-Stage-10-Original.md",
+      "sha256": "6ddb9de0dfb0192cde2f06bfb80f5d97e91e2271cef4e8bafb550fcc47f1f355",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-22-Evidence-Card.md",
+      "sha256": "923cf400c099c5f08317d282078b7033227d5270c23f3b48a2547c2708a73767",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-22-Marketing-Scope-Reconciliation.md",
+      "sha256": "a217946e83e17b66a7fa5231ef26b6be10df54c76e3d063cde9e811a98e8b29c",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-22-Marketing-Source-Provenance.json",
+      "sha256": "53bf37d8afbb7e42ad2a4d00ba0748f5adfed303aa184a6fb807daa0f000c1d7",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-22-Stage-10-Original.md",
+      "sha256": "68eec60119b3cd74f921749156669f2160aa27dd2183d626fc20ba8c982f957d",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-23-Evidence-Card.md",
+      "sha256": "5e83bbfa70324a7f224925a68c6145ef57d18e554a2f3100a908697d557bda47",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-23-Partner-Scope-Reconciliation.md",
+      "sha256": "39707ee2f0ef69b1d3e789c7bfff9fdcee321e0dea3f67b96d65945672504b16",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-23-Partner-Source-Provenance.json",
+      "sha256": "b5cc59e2ffce9c0bda77551199dccae7b3e170209eaf9231b0e2f8b2e10f7d23",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-23-Stage-10-Original.md",
+      "sha256": "b344f10af6eb7695b03ccccdffea470a5aee8b0f263ec0e43f50a2ce35457ad1",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-24-Evidence-Card.md",
+      "sha256": "780629f104e37f31f18c81f17d113c4fd8e6bdd86f3715af805dc7473d686050",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-24-Legal-Scope-Reconciliation.md",
+      "sha256": "a0f1c319bf46398cd51eb3a248cdaa5356475c969a2127819c0038c37a28b09f",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-24-Legal-Source-Provenance.json",
+      "sha256": "d17390542d87962d90caa1cb8ca34bfc65a068e2f39f2121e02a2dd52b44e895",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-24-Stage-10-Original.md",
+      "sha256": "9e9823137afa96ae72600acf5b5d839d5d99e639e322b8d1a5b9f42b9c1b7a90",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-25-Evidence-Card.md",
+      "sha256": "71d242d9ac3d9999f5b4ef319e708644a6ae2c5d24ce2501bd5e69effc4dc672",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-25-Stage-10-Original.md",
+      "sha256": "8ae3b972f4c76e291b06b22b396418dfe81f9f7dd51fd739507c4e6d0c42b9c5",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-25-Workforce-Scope-Reconciliation.md",
+      "sha256": "002c2f02c5e79081ffafa2da91d596d777a4e533f06ecddf2e791717416363f9",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-25-Workforce-Source-Provenance.json",
+      "sha256": "e7767fc35b7232a5acae963e4aab4461cd58e50bcfa33b25481099b32f858081",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-26-Asset-Scope-Reconciliation.md",
+      "sha256": "7225d46fae64e7f686a5772e1604efdd6aefddd63045aafcd43a84ada996524c",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-26-Asset-Source-Provenance.json",
+      "sha256": "73354d848da483cb44ea5a2e12eb4eb0f53f1a1da16f454bb935842785c0640d",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-26-Evidence-Card.md",
+      "sha256": "995f70734294f4a2a599ebb6d462ebc1be3c5ffdc6f5aa114c8a27d1b10633dd",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-26-Stage-10-Original.md",
+      "sha256": "66b463278a9e24f9c9828c2570743d463495a54822c7e18c3ca37971b7db6766",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-27-Evidence-Card.md",
+      "sha256": "3f17f95a5417b3a186b8fd3023c77a18d669e53b8602abfbe80d95f5ce94acd6",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-27-Stage-10-Original.md",
+      "sha256": "c2be4f55b1da02cc5592e684c084e1dba596fda2d0381c005faa213bec68f5d2",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-27-Sustainability-Scope-Reconciliation.md",
+      "sha256": "57ec1549c9d8da986784e5040b72a1e56d71d63301484fea006ab6dc2684d0fe",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-27-Sustainability-Source-Provenance.json",
+      "sha256": "f0efdf174dbca4862aa7965c7215fedefff0f48d11ad5718b72033957935f9e7",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-28-Evidence-Card.md",
+      "sha256": "010dc2c4095943eee28f57a22685c8c50db74aceadb10083811ca5999e58afbe",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-28-Security-Scope-Reconciliation.md",
+      "sha256": "4003517ba8be66211c4743604f6aacb5e0ae3a5071ad0bf54f9d26cea327b6d5",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-28-Security-Source-Provenance.json",
+      "sha256": "95de9b3d519b000e4d48f40207ef2b0bde7d032a0ffc8ea69fc4c3311dc72838",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-28-Stage-10-Original.md",
+      "sha256": "cef20c80769f0b852d1d8bd9a8fa3fbff2967877ce5237f4f8c6393f6007b194",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-29-Data-Governance-Scope-Reconciliation.md",
+      "sha256": "09d6f79ed34e849b487cdf4b61f91f3946bd32924beb0deaad66206452b8f3d0",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-29-Data-Governance-Source-Provenance.json",
+      "sha256": "1b803a54f6803d28b9d9e950be9da047f69853d7a6ddd3cd2dee753160182c8c",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-29-Evidence-Card.md",
+      "sha256": "eb3cdc389d20943fe83e076c7b9f360438eeccc9310771a8e94977264aabe6b4",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-29-Stage-10-Original.md",
+      "sha256": "a70c0a513693c994d35aa15ab7eaa5d61672b771132a0b96773b17c56a48a552",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-30-Analytics-Scope-Reconciliation.md",
+      "sha256": "c188090daa8c6c33080f7d8d095e8f6ad1100d2d43a1e21cdf8e281e0c9a0e46",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-30-Analytics-Source-Provenance.json",
+      "sha256": "e07d91b0371c045e67330b72bf19c9f57c014d8af109a0ea5c8a35e79a1465e7",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-30-Evidence-Card.md",
+      "sha256": "95acc2c91ebba00c038560c836d4bd88900f1261b7d4b7d4e307dad5fd23848f",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-30-Stage-10-Original.md",
+      "sha256": "d6f7fba6abc4cce557f49caf46c9b165c196d011e592981ca550e77f3710f340",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-31-Evidence-Card.md",
+      "sha256": "c37fc7a1bb308bcf5a294df435296069b07447d20fb43c285d7153a901c07a2f",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-31-Revenue-Scope-Reconciliation.md",
+      "sha256": "195217cd680ff617623399abfec183dda7a9426bca73d7595b070cc1a28d8b83",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-31-Revenue-Source-Provenance.json",
+      "sha256": "cfa6e2917cfa8dddf128bba49c8c57e25e2713572092412ae8e54d98393504cf",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-31-Stage-10-Original.md",
+      "sha256": "b9573636fd47a63aa59e9e9e3a6645a1c9ce6fcff069a3199e0493b12786df63",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-32-Customer-Success-Scope-Reconciliation.md",
+      "sha256": "5b4fc691a3a30c3bd8ac903ffb45195a78e770cf071593d9321b2b2da550aaa2",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-32-Customer-Success-Source-Provenance.json",
+      "sha256": "f18a2ce8c99cdc2931ed7127ce304e84b57ad1a5a62251fc6a7880a44c7d90b3",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-32-Evidence-Card.md",
+      "sha256": "1c9ef7ba9a79886d012b066b21725dd0c5320dd71f23664fc55aabac02861b9d",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-32-Stage-10-Original.md",
+      "sha256": "219e83372388879f019357a9d2fb9b0cd93b83add8e7a9b13701218742dbf6ea",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-33-Evidence-Card.md",
+      "sha256": "1f920debecc4c610764fac0f86e9642b59760391aa9a41859cb02fca05212565",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-33-Stage-10-Original.md",
+      "sha256": "0e860563b19307cb5463d53fb9181ff59dbea2b3a89d46948286b28124162be8",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-33-Supply-Chain-Scope-Reconciliation.md",
+      "sha256": "5407b46537d240616efc9da0884943027c236f3f0354dee968a4c4b8db4e3d55",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-33-Supply-Chain-Source-Provenance.json",
+      "sha256": "cd883e798e5a62353b3aefec528ee03b0a6c31da98bc6acb3e5c0a0b0bc013d9",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-34-Evidence-Card.md",
+      "sha256": "c65078d17b984d21be4da5a94baa496bf8868536ca4831c893f9d0c989c9191c",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-34-Manufacturing-Excellence-Scope-Reconciliation.md",
+      "sha256": "865efa5276e7d82c6543781c01562cdd29a6a59dbe634c2bd851985a6d6e2c1f",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-34-Manufacturing-Excellence-Source-Provenance.json",
+      "sha256": "0abd13df5b892c256913d67e7a62538355494e0525ed09e780bf962018e64c31",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-34-Stage-10-Original.md",
+      "sha256": "403526daa3feb88714ffa174869ca6ef29a095990d208eef4c8f9c53a54d4599",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-35-Evidence-Card.md",
+      "sha256": "84c614b72d664069a4ebc9040339bd50b9d6a96644c42789e9ed2a8aa26f8325",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-35-Innovation-Scope-Reconciliation.md",
+      "sha256": "6571b647eae95fb40938e01edb3c507b20e65bacff0e4591d5eedfe86f6f069f",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-35-Innovation-Source-Provenance.json",
+      "sha256": "676da67860d71f040812a0b6c9107f4439e6369e5c0e709bc1c2475e145200fc",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-35-Stage-10-Original.md",
+      "sha256": "6cfa3f7c3d7263b8efe225cbd2848dc12dd3bcf5064eed4f723f2d6c7f4adcf1",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-36-Evidence-Card.md",
+      "sha256": "ef6d229f57c4f7f790d5981a816e965906f14b2048a14640db31e61844c9ad78",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-36-Project-Scope-Reconciliation.md",
+      "sha256": "e7481be493fef74764bb0ad329aea4e8aa86327aae11843b2908c9b236a9afaa",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-36-Project-Source-Provenance.json",
+      "sha256": "2a80b04e88f65d496bf8d8a9a941c01cfde4ef0291eca5e83da220cdaa6015a5",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-36-Stage-10-Original.md",
+      "sha256": "d2ff9d16f8077e3cfb80feb2ec6e9f36c49522825964c221d96875cc55f79f93",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-37-Corporate-Governance-Scope-Reconciliation.md",
+      "sha256": "3b63c8fcd27cd52f62c667d4d3833623df5899f910dae7fcebc8b86d62234b89",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-37-Corporate-Governance-Source-Provenance.json",
+      "sha256": "1268a2ed839c9de510281685cb251e3f0789ad952fc16d8068ea2e123f2f35bb",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-37-Evidence-Card.md",
+      "sha256": "f8f32009dc92d73167b510f5cb77419dd3fa055ff4ded7c4f0a2d2b03de224ba",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-37-Stage-10-Original.md",
+      "sha256": "da8590a6b0cf8974dda34af1dd287ddf8dfbbaef83dd643e16415a2772951def",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-38-Evidence-Card.md",
+      "sha256": "9142d0d157ae0f1b46274f551664724315c32054fc9debdbd0904a95308dc2ad",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-38-Resilience-Scope-Reconciliation.md",
+      "sha256": "348ecd5947edefc7dbaefdfeb084e84482f478d6ac681bc64099bbf1f13fcd20",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-38-Resilience-Source-Provenance.json",
+      "sha256": "b33de5d0769253c6150333ee8e16e9121379cc559acccfc7d0ded639955a04e4",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-38-Stage-10-Original.md",
+      "sha256": "93671a4a582dbd294c7f9c5f594f7da45a281eb52dba64f6fce54b5969cc4875",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-39-Assurance-Scope-Reconciliation.md",
+      "sha256": "8638123bd4921960572a77d0bc962caddfa10c606831797f7dffb5e219389423",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-39-Assurance-Source-Provenance.json",
+      "sha256": "9dfb3f412f7df5d4494bb50e477f954b743c7c937a86d07d8a7389e47af170d7",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-39-Evidence-Card.md",
+      "sha256": "5168b4a4480d34cea22aebf3138192c237dae25b6ed7668d5afcf63c76a1d0e8",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-39-Stage-10-Original.md",
+      "sha256": "97a485bea4bc367bdb74aebab9e6d66d6e9d180d791c2488773e62e26b4b5c8a",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-40-Evidence-Card.md",
+      "sha256": "aada46e59bf0a4dbf7b919934ace1b89e0ece9e4d068d3b60b0eab5f551f8f2a",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-40-Globalization-Scope-Reconciliation.md",
+      "sha256": "b0e37d0389feedc14b8e6c51418864988410f70c10b8ed7f919d8a7836458e3a",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-40-Globalization-Source-Provenance.json",
+      "sha256": "e22dbf97913c7a34de86aa179fb869991188406ea4c4516146e81e3bc58e597e",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-40-Stage-10-Original.md",
+      "sha256": "6004f161c8f232e4e7f06ac77d92272dd91e6e66d4347e30016e06b689af3423",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-41-Evidence-Card.md",
+      "sha256": "61bb0f0c2552e992c0a6ea0170988d5a634477e20f439eefe208db2aff1226db",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-41-Platform-Scope-Reconciliation.md",
+      "sha256": "0f205ca87cf253813e5304a159c8252a4423ed62b1ab82bc249e88ee757a1122",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-41-Platform-Source-Provenance.json",
+      "sha256": "e5877acf54d0a6054de7b8f0ee443da9de1cd5ca87ac31fa598ba9fa31af485f",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-41-Stage-10-Original.md",
+      "sha256": "789c212bcf7419ad3d3556b09763682a832728cb1bb9f128e8b012c67cec9010",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-42-AI-Scope-Reconciliation.md",
+      "sha256": "89c0987ffe3653f4662b2a3b32d82d572b1f2716223cb10b346000b62bd24587",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-42-AI-Source-Provenance.json",
+      "sha256": "740bd068b46a735376c68a0b6939e0c5bc33d9e5d7bc60e1a746eef331e8a196",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-42-Evidence-Card.md",
+      "sha256": "5ffcaaae88302400fee319d0ab7580089624ea71a9f2f7f5c36ab0a399393988",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-42-Stage-10-Original.md",
+      "sha256": "f79495683a2cefaa578376840557ac9dc9f46c1607304d80fde764989ddcce6d",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-43-Ecosystem-Scope-Reconciliation.md",
+      "sha256": "fe6e56e310e9f89f0331dbc7cebbcfc20e60620df06b001277033b6f4bbbe7d6",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-43-Ecosystem-Source-Provenance.json",
+      "sha256": "9ccd062261bb4b8b8aad7be69e85ec87f71ef348a5e9c3ea834f7731382a6b9a",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-43-Evidence-Card.md",
+      "sha256": "3406dfabe8f2517b7a68db41f676359d7d1fffabcba629574b356a304688e0be",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-43-Stage-10-Original.md",
+      "sha256": "26a7c589adba1ebc519c040d871eb63e7ba219fba9dbc96ff087f605b0a24ed0",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-44-Evidence-Card.md",
+      "sha256": "8fc88b1b3a7a55278a2298e67fe1bca1d9d54aa8fe86473674ade35df69b7a46",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-44-Knowledge-Scope-Reconciliation.md",
+      "sha256": "51180e21af52e91a162b97a17ef26868700e2dedecd651ad567ce87e4f15f714",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-44-Knowledge-Source-Provenance.json",
+      "sha256": "822fde3bf09d3ba7cd5ab4dfb5a12586476b991a46320dd0070b2065986bd0cc",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Domain-44-Stage-10-Original.md",
+      "sha256": "850161dd9816b1b1f55335f61be035b606ad8f593a8354d4ba7aabc029e27472",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Operational-Evidence-Provenance.json",
+      "sha256": "14d892e867cb08feb90c78ba35ef564668d50a449dcf5271930015c1143700c2",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Operational-Evidence-SHA256SUMS.txt",
+      "sha256": "c065445b69693df28876b7908cf386e26d1b01ef72d275df276025f9c8dc1ab5",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Operational-Source-1-Original.md",
+      "sha256": "e05eb4ed3464e037ab7aa283d256006250f296b751b2ca99c9dc5365a8cd66d4",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Operational-Source-2-Original.md",
+      "sha256": "33ec546b98f84d78425d8afcf23e990192b7bb57711d5e39dd990ec9d417aa35",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Operational-Source-3-Original.md",
+      "sha256": "2c09bc36f02d6622cb280c04ad8234d57ee33132e77bcac3073d51a2837beed8",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Operational-Source-4-Original.md",
+      "sha256": "9de17d62dbbc97374ee665720d38be3c08b4a37da0d4faf4609679c3cb4c7882",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Order-Canon-Source-Reconciliation.md",
+      "sha256": "1f02c1f71364c603bcfe2f2870e40996ad732e331625e05e1ad6035b981f241e",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Order-Reconciliation-SHA256SUMS.txt",
+      "sha256": "266c4bc7f2f7f92cd098c5ff3cbd781e9a54d55fab73ad9d2f37bfec57bf5eff",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Order-Source-Provenance-and-Checks.json",
+      "sha256": "44abf26af7f4079a389f0de7c975e623203b275837b64ba50dd44d15e24b32c9",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Pack-2-11-Ownership-Contract-Original.md",
+      "sha256": "8cb80e4a31005ef39790e04ca83c7e3f5c3ca6bee1e02e992af5b3858370a0ad",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Pack-2-11F-Controlled-Closure-Original.md",
+      "sha256": "8f042df92bd1a0ab01f064516a2666f5dbce9990e5eeb8adcdeef9245bde6a7e",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Production-Recovery-and-Cutover-Evidence-Blocker.md",
+      "sha256": "380d3c2f6f51d40dd7d40aba5f4d5e3073a288cbb2ba07433227801174cf265a",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Recovery-Control-SHA256SUMS.txt",
+      "sha256": "17538ff495f75a365654c976dc25227f7fa7e8d1e4e2ec54b782fd5cc5eaf9cc",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Recovery-Control-Source-Provenance.json",
+      "sha256": "d3532930e4b535e0f8c76088800b519e17a4a8b81058a3594d99cdd0c818a4ff",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Recovery-Control-Source-Reconciliation.md",
+      "sha256": "6514136184b39b7b8ef70fb318559c03cc35fbfb9aa9c00946fedc660f21e732",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Repository-Tree-Evidence.json",
+      "sha256": "d9692e404a3d3f2ac3a32184dc207441767747765b47b422fe1e285a7f3e3f09",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/SMP1-44-Domain-Parity-Final-Matrix-2026-09-13.md",
+      "sha256": "2971e13b3b721b71433f0846d3a4876a77fbf2111e4a382df18f31ec62684deb",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/SMP1-44-Domain-Parity-Working-Matrix.md",
+      "sha256": "c138278de18f91bd4f7a76c35984a390c2614682d4bb4bd4069815ec30023fc0",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/SMP1-Canon-Recovery-Final-Reconciliation-2026-09-13.md",
+      "sha256": "12bbb592b2c576bba2e17330f534b9b21f1186a18577034c89c7faa62d4e9d5d",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/SMP1-Canon-Recovery-Repository-Publication-Blocker-2026-09-13.md",
+      "sha256": "df542dd9f2dc3ec8ec20c8ece54734dfcea887d1b911fa0b62db6178fa7a8cd5",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/SMP1-Canon-Recovery-Source-Provenance-2026-09-13.json",
+      "sha256": "f49b5ee23002fc215db4256bcc720e33de4e14b703d615e1de10f991062ea823",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/SMP1-Finding-Register-Baseline-06090dd.md",
+      "sha256": "86c3a19526c184f491db164529c1c788530819d1394bd40ae15ee721d953bdc0",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/SMP1-Finding-Register-Final-Reconciliation-2026-09-13.md",
+      "sha256": "a68d3f7535a89d6d8ef7f938b9ab3668491decf87b04b46633a3a90fb4791c4b",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/SMP1-Finding-Register-Recovery-Addendum-2026-09-13.md",
+      "sha256": "ba01a03620063908a4b59878ca28fbbfe2e6c1a5310b9d3835e2c5bf6ce212d6",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/Source-Read-Index.json",
+      "sha256": "2794f412515597b30d7099cbcad00340be061a4ffa1debb945e657d4dac31007",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/smp1-canon-recovery-publication-provenance-update-2026-09-13.json",
+      "sha256": "ac20cf89107457a2ac1cbd3238a85bfe8f6ab582a8a8d5c659e994bc9f136638",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/smp1-canon-recovery-publication-record-2026-09-13.md",
+      "sha256": "6544b405fabbb2146059087814156e3f1cfef631ef251286dba7d049db3743ca",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Reconciliation-2026-09-13/smp1-finding-register-publication-update-2026-09-13.md",
+      "sha256": "91cc6bbd6f29d2aad9d84d8d58540e3cd7354687addffb118121a53dc15cd638",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/00-Canon-Reference-Index.md",
+      "sha256": "c96fb424dbac2144385e293c2506055b033402381730835204f580d41bcf8776",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/GiftHatkeOS-Enterprise-Canon-44-Domain-Registry-Recovered.md",
+      "sha256": "dc996236782651c8994ff990a8b634fc1dbffa9ed6bb0b167ac5edd94a8d65ec",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/GiftHatkeOS-Enterprise-Canon-Recovery-Manifest.json",
+      "sha256": "01070fb226bffe5f586fc70f11125d8829e0236dc4b6de4077e703ffc145895f",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/GiftHatkeOS-Enterprise-Canon-Shared-Chat-Sanitized.json",
+      "sha256": "bedb0d6b514788327b0789568fed129bf49936e8f410b51ed4afcf15c0c79923",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/GiftHatkeOS-Enterprise-Canon-Shared-Chat.md",
+      "sha256": "a683d7e9f9fc51211d02a32977c504918be6fc3090ab183685a259d9cee27ad3",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/Order-Management-Canon-v1.0-Stage-1-Original.md",
+      "sha256": "aea6567f48d49e7dbb6f1196b5dde5e0fb992a53a42d066d97f3247f16e8c82d",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/Order-Management-Canon-v1.0-Stage-2-Original.md",
+      "sha256": "bf1a35be9de4dcd64f130c083bd9f8edaa4ce694a10bc0c5b9a67fc75cc99e00",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/Order-Stages-1-2-Recovery-Addendum.md",
+      "sha256": "5e862ed65c710e6c95b29d0928c0bdce2f0597e56e2cae7b60501327d13b2b2c",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/Order-Stages-1-2-Recovery-Provenance.json",
+      "sha256": "ae3ee1e133392ea5ee2081a01c085e1ccd5bd38f3c2522b834967aca5514dfe0",
+      "mode": 384
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/SHA256SUMS.txt",
+      "sha256": "636a5085e51e38b11320c14fe4a4de335711708484c99d1b0c91e6fcc6321996",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Canon-Recovery-2026-09-12/Vault-Integration-Verification-2026-09-12.md",
+      "sha256": "f2e1a4f69e2db819dab6f088681aadc22e2a3839413e9087d82b45af5d5b0ceb",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Certification and Release Controls.md",
+      "sha256": "f6d16772ab1f5379522f9581dafdfdfc508f41cba838afe2280d028395135d46",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Enterprise Canon - 44 Domain Overview.md",
+      "sha256": "81df4af7a0a3a48fa4fcf4aae90a48b8aff32883fe80138088d73c5de21ad44b",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Frozen Reference Non-Mutation.md",
+      "sha256": "fff15ecbade8148924c224921363841d273d9dac802a14821f6f549e9cfb8a1e",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/GiftHatkeOS-SMP1-Handover-Roadmap-and-Execution-Plan-2026-09-13.md",
+      "sha256": "d0d087ba05e49db3744242f18fbc6637a505ebe2d7248fa5473c0cea42cfe7d9",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/Roadmap - Locked Sequence.md",
+      "sha256": "0f5d439308f0c94bda128360953d20cf412b6c2ebc09250ab9fb29c892a54ce9",
+      "mode": 420
+    },
+    {
+      "relative": "01_GOVERNANCE/TITAN LOCK - Master Governance.md",
+      "sha256": "dbc353dd44fde07613ec2f84b50ed6fe5b27639dafe2053608812030726a6ca5",
+      "mode": 420
+    },
+    {
+      "relative": "02_BUSINESS/Brand Visual System.md",
+      "sha256": "6cfdb88be8687e2b7a81143b194ea2e96ff0d9536bf653818576c63d03ceb60b",
+      "mode": 420
+    },
+    {
+      "relative": "02_BUSINESS/Business MOC.md",
+      "sha256": "e5f4462099a7405139090fc68252d7da828f788e5c0c89e179fc87aac40fc6f7",
+      "mode": 420
+    },
+    {
+      "relative": "02_BUSINESS/Business Model and Channels.md",
+      "sha256": "8b02c2844e95173bafbae5915c8de42a726adfe67fa203f57c51f79c9d00e5a5",
+      "mode": 420
+    },
+    {
+      "relative": "02_BUSINESS/Company and Brand Profile.md",
+      "sha256": "f81749a2ce7094f62fcda5bd7df686f767bca27a1e5fa52d8d364cad882f3332",
+      "mode": 420
+    },
+    {
+      "relative": "02_BUSINESS/Corporate and Retailer Business.md",
+      "sha256": "6652dd97bbbfcf04286acfe7a78d15eee0077cc7553d9021742535fb38074b0b",
+      "mode": 420
+    },
+    {
+      "relative": "02_BUSINESS/Customer Segments and Gifting Occasions.md",
+      "sha256": "f3d06f1fcd433049f695eb140b140251eabc4010a4eda76752beb5d10d7b81b6",
+      "mode": 420
+    },
+    {
+      "relative": "02_BUSINESS/Economics and Commercial Notes.md",
+      "sha256": "d62de59502cd2c3ad2f65a7e386ac79957ddad87b1b3e868d588d8a80985039c",
+      "mode": 420
+    },
+    {
+      "relative": "03_PRODUCTS/Acrylic LED Lamps.md",
+      "sha256": "a37ea0a8e15cbd3f5af0ab636ae003ba0e3751848d49da56405256abde94cab0",
+      "mode": 420
+    },
+    {
+      "relative": "03_PRODUCTS/Baby 12 Months Milestone Clock.md",
+      "sha256": "6f890f5c8ae3a04ded1821c4c39455cf5b6f435de032573612f607d27f56b9d0",
+      "mode": 420
+    },
+    {
+      "relative": "03_PRODUCTS/Couple Wedding and Anniversary Products.md",
+      "sha256": "19a63987ac0419d67da85d7ef8b630c2fa2c6726aecd63e6b2ad78d4fab899b5",
+      "mode": 420
+    },
+    {
+      "relative": "03_PRODUCTS/Keychains and Small Keepsakes.md",
+      "sha256": "559fe8b463bec85f1815534bd0bc8dcd4ac46203aa8521cab1a46c69d6a7ba84",
+      "mode": 420
+    },
+    {
+      "relative": "03_PRODUCTS/Personalized Product Asset Privacy Standard.md",
+      "sha256": "3278e0777431fe048cba960bbc26689c5fdeaa6dc47c3893340fb92eec7208bb",
+      "mode": 420
+    },
+    {
+      "relative": "03_PRODUCTS/Product MOC.md",
+      "sha256": "a6dbad9f6a34c0d63b9eb26b5926a58c9309a6ea28bdacf79d3fdcd0eb890a8b",
+      "mode": 420
+    },
+    {
+      "relative": "03_PRODUCTS/Product Portfolio.md",
+      "sha256": "948b33aa72265d420fd90f1ed5089c2e6c8cc92155b29230f28871cb6ed7d756",
+      "mode": 420
+    },
+    {
+      "relative": "03_PRODUCTS/Rakhi Hamper.md",
+      "sha256": "424b0b99ff8baca6ce408949a4651a4df50deaba4f092abca42bc8d6d5b6c8dc",
+      "mode": 420
+    },
+    {
+      "relative": "03_PRODUCTS/Wooden Engraved Photo Frames.md",
+      "sha256": "18444b6450e624f6b704ade3c40e0ff01fbca9c3e4af978d07b8df9070113a73",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Amazon Flipkart and Marketplaces.md",
+      "sha256": "c53af26b1f36a4d664e811809ff72a8d1ee9a8f30efc12a130dc18bb2961d754",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Checkout and Partial COD.md",
+      "sha256": "c924188b86c6ece68f1379d7d9469543c13ce608996dd12c042336e9aa75a697",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Commerce and Marketing MOC.md",
+      "sha256": "332e98c55d0d70889a40416754b645b4ab7008551738201fde53979fb6441058",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Customer Email Templates.md",
+      "sha256": "f900de8a5094207488ad6644696791f2d9e05323935e15c1f7fd50f90965acfb",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Flipkart Personalized Returns Problem.md",
+      "sha256": "341b52e740a87280c313808573a991b140f872026c6c0c242be2cad6bc5e28b7",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Meta Ads and Creative Strategy.md",
+      "sha256": "bbdbaaa0877171aefc5442a1933990dcb23b853762fc937ea0e6f04a8334d705",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Rakhi Campaign - Aug 2026.md",
+      "sha256": "6ee5f2ab005f16a9ee28877e429c0fa1e7308492e19ec5ecd5588dd449123911",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/SEO Content and Policy Pages.md",
+      "sha256": "3e9d34855b9a8828ea4ffbcc0890fcdaf6277a6360f3ee90e2e5daf91b75d090",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Shopify Store.md",
+      "sha256": "aecc6d03722ee07d9e636247ce2674d17fe08ccbc46100ee8930dfe13fa8e977",
+      "mode": 420
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/WhatsApp AI Automation.md",
+      "sha256": "78e8052333aefb1f0e6bea13e91a1bd61d6885338e42e3128fab53f375b058b2",
+      "mode": 420
+    },
+    {
+      "relative": "05_OPERATIONS/Customer Success.md",
+      "sha256": "690bc590fa861392cd8301f0cdabc29f3c4a6c810c12b92c328b34dc9d64410a",
+      "mode": 420
+    },
+    {
+      "relative": "05_OPERATIONS/Finance and Margin Control.md",
+      "sha256": "76aba46f4495824ddb5b1e114f228bf61331f28b6d56eb8e416f7b37f8cfb04b",
+      "mode": 420
+    },
+    {
+      "relative": "05_OPERATIONS/Inventory and Procurement.md",
+      "sha256": "1bca2efe60366c1cfa7bc5f2be49c63cbdac037c6c46f85546ecfa6c66240c67",
+      "mode": 420
+    },
+    {
+      "relative": "05_OPERATIONS/Marketplace Operations.md",
+      "sha256": "e934df477d657908a23cb1377ea708bcf7e0f27cd57c6f9ba47938331addba32",
+      "mode": 420
+    },
+    {
+      "relative": "05_OPERATIONS/Operations MOC.md",
+      "sha256": "64d7b5a53dbda94d0d1b7aea3c5e07c68daec997ffe639ef4f77cdfb49025013",
+      "mode": 420
+    },
+    {
+      "relative": "05_OPERATIONS/Order to Delivery Lifecycle.md",
+      "sha256": "bd9f786557d98ee8a4b3f7bc82d636edca270969fd6bd8e9bbe37ba4d228892b",
+      "mode": 420
+    },
+    {
+      "relative": "05_OPERATIONS/Personalization Intake and Digital Assets.md",
+      "sha256": "60aa5e477e4d89244864e7215e877c9a04ec6470075467ca22424c38a9834d9f",
+      "mode": 420
+    },
+    {
+      "relative": "05_OPERATIONS/Production.md",
+      "sha256": "651e0d70349f650e2f7a38fed919c03d5043c69c7db9f1bd5e06bf0eaef2a3fa",
+      "mode": 420
+    },
+    {
+      "relative": "05_OPERATIONS/Shipping and Returns.md",
+      "sha256": "fb33606a03e82c3bae15ba0f3d3f8333fe9a4ea9cab27009d83ae24b3be05217",
+      "mode": 420
+    },
+    {
+      "relative": "06_PEOPLE/Customer Success Executive - Hiring.md",
+      "sha256": "b57e3c96755717610a184c5cb69d3c1560e47a39526169d597674255596235c0",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/00_MOC/GiftHatkeOS MOC.md",
+      "sha256": "eef7464ac6b8518e2f33bc1eaa9f7206ff24ab9dc18ebdaadbaed05dfbc7edfb",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/01_ARCHITECTURE/Runtime Independent Platform.md",
+      "sha256": "d6fc9b9ccf926527f4622b93a5f95bbacb74f9e55fef24285c9b8fb6108b7b7b",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/01_ARCHITECTURE/Security and RBAC.md",
+      "sha256": "366a8f5bf6b14b400fd9c48d7dd7e476a4fdf6e37cbc184b870b78e8b35a3a73",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/01_ARCHITECTURE/Standalone Production Architecture.md",
+      "sha256": "b8326a0703598c7f9714400ae1188cd8bbe57420afb01f3929d4ec34844a3656",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/02_APPS_SCRIPT_REFERENCE/Apps Script V1 Reference.md",
+      "sha256": "961ede4aada432d062c8a3e809f92e6cd088c0b5d2fea8939db86e38ac1eb425",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/02_APPS_SCRIPT_REFERENCE/V1 Permanent Reference Freeze.md",
+      "sha256": "8bb04d4f1bcf6374e9e7c4b6018c393a7d1073e444179f94cfa4c6ef5ddec962",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/03_ERP_HISTORY/ERP Evolution Summary.md",
+      "sha256": "cce7e77506c49f6ce763633d03400e206b2c631a3908e6267419c283d4c83002",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/03_ERP_HISTORY/ERP7.md",
+      "sha256": "ef35d626aa061cd8ca0be2f3c99be3bf3c78338c935e65cc716f9696808a800e",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/03_ERP_HISTORY/ERP8.md",
+      "sha256": "313e9f33e261bcda81922b5eea0fab78b423eb82b78576d875923be440cd288c",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/04_GLP1_GO_LIVE/GLP1 Programme.md",
+      "sha256": "1bd3836160d9b3282aaf2ed1de98f53d1ef63d2b7bb06bfa7fab2869be5a46f6",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/04_GLP1_GO_LIVE/Production Deployment History.md",
+      "sha256": "a67b801b35f38db997f20ef6523937f3acfffa626fdb23f4b22bd3fcf259f7a1",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/CRM Production Parity Certification.md",
+      "sha256": "d88c0065ea82210e76871f6a1479ddc4ffbeb20f7717ecac3d9a8ace8f10048e",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Customers Production Parity.md",
+      "sha256": "31125dbefd59fa8b14357fa0547705c61d4eaa1caa47a1965c21eedcdb4c67ca",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Dashboard Wave 1.1.md",
+      "sha256": "ce2abbd6195ade95eab7838fb314461e11d5dd42c1a1c6ee1339135a93d2f69a",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Finance S1E Scope Lock.md",
+      "sha256": "ad5c9975cedeb77e7275c895025aba5c509e8246ff84885e8a29269ccb0937e6",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Finance SMP1 Implementation Reconciliation.md",
+      "sha256": "7f2322a92a99924e21051c6ff5f47e769ce1709c0fc066ca57b4e63bf8d08f0f",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Production Parity Programme.md",
+      "sha256": "72aff64861ff9099bc51983c5a9cda60abe439b12ccee7501a72f86889ca9dc0",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/SMP1 Programme.md",
+      "sha256": "e2f7dae8eadc8a866e3bee02fdc27c219ab9a8d13f2ec09d147cc03dc0b59678",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/SMP1 Reconciliation 2026-09-10.md",
+      "sha256": "d3a55f305b6e48197d686d50f0ed281b54500c99da656d92d3ab528512979e1c",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/SMP1 Stage 2 Pack History.md",
+      "sha256": "e8ea6fd8c4726129c826feeb06f6b7e65b6efb29b261697cfc4bd72f322fdd64",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/CRM.md",
+      "sha256": "8b07a3d8acbafb2ab6b2302ed50682c0a3f1fcf343382858445528df56d69c46",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Customers.md",
+      "sha256": "43855c78715ea964b76f7fdcba8e0c817be73d23a2e851f2b90da776f267175e",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Dashboard.md",
+      "sha256": "b597f524995246f09f6b669d26ceb84a0ee9d2ed8d4ee600227aa32c429072f1",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Finance.md",
+      "sha256": "cfd4409729da042232352ca076c420486ee4a6fdcfaa7b4e5ca6225368da2cee",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Inventory.md",
+      "sha256": "8556340f82fa7e9574d6b6b960523d935d5bcbbeee9337a66e85fcee67bd222f",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Orders.md",
+      "sha256": "e17c51783e4ba7804f8b5f17fbdb8203ae24cc210c1e921281937ddfc8c81588",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Procurement.md",
+      "sha256": "8c85653468c3fa7319dcfb786c1069577ac2c4309118cb4d5b6fe4a38c23cb68",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Production.md",
+      "sha256": "32c81166a2deeefdc5a65f083cb83239901ba1926c7e929799e7b1833046921a",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Retailer Reseller Partner Dashboard.md",
+      "sha256": "c76ae6799682176720e30a7c0e03c94c5b700d51b760a8d31d3f063a73e11840",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Settings.md",
+      "sha256": "6433bd10a55cf59b6f442edda3519d174e25ee5830831330e139f7cc14d13909",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Shipping.md",
+      "sha256": "e5d9813dff423f0ce9eb6e025629770d81711e0420b6b5467c6d3fcd8568d6bf",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Users Roles and Permissions.md",
+      "sha256": "3cd71b210343dcb404a2e9c4b074ba19cc2efc681d463427ef5ca8e91690cb0e",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/07_INCIDENTS/Executive Dashboard PH1 Incident.md",
+      "sha256": "b4972b43b3f3c322566ba83ffe814a42ae1127f4ba3566d8b84b77646209767f",
+      "mode": 420
+    },
+    {
+      "relative": "07_GIFTHATKEOS/07_INCIDENTS/Standalone Google OAuth Origin Incident.md",
+      "sha256": "044393746b8759279a149972ee4a156b16ab0d01c98745a22034e4bdd9a848de",
+      "mode": 420
+    },
+    {
+      "relative": "08_KNOWLEDGE_BASE/Knowledge Base Charter.md",
+      "sha256": "6438109bcf331958b6e993cc41c49f57b3f1643cc032934a293d1ae7e43f840d",
+      "mode": 420
+    },
+    {
+      "relative": "08_KNOWLEDGE_BASE/Recommended Documentation Architecture.md",
+      "sha256": "cf689bea578e897a496232c183ed3715685d9fa84b72c4ee6ba3352c25039459",
+      "mode": 420
+    },
+    {
+      "relative": "09_TIMELINE/Gift Hatke Timeline.md",
+      "sha256": "1a084f1fe826a4d412adb58b8aeff19012364e0800304ad8eee71546b96abe96",
+      "mode": 420
+    },
+    {
+      "relative": "10_REGISTERS/Branches Commits Tags and Certifications.md",
+      "sha256": "d523afe4aa2c7f314d284691f75156f3c3019dceb23548517fe6275b2be47ddd",
+      "mode": 420
+    },
+    {
+      "relative": "10_REGISTERS/Decision Register.md",
+      "sha256": "cc0c156f734c1a536274a903a5c2e5d03d048b684beb69bc35671642bb7c482f",
+      "mode": 420
+    },
+    {
+      "relative": "10_REGISTERS/Key URLs and Paths.md",
+      "sha256": "48a3c7d83b5dbd3e77ef9ee69a39d9c4186c651b65a8686c9d4bbfee29e76935",
+      "mode": 420
+    },
+    {
+      "relative": "10_REGISTERS/Open Issues Risks and Unknowns.md",
+      "sha256": "d868d381eeda3336454e2240c2c08158bc744c664e28604931323698de785259",
+      "mode": 420
+    },
+    {
+      "relative": "10_REGISTERS/Production Environments and Deployments.md",
+      "sha256": "2c09bc36f02d6622cb280c04ad8234d57ee33132e77bcac3073d51a2837beed8",
+      "mode": 420
+    },
+    {
+      "relative": "10_REGISTERS/SMP1 Shipping S3A.9 Final Certification.md",
+      "sha256": "8cc3fcd9321cd4c98d7d01862fa9b2bb9102a79afe37cdbe90684a90e5355f6f",
+      "mode": 420
+    },
+    {
+      "relative": "10_REGISTERS/Terminology and Acronyms.md",
+      "sha256": "cf85558e950d5da522801af4708ada3f6b32069b5b9f2b9009689767f4173c98",
+      "mode": 420
+    },
+    {
+      "relative": "90_TEMPLATES/Certification Template.md",
+      "sha256": "699678c378bfbe6dccafe9a6aa9934095d786fb8c331faca766b7e733068b89a",
+      "mode": 420
+    },
+    {
+      "relative": "90_TEMPLATES/Decision Template.md",
+      "sha256": "69902d424a426f6a5ed00d7cc181c722213c38f803edb2b04ace24348d7defc8",
+      "mode": 420
+    },
+    {
+      "relative": "90_TEMPLATES/Incident Template.md",
+      "sha256": "6175f7758f746c0965edc80c9fabf658c2bd24f37fbe52ccc1c71c80fc075432",
+      "mode": 420
+    },
+    {
+      "relative": "90_TEMPLATES/Product Template.md",
+      "sha256": "5e2ca4245a2315c3556a684f1ad41cde1efe3906e721d3d4d4b695188806935d",
+      "mode": 420
+    },
+    {
+      "relative": "90_TEMPLATES/SOP Template.md",
+      "sha256": "e1d8a5614baf59f3f88dae8260b67d7cf645f0732d550fe6602cc69f64f150ee",
+      "mode": 420
+    },
+    {
+      "relative": "99_META/Missing Authoritative Artifacts to Import.md",
+      "sha256": "dd05b5c4fd46ce21f2cd04580579c0ea651a7d1b4d62e390bb99ff747de884b4",
+      "mode": 420
+    },
+    {
+      "relative": "99_META/Status and Evidence Model.md",
+      "sha256": "e6f839739c834871c52d33d275ea0d5532e17f24fad0ac581c1280637b8d9e2b",
+      "mode": 420
+    },
+    {
+      "relative": "99_META/Vault Maintenance Rules.md",
+      "sha256": "b027c7f87b30e42f184ed64b8dd7d8091ec7eae197415b479d02ca0fed11cfd4",
+      "mode": 420
+    },
+    {
+      "relative": "99_META/Vault Manifest.md",
+      "sha256": "a78bc5ee1ee7220e74bcd382d1b5ecbc0ea6ed9a2a5a2d645b1b29e0b16bff0a",
+      "mode": 420
+    },
+    {
+      "relative": "README_FIRST.md",
+      "sha256": "5b3a2da7d994f6af35eb3a1cacde12558f07e406fedb35a544fec0a0c88428c9",
+      "mode": 420
+    },
+    {
+      "relative": "SMP1 Overall Production Parity Gap Analysis.md",
+      "sha256": "d9cc8fc565cb7d9ffbaab6cca79c2fa473d0baa9c308c346f90857a02aad637a",
+      "mode": 420
+    }
+  ],
+  "importedNotes": [
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Reports SMP1 Scope Lock.md",
+      "sha256": "59a0cc2ad09774e7ce6aa74b9022a0ce688e6ab25e9214b2b4e1b82d6a87b3f2",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Reports SMP1 Scope Lock.md",
+      "sha256": "4f74ccf49e2fff39b91e44f2fbbac3f686f5aaf76e979de9dc709df30982e482",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "SMP1 Canon Recovery and Final Reconciliation.md",
+      "sha256": "89595e66c31dd7d89b31c734df2c59bed34931fdd5e6c2beed48ee9f06a0bee9",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Application and Transport.md",
+      "sha256": "b532c72540e4ce277e8c746a503754c8d47700b9c4dee136fbfa82086a2a4327",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Certification and Closure.md",
+      "sha256": "738efe31d519a7a68837e80255112aac83e5ce544da2c5ab932bc32bd458bfcf",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Core Persistence.md",
+      "sha256": "6c5d9e3be07cfef61b04ad8bc8f8de385e6f6fa335a64cf2d99ce05b130b1c01",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Deployment Exact-Scope Gate.md",
+      "sha256": "f5e8de64215c62269ebde740c159ea96d115f331735604391bdcc4b183431076",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Domain Contracts and Ports.md",
+      "sha256": "8411da798f4b22dbfdf8f8d52e9408166929df88381709f5a8342cca13eb867a",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 ERP8.5 Tax Finance Wave.md",
+      "sha256": "be51871716b7883854ea0a8048008085546bdb3c2951f212a5bdcd49a63bee4c",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 ERP8.7 Production Configuration Wave.md",
+      "sha256": "e9bfc5427daec50102155be75481dd4885ce42a6c6df387319d727c5df1e5d2d",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 ERP8.8 Inventory Procurement Wave.md",
+      "sha256": "cdcf143320f6f6eb8cf06a0eee461a3d465675481140d633ac2d530f24dd55e4",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 ERP8.9 Notification Communication Wave.md",
+      "sha256": "b581b4b72c7c14b19dbaadc5ef4a0e6e00b691b2afc7896298d9ac605150673c",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Family Behaviour Gap.md",
+      "sha256": "8da33f8a4ff75c554fc0ed4f79322497cf7e28d2ceb8e3734bccff3f41e4b328",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Family Persistence.md",
+      "sha256": "fa039ea22708fbe0f8466673e23fb645ea1ec929ee5d3829baec0ae2afb45989",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Family Wave Company Organization Sequences.md",
+      "sha256": "157b6c8ab42e3eb8baa2df95a7605e1ca52ca6d0cbe09bbf81d7708fe821621e",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Frozen Workspace UI.md",
+      "sha256": "d6d88aaa1e848092beabd5d98cce1865055464c6a03f7c57d3ec56f8c7ed0e10",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Live Privilege Remediation Gate.md",
+      "sha256": "c7fd9617cb87ce42d60414e18f4ccaca4410f1e9d4da93fb69e357a3f7d14d22",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Live Privilege Remediation Validation.md",
+      "sha256": "3169f301daabc557c9256f181d9d69a46272167347cce9e13e600493d5b470df",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Marketplace Wave.md",
+      "sha256": "82a5487c0b1b6cda6508160825306270907f1b53a568d1e6e731c27a807671a9",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Migration Necessity Gate.md",
+      "sha256": "cece7c3d50e00bb08a65959651fec268ba344757cb5c114274d67203e5262233",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Repository Regression Gate.md",
+      "sha256": "9fbc2374a98ef16538da65ce6577a13c1237e608c72a0051c13ca55ae6ae8a75",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Scope Lock.md",
+      "sha256": "16d8345be919b532feec193b52c820cbe4cefb0f2246ad59b5e6620766610250",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "Settings SMP1 Sensitive Provider Disposition.md",
+      "sha256": "bd8c85d3e41c8339ae944ac9a52a6730c20cf37da85774e4bbedea9e61a94557",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "User Management SMP1 Build Contract Reconciliation.md",
+      "sha256": "f9a0f18c02ffe9da78aed54a47d9ab6869a64ce8b0498dfc93c44f6baff1a52d",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "User Management SMP1 Certification and Closure.md",
+      "sha256": "4a0fc0a5f9d16caf7d2573c32ca7695fdae9202e5c476b6c3b786fdf3bb9f6ce",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "User Management SMP1 Deployment Gate.md",
+      "sha256": "e526c0859c5291ad141d68b56a2ac185cf5bf44dc161273a3f92c3b135c2c12c",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "User Management SMP1 Deployment Route Reconciliation.md",
+      "sha256": "53a3625f7036359a8e71c18e4823eeefbc9e6bd3f86ab74024cffbc48199db42",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "User Management SMP1 Implementation Milestone.md",
+      "sha256": "a270ca1c74a0362076b7944c6c97f47940f76327d8c5cd7c4207a793e650dc8a",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "User Management SMP1 Permission and Frozen-Rule Reconciliation.md",
+      "sha256": "69802d5e34bb9b51e5f0df15bc908f9cde4977845744b79ea7c7434f4de11d94",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    },
+    {
+      "relative": "User Management SMP1 Scope Lock.md",
+      "sha256": "e61e517fd42119b0e203a29a10de14c165bba8ce231c9b0324cd3108c61d73de",
+      "sourceCommit": "be75043bc4616114cad541fbc64583dff0333c3b"
+    }
+  ],
+  "editedIndexes": [
+    {
+      "relative": "00_HOME/Home.md",
+      "preservedSourceSha256": "b7617a6fed215dcc7595fc5083808e98661001f0df2cdaf2d107ea1aa021053d",
+      "publishedOriginalSha256": "ff8aaf3fd677234dad504cf79b950b2dab3a60110eab6b25ceabcfc8b0a9e482",
+      "publishedOriginalLocation": "published-originals/00_HOME/Home.md"
+    },
+    {
+      "relative": "README_FIRST.md",
+      "preservedSourceSha256": "5b3a2da7d994f6af35eb3a1cacde12558f07e406fedb35a544fec0a0c88428c9",
+      "publishedOriginalSha256": "8591740110cbfcee05da2d60de4f174dae63f4b9e28fc29b4e9ad28ca021eea8",
+      "publishedOriginalLocation": "published-originals/README_FIRST.md"
+    }
+  ],
+  "restoredPublicationFiles": [
+    {
+      "relative": ".obsidian/app.json",
+      "gitBlob": "0b0dc425339fba9d24925b97058e6360f427ebac",
+      "sha256": "2ca5f89a43f5bd6e8ea6fc9c85f841da87642fbcf97f4462e53dd0bbda5f373a"
+    },
+    {
+      "relative": ".obsidian/appearance.json",
+      "gitBlob": "1384130834a59983f171772cd3ddf38c53c73d2e",
+      "sha256": "b5a92081906f1156588599f288276e42cc380381ac5565625b7ae060385b3025"
+    },
+    {
+      "relative": ".obsidian/core-plugins.json",
+      "gitBlob": "f8322f7a54baf1e39914214eb226e46f7d911f19",
+      "sha256": "5373b1000fc058e5079b06c8c9183fbbd30d8281e4a62190f7865ff954807fca"
+    },
+    {
+      "relative": "00_HOME/AI Handoff - TITAN LOCK Context.md",
+      "gitBlob": "548e7a873d8d8e561a8f466a8f8563446ca6844d",
+      "sha256": "8a94ce3d1ff9345be55e56cb9b0c45f8d3c0bf85c17395fdd393ce0a274e5173"
+    },
+    {
+      "relative": "00_HOME/Current Operating Snapshot.md",
+      "gitBlob": "50792c0a6017ef61209f6347b53b4511c7a1c6d0",
+      "sha256": "9de17d62dbbc97374ee665720d38be3c08b4a37da0d4faf4609679c3cb4c7882"
+    },
+    {
+      "relative": "00_HOME/Home.md",
+      "gitBlob": "f39a322995df469dde32c9b9ca9fb8ebc4e36160",
+      "sha256": "ff8aaf3fd677234dad504cf79b950b2dab3a60110eab6b25ceabcfc8b0a9e482"
+    },
+    {
+      "relative": "01_GOVERNANCE/Authority Hierarchy.md",
+      "gitBlob": "ee85e23b804472a3b6236588698476997d73edeb",
+      "sha256": "ec19fe7985134bad7254109cfa806b3cb545b64791ddcc6981109d290d39b23a"
+    },
+    {
+      "relative": "01_GOVERNANCE/Certification and Release Controls.md",
+      "gitBlob": "a7de6c390810c78537c5e099a4cdd5dcbbe52532",
+      "sha256": "f6d16772ab1f5379522f9581dafdfdfc508f41cba838afe2280d028395135d46"
+    },
+    {
+      "relative": "01_GOVERNANCE/Enterprise Canon - 44 Domain Overview.md",
+      "gitBlob": "92b13b5d74a8b5d10390b6d0d962502b4cb22982",
+      "sha256": "81df4af7a0a3a48fa4fcf4aae90a48b8aff32883fe80138088d73c5de21ad44b"
+    },
+    {
+      "relative": "01_GOVERNANCE/Frozen Reference Non-Mutation.md",
+      "gitBlob": "9cf35878c689e6df5c321cf3d0156fead329c7d7",
+      "sha256": "fff15ecbade8148924c224921363841d273d9dac802a14821f6f549e9cfb8a1e"
+    },
+    {
+      "relative": "01_GOVERNANCE/Roadmap - Locked Sequence.md",
+      "gitBlob": "eb8089dc88d71768f9a1f58737a1161f1d5a83dd",
+      "sha256": "0f5d439308f0c94bda128360953d20cf412b6c2ebc09250ab9fb29c892a54ce9"
+    },
+    {
+      "relative": "01_GOVERNANCE/TITAN LOCK - Master Governance.md",
+      "gitBlob": "2de14fb80e78c76cad90bcf04ce3c20a1e3d8469",
+      "sha256": "dbc353dd44fde07613ec2f84b50ed6fe5b27639dafe2053608812030726a6ca5"
+    },
+    {
+      "relative": "02_BUSINESS/Brand Visual System.md",
+      "gitBlob": "ef9b73e8f1ef0a819ad4793d9bbd4bf249a03213",
+      "sha256": "6cfdb88be8687e2b7a81143b194ea2e96ff0d9536bf653818576c63d03ceb60b"
+    },
+    {
+      "relative": "02_BUSINESS/Business MOC.md",
+      "gitBlob": "570928fa34be0d41af530fca681120f7a9a35c8d",
+      "sha256": "e5f4462099a7405139090fc68252d7da828f788e5c0c89e179fc87aac40fc6f7"
+    },
+    {
+      "relative": "02_BUSINESS/Business Model and Channels.md",
+      "gitBlob": "72f4b08a9361601ff37c48b793e6c11a0aaa2866",
+      "sha256": "8b02c2844e95173bafbae5915c8de42a726adfe67fa203f57c51f79c9d00e5a5"
+    },
+    {
+      "relative": "02_BUSINESS/Company and Brand Profile.md",
+      "gitBlob": "efc878538d52034aee90f4fcf61e0e5c3c5335da",
+      "sha256": "f81749a2ce7094f62fcda5bd7df686f767bca27a1e5fa52d8d364cad882f3332"
+    },
+    {
+      "relative": "02_BUSINESS/Corporate and Retailer Business.md",
+      "gitBlob": "1aad6d0a5f30c93c91deec7bb8780b07ff7b42e7",
+      "sha256": "6652dd97bbbfcf04286acfe7a78d15eee0077cc7553d9021742535fb38074b0b"
+    },
+    {
+      "relative": "02_BUSINESS/Customer Segments and Gifting Occasions.md",
+      "gitBlob": "9147a5255b1850c20c73e86997a18d5653e51c1d",
+      "sha256": "f3d06f1fcd433049f695eb140b140251eabc4010a4eda76752beb5d10d7b81b6"
+    },
+    {
+      "relative": "02_BUSINESS/Economics and Commercial Notes.md",
+      "gitBlob": "1f5740def2d8065439b954001337cb3197bd2b67",
+      "sha256": "d62de59502cd2c3ad2f65a7e386ac79957ddad87b1b3e868d588d8a80985039c"
+    },
+    {
+      "relative": "03_PRODUCTS/Acrylic LED Lamps.md",
+      "gitBlob": "47210fc0fe60b226f67358f0acd945708cf9a784",
+      "sha256": "a37ea0a8e15cbd3f5af0ab636ae003ba0e3751848d49da56405256abde94cab0"
+    },
+    {
+      "relative": "03_PRODUCTS/Baby 12 Months Milestone Clock.md",
+      "gitBlob": "2d5e0b0effd6b8c6f31eddf0acd7ae562591abf6",
+      "sha256": "6f890f5c8ae3a04ded1821c4c39455cf5b6f435de032573612f607d27f56b9d0"
+    },
+    {
+      "relative": "03_PRODUCTS/Couple Wedding and Anniversary Products.md",
+      "gitBlob": "c044bd3f133712432fb893b637923748974f613f",
+      "sha256": "19a63987ac0419d67da85d7ef8b630c2fa2c6726aecd63e6b2ad78d4fab899b5"
+    },
+    {
+      "relative": "03_PRODUCTS/Keychains and Small Keepsakes.md",
+      "gitBlob": "8b54422837333f1d0fd351f24da9af45677f7767",
+      "sha256": "559fe8b463bec85f1815534bd0bc8dcd4ac46203aa8521cab1a46c69d6a7ba84"
+    },
+    {
+      "relative": "03_PRODUCTS/Personalized Product Asset Privacy Standard.md",
+      "gitBlob": "09d2136525aafe228768cafabbfefc6fca70175e",
+      "sha256": "3278e0777431fe048cba960bbc26689c5fdeaa6dc47c3893340fb92eec7208bb"
+    },
+    {
+      "relative": "03_PRODUCTS/Product MOC.md",
+      "gitBlob": "be3d8efbeb1d61da5f2b489f2f9283cb3e2b0b26",
+      "sha256": "a6dbad9f6a34c0d63b9eb26b5926a58c9309a6ea28bdacf79d3fdcd0eb890a8b"
+    },
+    {
+      "relative": "03_PRODUCTS/Product Portfolio.md",
+      "gitBlob": "9483d1ccb09e1e6a86b848fcec73397ac5348121",
+      "sha256": "948b33aa72265d420fd90f1ed5089c2e6c8cc92155b29230f28871cb6ed7d756"
+    },
+    {
+      "relative": "03_PRODUCTS/Rakhi Hamper.md",
+      "gitBlob": "bbd4b10396d193689976a93414973cedcf57f8dd",
+      "sha256": "424b0b99ff8baca6ce408949a4651a4df50deaba4f092abca42bc8d6d5b6c8dc"
+    },
+    {
+      "relative": "03_PRODUCTS/Wooden Engraved Photo Frames.md",
+      "gitBlob": "a7f0a09102e5135a59d757416845e3532ea21617",
+      "sha256": "18444b6450e624f6b704ade3c40e0ff01fbca9c3e4af978d07b8df9070113a73"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Amazon Flipkart and Marketplaces.md",
+      "gitBlob": "65a2fc39c5e72843d2aa837c90a9189b9e4107d4",
+      "sha256": "c53af26b1f36a4d664e811809ff72a8d1ee9a8f30efc12a130dc18bb2961d754"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Checkout and Partial COD.md",
+      "gitBlob": "82da2a609e7e17dae4a7151ac7f015d65587aa30",
+      "sha256": "c924188b86c6ece68f1379d7d9469543c13ce608996dd12c042336e9aa75a697"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Commerce and Marketing MOC.md",
+      "gitBlob": "fce067f7d99fdd661ebcdf1e3498b0844728c4f5",
+      "sha256": "332e98c55d0d70889a40416754b645b4ab7008551738201fde53979fb6441058"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Customer Email Templates.md",
+      "gitBlob": "eb43c0cf709acb5a4909331c3e3ba1dfad0711e9",
+      "sha256": "f900de8a5094207488ad6644696791f2d9e05323935e15c1f7fd50f90965acfb"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Flipkart Personalized Returns Problem.md",
+      "gitBlob": "83707ea6d06841f214218973271277f9d4250afb",
+      "sha256": "341b52e740a87280c313808573a991b140f872026c6c0c242be2cad6bc5e28b7"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Meta Ads and Creative Strategy.md",
+      "gitBlob": "e171f46d86366fd10dbad3ea681aea9be16dfc59",
+      "sha256": "bbdbaaa0877171aefc5442a1933990dcb23b853762fc937ea0e6f04a8334d705"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Rakhi Campaign - Aug 2026.md",
+      "gitBlob": "8e5e91e7dee373f22b3b04783e420341a6163a4c",
+      "sha256": "6ee5f2ab005f16a9ee28877e429c0fa1e7308492e19ec5ecd5588dd449123911"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/SEO Content and Policy Pages.md",
+      "gitBlob": "f119fbbfad1fa1727075b1ecd9bcc6855c33b24e",
+      "sha256": "3e9d34855b9a8828ea4ffbcc0890fcdaf6277a6360f3ee90e2e5daf91b75d090"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/Shopify Store.md",
+      "gitBlob": "73a8c7d0428be9f5357919cd12d2bac9a3b7ef11",
+      "sha256": "aecc6d03722ee07d9e636247ce2674d17fe08ccbc46100ee8930dfe13fa8e977"
+    },
+    {
+      "relative": "04_COMMERCE_MARKETING/WhatsApp AI Automation.md",
+      "gitBlob": "4bf4a08dcdbe5ade956daf91dc6d0aa729e39c29",
+      "sha256": "78e8052333aefb1f0e6bea13e91a1bd61d6885338e42e3128fab53f375b058b2"
+    },
+    {
+      "relative": "05_OPERATIONS/Customer Success.md",
+      "gitBlob": "f5984a707d31be0e42afd561966860921b2bdbd5",
+      "sha256": "690bc590fa861392cd8301f0cdabc29f3c4a6c810c12b92c328b34dc9d64410a"
+    },
+    {
+      "relative": "05_OPERATIONS/Finance and Margin Control.md",
+      "gitBlob": "9517112c0fed9523f6c601232305d14c1859a579",
+      "sha256": "76aba46f4495824ddb5b1e114f228bf61331f28b6d56eb8e416f7b37f8cfb04b"
+    },
+    {
+      "relative": "05_OPERATIONS/Inventory and Procurement.md",
+      "gitBlob": "35129a4e19a5ebc450af089a7f3c03811ea54eee",
+      "sha256": "1bca2efe60366c1cfa7bc5f2be49c63cbdac037c6c46f85546ecfa6c66240c67"
+    },
+    {
+      "relative": "05_OPERATIONS/Marketplace Operations.md",
+      "gitBlob": "5db2af5befc89d6ee32882a4715b5117c96a0d7b",
+      "sha256": "e934df477d657908a23cb1377ea708bcf7e0f27cd57c6f9ba47938331addba32"
+    },
+    {
+      "relative": "05_OPERATIONS/Operations MOC.md",
+      "gitBlob": "b94f216e5272fe1a9b70232c24403281b2e3d46a",
+      "sha256": "64d7b5a53dbda94d0d1b7aea3c5e07c68daec997ffe639ef4f77cdfb49025013"
+    },
+    {
+      "relative": "05_OPERATIONS/Order to Delivery Lifecycle.md",
+      "gitBlob": "e393ea42c77c43d74375c0a97436e4786c5b7bca",
+      "sha256": "bd9f786557d98ee8a4b3f7bc82d636edca270969fd6bd8e9bbe37ba4d228892b"
+    },
+    {
+      "relative": "05_OPERATIONS/Personalization Intake and Digital Assets.md",
+      "gitBlob": "d5df8d085cb9cf28a292e7d905eb25b4b87d1ccc",
+      "sha256": "60aa5e477e4d89244864e7215e877c9a04ec6470075467ca22424c38a9834d9f"
+    },
+    {
+      "relative": "05_OPERATIONS/Production.md",
+      "gitBlob": "66058c13fd1c1b254e27b16c9c9badce75645a19",
+      "sha256": "651e0d70349f650e2f7a38fed919c03d5043c69c7db9f1bd5e06bf0eaef2a3fa"
+    },
+    {
+      "relative": "05_OPERATIONS/Shipping and Returns.md",
+      "gitBlob": "d5abad9762ebab106ce22b5421e213e0daf51f2e",
+      "sha256": "fb33606a03e82c3bae15ba0f3d3f8333fe9a4ea9cab27009d83ae24b3be05217"
+    },
+    {
+      "relative": "06_PEOPLE/Customer Success Executive - Hiring.md",
+      "gitBlob": "cda7b26076ef8f8b06c21a709d0bbcadd9d48a92",
+      "sha256": "b57e3c96755717610a184c5cb69d3c1560e47a39526169d597674255596235c0"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/00_MOC/GiftHatkeOS MOC.md",
+      "gitBlob": "0a64c7f2a563e7202d2f08bee71c6a1a11e2ba86",
+      "sha256": "eef7464ac6b8518e2f33bc1eaa9f7206ff24ab9dc18ebdaadbaed05dfbc7edfb"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/01_ARCHITECTURE/Runtime Independent Platform.md",
+      "gitBlob": "e5491dc17d1e4f6832e968d0fafe929bd1b5ee80",
+      "sha256": "d6fc9b9ccf926527f4622b93a5f95bbacb74f9e55fef24285c9b8fb6108b7b7b"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/01_ARCHITECTURE/Security and RBAC.md",
+      "gitBlob": "5bf6dfa23046f787198ce072a9585d7b7c1ba674",
+      "sha256": "366a8f5bf6b14b400fd9c48d7dd7e476a4fdf6e37cbc184b870b78e8b35a3a73"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/01_ARCHITECTURE/Standalone Production Architecture.md",
+      "gitBlob": "4e9d1b9901b461ed4682ca8fc3cd3230cd9ea4b6",
+      "sha256": "b8326a0703598c7f9714400ae1188cd8bbe57420afb01f3929d4ec34844a3656"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/02_APPS_SCRIPT_REFERENCE/Apps Script V1 Reference.md",
+      "gitBlob": "e52b94e033baea30acd17e9b32023c5f28c74912",
+      "sha256": "961ede4aada432d062c8a3e809f92e6cd088c0b5d2fea8939db86e38ac1eb425"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/02_APPS_SCRIPT_REFERENCE/V1 Permanent Reference Freeze.md",
+      "gitBlob": "b4a44c2f4414c0a1cb033a8bc59ddde23982bc19",
+      "sha256": "8bb04d4f1bcf6374e9e7c4b6018c393a7d1073e444179f94cfa4c6ef5ddec962"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/03_ERP_HISTORY/ERP Evolution Summary.md",
+      "gitBlob": "f17342c282650f1e00623fd7f26efb502163acd5",
+      "sha256": "cce7e77506c49f6ce763633d03400e206b2c631a3908e6267419c283d4c83002"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/03_ERP_HISTORY/ERP7.md",
+      "gitBlob": "102f58b66baa438bceec6bd080bc500036c97aab",
+      "sha256": "ef35d626aa061cd8ca0be2f3c99be3bf3c78338c935e65cc716f9696808a800e"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/03_ERP_HISTORY/ERP8.md",
+      "gitBlob": "f74e4c4c622425b2eef9e0c898afb13035549347",
+      "sha256": "313e9f33e261bcda81922b5eea0fab78b423eb82b78576d875923be440cd288c"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/04_GLP1_GO_LIVE/GLP1 Programme.md",
+      "gitBlob": "70befbae44005a26c1f6f11ae44fa31d9e386430",
+      "sha256": "1bd3836160d9b3282aaf2ed1de98f53d1ef63d2b7bb06bfa7fab2869be5a46f6"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/04_GLP1_GO_LIVE/Production Deployment History.md",
+      "gitBlob": "841d050fa426d854620836b00a0ca232336f158f",
+      "sha256": "a67b801b35f38db997f20ef6523937f3acfffa626fdb23f4b22bd3fcf259f7a1"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/CRM Production Parity Certification.md",
+      "gitBlob": "a1f5bfbd49d8f1540e01369b3f50973f9a309c5c",
+      "sha256": "d88c0065ea82210e76871f6a1479ddc4ffbeb20f7717ecac3d9a8ace8f10048e"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Customers Production Parity.md",
+      "gitBlob": "0c41d244f2e4db1ada536ebb51acd502b6a7861d",
+      "sha256": "31125dbefd59fa8b14357fa0547705c61d4eaa1caa47a1965c21eedcdb4c67ca"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Dashboard Wave 1.1.md",
+      "gitBlob": "01bd2012921ee7b7924a5e4fac89049194c74728",
+      "sha256": "ce2abbd6195ade95eab7838fb314461e11d5dd42c1a1c6ee1339135a93d2f69a"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Finance S1E Scope Lock.md",
+      "gitBlob": "8fb2bff33a95a8efe11aa951715a394cfba1c51c",
+      "sha256": "ad5c9975cedeb77e7275c895025aba5c509e8246ff84885e8a29269ccb0937e6"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Finance SMP1 Implementation Reconciliation.md",
+      "gitBlob": "4dd92926a436cd34b08c435a5bc90274fac46848",
+      "sha256": "7f2322a92a99924e21051c6ff5f47e769ce1709c0fc066ca57b4e63bf8d08f0f"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Production Parity Programme.md",
+      "gitBlob": "1f98aaa4560bd6248acb82d502e173e2774842b3",
+      "sha256": "72aff64861ff9099bc51983c5a9cda60abe439b12ccee7501a72f86889ca9dc0"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/Reports SMP1 Scope Lock.md",
+      "gitBlob": "a07c1efe42de0946d4b46308e5e430346dae97d3",
+      "sha256": "59a0cc2ad09774e7ce6aa74b9022a0ce688e6ab25e9214b2b4e1b82d6a87b3f2"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/SMP1 Programme.md",
+      "gitBlob": "19e9fc00e1f98c0f09394b438d1c84c83ceaae1e",
+      "sha256": "e2f7dae8eadc8a866e3bee02fdc27c219ab9a8d13f2ec09d147cc03dc0b59678"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/SMP1 Reconciliation 2026-09-10.md",
+      "gitBlob": "bd2d64d85a8a1d9c551530521fd6759aba74eed6",
+      "sha256": "d3a55f305b6e48197d686d50f0ed281b54500c99da656d92d3ab528512979e1c"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/05_SMP1_STANDALONE/SMP1 Stage 2 Pack History.md",
+      "gitBlob": "28fb1fd105da6377b76f685757cd7019a6b5ae6b",
+      "sha256": "e8ea6fd8c4726129c826feeb06f6b7e65b6efb29b261697cfc4bd72f322fdd64"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/CRM.md",
+      "gitBlob": "edf5ee1f0e913805294f5bd2412b07e403b4c780",
+      "sha256": "8b07a3d8acbafb2ab6b2302ed50682c0a3f1fcf343382858445528df56d69c46"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Customers.md",
+      "gitBlob": "afa4c2941aedaf9b82c0bf1433784716a868b583",
+      "sha256": "43855c78715ea964b76f7fdcba8e0c817be73d23a2e851f2b90da776f267175e"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Dashboard.md",
+      "gitBlob": "9414c836aeb37011f00522fa8a5f5e97aa232dc7",
+      "sha256": "b597f524995246f09f6b669d26ceb84a0ee9d2ed8d4ee600227aa32c429072f1"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Finance.md",
+      "gitBlob": "5442ad9c3bbf161a4db7893fdd26f8c0cf7ba606",
+      "sha256": "cfd4409729da042232352ca076c420486ee4a6fdcfaa7b4e5ca6225368da2cee"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Inventory.md",
+      "gitBlob": "6ea9c55cceffb8ba861f6986700090ae5571efb4",
+      "sha256": "8556340f82fa7e9574d6b6b960523d935d5bcbbeee9337a66e85fcee67bd222f"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Orders.md",
+      "gitBlob": "9cf63bb56d6c68fd9871b88b42825cbf41855948",
+      "sha256": "e17c51783e4ba7804f8b5f17fbdb8203ae24cc210c1e921281937ddfc8c81588"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Procurement.md",
+      "gitBlob": "dac205c7905938bcf3f664fb953a05ca68ee3b26",
+      "sha256": "8c85653468c3fa7319dcfb786c1069577ac2c4309118cb4d5b6fe4a38c23cb68"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Production.md",
+      "gitBlob": "b2ba8a1ba87b8908265bbfc047cb1f514d8ebdbf",
+      "sha256": "32c81166a2deeefdc5a65f083cb83239901ba1926c7e929799e7b1833046921a"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Retailer Reseller Partner Dashboard.md",
+      "gitBlob": "2d4393d64e63e5b7f2195fcca936f7773367d2d7",
+      "sha256": "c76ae6799682176720e30a7c0e03c94c5b700d51b760a8d31d3f063a73e11840"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Settings.md",
+      "gitBlob": "51726739d8162388baed7483bcd6b862fb4236f2",
+      "sha256": "6433bd10a55cf59b6f442edda3519d174e25ee5830831330e139f7cc14d13909"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Shipping.md",
+      "gitBlob": "9ed1d960f71e44a325412fca5ca48c619fde723d",
+      "sha256": "e5d9813dff423f0ce9eb6e025629770d81711e0420b6b5467c6d3fcd8568d6bf"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/06_MODULES/Users Roles and Permissions.md",
+      "gitBlob": "59deeb2d8517d806f075f372b0e92c7a1527b5d5",
+      "sha256": "3cd71b210343dcb404a2e9c4b074ba19cc2efc681d463427ef5ca8e91690cb0e"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/07_INCIDENTS/Executive Dashboard PH1 Incident.md",
+      "gitBlob": "d92b52b19e78f4514d4eebee18f29b55d38ac989",
+      "sha256": "b4972b43b3f3c322566ba83ffe814a42ae1127f4ba3566d8b84b77646209767f"
+    },
+    {
+      "relative": "07_GIFTHATKEOS/07_INCIDENTS/Standalone Google OAuth Origin Incident.md",
+      "gitBlob": "a8572737f5222af90c85e51a5d68134508483286",
+      "sha256": "044393746b8759279a149972ee4a156b16ab0d01c98745a22034e4bdd9a848de"
+    },
+    {
+      "relative": "08_KNOWLEDGE_BASE/Knowledge Base Charter.md",
+      "gitBlob": "de8796b191094dd1ed333a3d314809e4041d1693",
+      "sha256": "6438109bcf331958b6e993cc41c49f57b3f1643cc032934a293d1ae7e43f840d"
+    },
+    {
+      "relative": "08_KNOWLEDGE_BASE/Recommended Documentation Architecture.md",
+      "gitBlob": "9c904834d4c022a534c56c4635668cd967e8ba0e",
+      "sha256": "cf689bea578e897a496232c183ed3715685d9fa84b72c4ee6ba3352c25039459"
+    },
+    {
+      "relative": "09_TIMELINE/Gift Hatke Timeline.md",
+      "gitBlob": "c5fbb2e8f1ddccae0f93b156f7716bf968369576",
+      "sha256": "1a084f1fe826a4d412adb58b8aeff19012364e0800304ad8eee71546b96abe96"
+    },
+    {
+      "relative": "10_REGISTERS/Branches Commits Tags and Certifications.md",
+      "gitBlob": "8c68c2f715b4a2047fe6553c4921d7074535f065",
+      "sha256": "d523afe4aa2c7f314d284691f75156f3c3019dceb23548517fe6275b2be47ddd"
+    },
+    {
+      "relative": "10_REGISTERS/Decision Register.md",
+      "gitBlob": "9bcac04894a46707919e61ad18421f9685a6dee2",
+      "sha256": "cc0c156f734c1a536274a903a5c2e5d03d048b684beb69bc35671642bb7c482f"
+    },
+    {
+      "relative": "10_REGISTERS/Key URLs and Paths.md",
+      "gitBlob": "4d7cbba33f5314f73a5d1a75e50883ac00609753",
+      "sha256": "48a3c7d83b5dbd3e77ef9ee69a39d9c4186c651b65a8686c9d4bbfee29e76935"
+    },
+    {
+      "relative": "10_REGISTERS/Open Issues Risks and Unknowns.md",
+      "gitBlob": "70739ac574dfe0d3e99d13d34cc2f93ee359b813",
+      "sha256": "d868d381eeda3336454e2240c2c08158bc744c664e28604931323698de785259"
+    },
+    {
+      "relative": "10_REGISTERS/Production Environments and Deployments.md",
+      "gitBlob": "cce93e3d9c9708caecc47220e4399a6910ea8130",
+      "sha256": "2c09bc36f02d6622cb280c04ad8234d57ee33132e77bcac3073d51a2837beed8"
+    },
+    {
+      "relative": "10_REGISTERS/SMP1 Shipping S3A.9 Final Certification.md",
+      "gitBlob": "93bc6239a6a8014c481d22d28777e5b878d5531a",
+      "sha256": "8cc3fcd9321cd4c98d7d01862fa9b2bb9102a79afe37cdbe90684a90e5355f6f"
+    },
+    {
+      "relative": "10_REGISTERS/Terminology and Acronyms.md",
+      "gitBlob": "443e353d98e44b3033795220e943a6a463b177ff",
+      "sha256": "cf85558e950d5da522801af4708ada3f6b32069b5b9f2b9009689767f4173c98"
+    },
+    {
+      "relative": "90_TEMPLATES/Certification Template.md",
+      "gitBlob": "b9cab08dd7222a97fc3bc4a3734bf125683573bf",
+      "sha256": "699678c378bfbe6dccafe9a6aa9934095d786fb8c331faca766b7e733068b89a"
+    },
+    {
+      "relative": "90_TEMPLATES/Decision Template.md",
+      "gitBlob": "c2b1eaf0c08245211389faf5100c42647490adcf",
+      "sha256": "69902d424a426f6a5ed00d7cc181c722213c38f803edb2b04ace24348d7defc8"
+    },
+    {
+      "relative": "90_TEMPLATES/Incident Template.md",
+      "gitBlob": "d9e3fc65be7b22639a7f2005863061444f63e61e",
+      "sha256": "6175f7758f746c0965edc80c9fabf658c2bd24f37fbe52ccc1c71c80fc075432"
+    },
+    {
+      "relative": "90_TEMPLATES/Product Template.md",
+      "gitBlob": "9270e76b90e24595bfe942b474a234340d4ace89",
+      "sha256": "5e2ca4245a2315c3556a684f1ad41cde1efe3906e721d3d4d4b695188806935d"
+    },
+    {
+      "relative": "90_TEMPLATES/SOP Template.md",
+      "gitBlob": "63f97d669646bc1deca051fc49dd3b8466334928",
+      "sha256": "e1d8a5614baf59f3f88dae8260b67d7cf645f0732d550fe6602cc69f64f150ee"
+    },
+    {
+      "relative": "99_META/Missing Authoritative Artifacts to Import.md",
+      "gitBlob": "de51e360d51536bd71a35eb84ea750bb4f1b7f01",
+      "sha256": "dd05b5c4fd46ce21f2cd04580579c0ea651a7d1b4d62e390bb99ff747de884b4"
+    },
+    {
+      "relative": "99_META/Status and Evidence Model.md",
+      "gitBlob": "48808bedf9f4c310c0d834af5805e7d20a5a6be8",
+      "sha256": "e6f839739c834871c52d33d275ea0d5532e17f24fad0ac581c1280637b8d9e2b"
+    },
+    {
+      "relative": "99_META/Vault Maintenance Rules.md",
+      "gitBlob": "b4eae0674e96ec9824cc09eaffa0af4f1ba0f07c",
+      "sha256": "b027c7f87b30e42f184ed64b8dd7d8091ec7eae197415b479d02ca0fed11cfd4"
+    },
+    {
+      "relative": "99_META/Vault Manifest.md",
+      "gitBlob": "94a71f792ac7bd120c1fbeab412182639127a552",
+      "sha256": "a78bc5ee1ee7220e74bcd382d1b5ecbc0ea6ed9a2a5a2d645b1b29e0b16bff0a"
+    },
+    {
+      "relative": "README_FIRST.md",
+      "gitBlob": "5e86aa89d9d16e5c3c3ca0b677a9d1a02510da75",
+      "sha256": "8591740110cbfcee05da2d60de4f174dae63f4b9e28fc29b4e9ad28ca021eea8"
+    },
+    {
+      "relative": "Reports SMP1 Scope Lock.md",
+      "gitBlob": "626d104c8e845ec76153b2f9e99448c080579c61",
+      "sha256": "4f74ccf49e2fff39b91e44f2fbbac3f686f5aaf76e979de9dc709df30982e482"
+    },
+    {
+      "relative": "SMP1 Canon Recovery and Final Reconciliation.md",
+      "gitBlob": "fef555bca6d596b5bcdfa804525f20e3a6e9df7f",
+      "sha256": "89595e66c31dd7d89b31c734df2c59bed34931fdd5e6c2beed48ee9f06a0bee9"
+    },
+    {
+      "relative": "SMP1 Overall Production Parity Gap Analysis.md",
+      "gitBlob": "06eee57618f9b65fdaadf8cd4f3c1f0ff0d768f2",
+      "sha256": "d9cc8fc565cb7d9ffbaab6cca79c2fa473d0baa9c308c346f90857a02aad637a"
+    },
+    {
+      "relative": "Settings SMP1 Application and Transport.md",
+      "gitBlob": "87c8d672784e465db5c3c957193f57f00b089aff",
+      "sha256": "b532c72540e4ce277e8c746a503754c8d47700b9c4dee136fbfa82086a2a4327"
+    },
+    {
+      "relative": "Settings SMP1 Certification and Closure.md",
+      "gitBlob": "6dd34c7916e9d60bb14eae5bed675c33c374b9dd",
+      "sha256": "738efe31d519a7a68837e80255112aac83e5ce544da2c5ab932bc32bd458bfcf"
+    },
+    {
+      "relative": "Settings SMP1 Core Persistence.md",
+      "gitBlob": "07ce2b4d3d0ee998e2dfb84db60d3c0202a9f73e",
+      "sha256": "6c5d9e3be07cfef61b04ad8bc8f8de385e6f6fa335a64cf2d99ce05b130b1c01"
+    },
+    {
+      "relative": "Settings SMP1 Deployment Exact-Scope Gate.md",
+      "gitBlob": "104cc92d4645088b7bb6ad8137d78b9618accbd3",
+      "sha256": "f5e8de64215c62269ebde740c159ea96d115f331735604391bdcc4b183431076"
+    },
+    {
+      "relative": "Settings SMP1 Domain Contracts and Ports.md",
+      "gitBlob": "d1b9f966f0673e8871f6173234b466a57eb4ea0d",
+      "sha256": "8411da798f4b22dbfdf8f8d52e9408166929df88381709f5a8342cca13eb867a"
+    },
+    {
+      "relative": "Settings SMP1 ERP8.5 Tax Finance Wave.md",
+      "gitBlob": "427c03017704b29dcb2b9ef9136865bc723960e3",
+      "sha256": "be51871716b7883854ea0a8048008085546bdb3c2951f212a5bdcd49a63bee4c"
+    },
+    {
+      "relative": "Settings SMP1 ERP8.7 Production Configuration Wave.md",
+      "gitBlob": "f12d98738e154449f559ad231392dc59357a97b0",
+      "sha256": "e9bfc5427daec50102155be75481dd4885ce42a6c6df387319d727c5df1e5d2d"
+    },
+    {
+      "relative": "Settings SMP1 ERP8.8 Inventory Procurement Wave.md",
+      "gitBlob": "c01dd0a2101acb195b05d5ca1251d744909922e0",
+      "sha256": "cdcf143320f6f6eb8cf06a0eee461a3d465675481140d633ac2d530f24dd55e4"
+    },
+    {
+      "relative": "Settings SMP1 ERP8.9 Notification Communication Wave.md",
+      "gitBlob": "83dc77f0c76e4054674d4d8f54c3ed59b462d5af",
+      "sha256": "b581b4b72c7c14b19dbaadc5ef4a0e6e00b691b2afc7896298d9ac605150673c"
+    },
+    {
+      "relative": "Settings SMP1 Family Behaviour Gap.md",
+      "gitBlob": "7d60ea97a6ffc9167a4da821ff1e4d529f74c783",
+      "sha256": "8da33f8a4ff75c554fc0ed4f79322497cf7e28d2ceb8e3734bccff3f41e4b328"
+    },
+    {
+      "relative": "Settings SMP1 Family Persistence.md",
+      "gitBlob": "0acaec9e3a39f6ef76ea20118af0e46a3ee25938",
+      "sha256": "fa039ea22708fbe0f8466673e23fb645ea1ec929ee5d3829baec0ae2afb45989"
+    },
+    {
+      "relative": "Settings SMP1 Family Wave Company Organization Sequences.md",
+      "gitBlob": "8929db7460d63c3ee5bc448b27869a07e505467f",
+      "sha256": "157b6c8ab42e3eb8baa2df95a7605e1ca52ca6d0cbe09bbf81d7708fe821621e"
+    },
+    {
+      "relative": "Settings SMP1 Frozen Workspace UI.md",
+      "gitBlob": "928a5e33f404b8ce08bd00412ece8e290f7412b4",
+      "sha256": "d6d88aaa1e848092beabd5d98cce1865055464c6a03f7c57d3ec56f8c7ed0e10"
+    },
+    {
+      "relative": "Settings SMP1 Live Privilege Remediation Gate.md",
+      "gitBlob": "a9f7660bec48d50786c650424363c1ad3ea446cf",
+      "sha256": "c7fd9617cb87ce42d60414e18f4ccaca4410f1e9d4da93fb69e357a3f7d14d22"
+    },
+    {
+      "relative": "Settings SMP1 Live Privilege Remediation Validation.md",
+      "gitBlob": "c37568966a9f61801ce91c8cfa925de6605ed0ed",
+      "sha256": "3169f301daabc557c9256f181d9d69a46272167347cce9e13e600493d5b470df"
+    },
+    {
+      "relative": "Settings SMP1 Marketplace Wave.md",
+      "gitBlob": "a57becfffb0a65a6ccbf0fd270b0d5da53f962f6",
+      "sha256": "82a5487c0b1b6cda6508160825306270907f1b53a568d1e6e731c27a807671a9"
+    },
+    {
+      "relative": "Settings SMP1 Migration Necessity Gate.md",
+      "gitBlob": "42bc8ac03dd3299a9382e520eafd809cb713442d",
+      "sha256": "cece7c3d50e00bb08a65959651fec268ba344757cb5c114274d67203e5262233"
+    },
+    {
+      "relative": "Settings SMP1 Repository Regression Gate.md",
+      "gitBlob": "4f5de2a0ddf3813ea2c012315885545ae43e45d6",
+      "sha256": "9fbc2374a98ef16538da65ce6577a13c1237e608c72a0051c13ca55ae6ae8a75"
+    },
+    {
+      "relative": "Settings SMP1 Scope Lock.md",
+      "gitBlob": "c36d1c389169d472ca3e2cea0a909f9068ec826e",
+      "sha256": "16d8345be919b532feec193b52c820cbe4cefb0f2246ad59b5e6620766610250"
+    },
+    {
+      "relative": "Settings SMP1 Sensitive Provider Disposition.md",
+      "gitBlob": "fa873b0f4867583beb2ea4243efd41f5a0592fc2",
+      "sha256": "bd8c85d3e41c8339ae944ac9a52a6730c20cf37da85774e4bbedea9e61a94557"
+    },
+    {
+      "relative": "User Management SMP1 Build Contract Reconciliation.md",
+      "gitBlob": "a294ae58d7627779cc523a5516a85fff9bff7bd1",
+      "sha256": "f9a0f18c02ffe9da78aed54a47d9ab6869a64ce8b0498dfc93c44f6baff1a52d"
+    },
+    {
+      "relative": "User Management SMP1 Certification and Closure.md",
+      "gitBlob": "dd21b3a62449a0813e8577fa38b67b87cda27412",
+      "sha256": "4a0fc0a5f9d16caf7d2573c32ca7695fdae9202e5c476b6c3b786fdf3bb9f6ce"
+    },
+    {
+      "relative": "User Management SMP1 Deployment Gate.md",
+      "gitBlob": "b257ffb6f53b2b2a953ae62002b5c9e23c7e1be0",
+      "sha256": "e526c0859c5291ad141d68b56a2ac185cf5bf44dc161273a3f92c3b135c2c12c"
+    },
+    {
+      "relative": "User Management SMP1 Deployment Route Reconciliation.md",
+      "gitBlob": "182c25cecda3a39aeef1733cc2d106239dc0cff9",
+      "sha256": "53a3625f7036359a8e71c18e4823eeefbc9e6bd3f86ab74024cffbc48199db42"
+    },
+    {
+      "relative": "User Management SMP1 Implementation Milestone.md",
+      "gitBlob": "c44cd56bcbefa6f6a15487488914bbe50099fed5",
+      "sha256": "a270ca1c74a0362076b7944c6c97f47940f76327d8c5cd7c4207a793e650dc8a"
+    },
+    {
+      "relative": "User Management SMP1 Permission and Frozen-Rule Reconciliation.md",
+      "gitBlob": "71d30059414d04f47e804cf4c107588252934024",
+      "sha256": "69802d5e34bb9b51e5f0df15bc908f9cde4977845744b79ea7c7434f4de11d94"
+    },
+    {
+      "relative": "User Management SMP1 Scope Lock.md",
+      "gitBlob": "c3d5313d414512cbd97257c93d1fe2ee54073c98",
+      "sha256": "e61e517fd42119b0e203a29a10de14c165bba8ce231c9b0324cd3108c61d73de"
+    }
+  ],
+  "findingDisposition": "SMP1-GAP-011 remains open. Original active repository remains unchanged, stale, and dirty. No existing finding is resolved by this file restoration.",
+  "runtimeAcceptance": "Not tested or certified by this script",
+  "automaticDeployment": "No deployment settings inspected or changed; no commit or push performed"
+}

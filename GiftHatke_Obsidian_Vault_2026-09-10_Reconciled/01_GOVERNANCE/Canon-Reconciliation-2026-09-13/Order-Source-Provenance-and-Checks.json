@@ -1,0 +1,133 @@
+{
+  "active_ref": "06090ddcd8a68c6be6ef484d43b252547bf5ec55",
+  "frozen_ref": "fd7c754fb1be380e6d3f9b01dd041b97b82f1d87",
+  "sources": [
+    {
+      "path": "docs/certification/PACK_2_8_ORDER_MANAGEMENT_CONTROLLED_CLOSURE.md",
+      "git_blob_sha": "730ea752dec9184d3570cee300742f1a294b4f87",
+      "sha256": "abc94a483a86b0ae787a0083f8addec5c3a579133e3b2f4ccd36035087aab2c2"
+    },
+    {
+      "path": "docs/certification/SMP1_EMPLOYEE_ORDER_MUTATION_WORKSPACE_CERTIFICATION_AND_CONTROLLED_CLOSURE.md",
+      "git_blob_sha": "5cde6896655b63f54fa269f67d3f9acac8baf080",
+      "sha256": "2a6d9ff9c4a2f40c9c0e5ab01ed71bd2ad7078aba223a8a58eb182b130542c76"
+    },
+    {
+      "path": "packages/domain/src/order-ports.ts",
+      "git_blob_sha": "c8c1d0ffd8631480064993ebe16bf74855d385dd",
+      "sha256": "af63901740eebd2a0039fd75b499fad5deb206c5e81a380a99b3304f4762dd81"
+    },
+    {
+      "path": "packages/domain/src/order.ts",
+      "git_blob_sha": "fe4a9fa971537856814bb9a94812e8c9ebb87c6e",
+      "sha256": "b164eca0c7fb614d652df760fbf5d6cbbd02bc294c855a91b3ee1f43b7599ca7"
+    },
+    {
+      "path": "Orders.js",
+      "git_blob_sha": "1f84c3ebcd9b2b78f6040c0516990dc0f542d5ea",
+      "sha256": "4268c9c95cba86c9de75f9cf6b21152bdf9b15200969d4f22137d07a40cf6d09"
+    },
+    {
+      "path": "apps/api/src/order-lookup-source-absence.ts",
+      "git_blob_sha": "a65d23958840a67254f1b8be566bc477f338ac3f",
+      "sha256": "940bec399814a81575b671c8bc0ac459505aa78f18272fd8361608a6529255c8"
+    },
+    {
+      "path": "apps/api/src/server.ts",
+      "git_blob_sha": "be5f2522d8a9b1499060167856004d92aef09de5",
+      "sha256": "641c0b1e5b8cdfe1a36eaf391b6128e2316487ed5a8f1e2dae49befffbfc5a80"
+    }
+  ],
+  "vocabulary_checks": [
+    {
+      "name": "ORDER_STATUSES",
+      "values": [
+        "Draft",
+        "Confirmed",
+        "Waiting for Details",
+        "Ready for Personalization",
+        "Personalization",
+        "Customer Approval",
+        "Ready for Production",
+        "In Production",
+        "Quality Check",
+        "Ready for Packing",
+        "Packed",
+        "Ready to Dispatch",
+        "Dispatched",
+        "Delivered",
+        "On Hold",
+        "Cancelled",
+        "Returned",
+        "Refunded"
+      ],
+      "exact_ordered_match": true
+    },
+    {
+      "name": "ORDER_PAYMENT_STATUSES",
+      "values": [
+        "Pending",
+        "Partial",
+        "Paid",
+        "Refund Pending",
+        "Refunded"
+      ],
+      "exact_ordered_match": true
+    },
+    {
+      "name": "ORDER_PRIORITIES",
+      "values": [
+        "Low",
+        "Medium",
+        "High",
+        "Urgent"
+      ],
+      "exact_ordered_match": true
+    },
+    {
+      "name": "ORDER_CHANNELS",
+      "values": [
+        "WhatsApp",
+        "Instagram",
+        "Meta Ads",
+        "Website",
+        "Direct",
+        "Phone",
+        "Referral",
+        "Amazon",
+        "Flipkart",
+        "Meesho",
+        "Corporate",
+        "Retail Partner",
+        "Other"
+      ],
+      "exact_ordered_match": true
+    },
+    {
+      "name": "ORDER_PERSONALIZATION_STATUSES",
+      "values": [
+        "Not Started",
+        "Details Pending",
+        "Assets Pending",
+        "Ready",
+        "In Design",
+        "Revision",
+        "Approved",
+        "Production File Ready",
+        "Not Required"
+      ],
+      "exact_ordered_match": true
+    },
+    {
+      "name": "ORDER_APPROVAL_STATUSES",
+      "values": [
+        "Not Required",
+        "Not Sent",
+        "Pending",
+        "Changes Requested",
+        "Approved"
+      ],
+      "exact_ordered_match": true
+    }
+  ]
+}
