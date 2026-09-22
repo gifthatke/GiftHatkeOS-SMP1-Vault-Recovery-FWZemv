@@ -60,8 +60,28 @@ This part IS mechanically straightforward given how this system is deployed — 
 
 1. ~~Run an actual restore drill against a Neon branch~~ — **done, 2026-09-21.** See above.
 2. ~~Confirm whether the current Neon plan supports point-in-time recovery/branching, and the actual retention window~~ — **done, 2026-09-21: Free plan, 6 hours, boundary confirmed exactly.**
-3. **Scheduled, 2026-09-21**: rehearse actually promoting a restored branch to production (§2.4) — operator said go; see execution notes below.
+3. ~~Rehearse actually promoting a restored branch to production (§2.4)~~ — **done, 2026-09-22.** See execution notes below.
 4. ~~Fill in §3's decision authority explicitly~~ — **done, 2026-09-21: Hitendra Chug.**
 5. ~~Decide whether the 6-hour recovery window is acceptable~~ — **done, 2026-09-21: accepted as-is.** See §4.
 
-**All corrections from the operator are now in.** The one remaining piece before this procedure can be considered fully trustworthy is the production-cutover rehearsal itself (§2.4) — scheduled, not yet performed as of this update.
+**All items are now closed.** This procedure can be considered fully trustworthy as written, with one correction folded into §2.4 below.
+
+## §2.4 execution notes, 2026-09-22 — the production-cutover rehearsal, performed for real
+
+Executed end-to-end against live production, with the operator (Hitendra Chug) at the controls for every step touching secrets, per §3's decision authority and because Render masks environment variable values — there was no way to read and safely restore the original `DATABASE_URL`/`DATABASE_MIGRATOR_URL` without the operator's own hands on that specific step.
+
+**Sequence actually run:**
+1. Operator suspended `gifthatkeos-standalone-v1-api` in the Render dashboard (confirmed via `erp.gifthatke.in/health` returning "Service Suspended").
+2. A Neon branch (`cutover-drill-2026-09-22`, from `production`, "Branch data and schema" / current moment) was created only after the suspend, so it's a bit-for-bit copy with zero gap — nothing written between suspend and branch creation, because nothing could be.
+3. Operator updated `DATABASE_URL` (pooled) and `DATABASE_MIGRATOR_URL` (direct) to the branch's connection strings, after first saving the original values, then resumed the service.
+4. **First real finding**: after Resume, Neon showed no new activity on the drill branch — `production`'s compute stayed the one showing recent activity. Traced via the Events log: Suspend and Resume are the only two events recorded; no Deploy event fired in between. **Resuming a suspended Render service does not perform a fresh deploy and does not reliably pick up environment variable changes make while it was suspended — it restarts the previous running configuration.** A real incident response that stops here, believing the swap took effect, would keep serving from the old (potentially failed/corrupted) database while believing it had cut over.
+5. Fix: triggered an explicit Manual Deploy → Deploy latest commit (same commit, forced rebuild + fresh container). This time it worked.
+6. Verified genuinely — not just inferred — via Neon's per-branch compute monitoring graph (Postgres → Monitoring → CPU), which shows real `Used` CPU at precise timestamps. A `/health/database` request against `erp.gifthatke.in` was immediately followed by checking Neon's graph at that same timestamp: the drill branch showed live CPU usage (`0.04` vCPUs) at the exact second of the request; `production`'s own graph showed no corresponding new activity in that window. This is a materially stronger check than the branch list's summary "Compute last active" column, which turned out to be a stale/lagging billing-period rollup, not a live indicator — it continued to say `production... now` throughout, even while `production` was demonstrably not being queried. **Don't trust that column for this kind of verification; use the per-branch Monitoring → CPU graph with a timestamp-correlated request instead.**
+7. Reversed cleanly: operator restored the original `DATABASE_URL`/`DATABASE_MIGRATOR_URL` values, another explicit Manual Deploy was triggered (not Resume, having learned the lesson from step 4), and the same timestamp-correlated verification confirmed `production` active again and the drill branch back to idle.
+8. Drill branch deleted. No residue: back to 1 branch, matching the same clean-teardown standard the 2026-09-21 drill set.
+
+**Net result: the mechanism genuinely works, cutover and cutover-back both, with zero data loss** (writes were stopped before the branch was taken, and the original production branch was never written to or otherwise touched at any point during the drill). Total production outage: approximately 24 minutes (9:30 PM suspend to 9:53 PM final live-and-verified redeploy) — longer than a well-drilled real incident should take, entirely because of the Resume-doesn't-redeploy discovery mid-drill; a second attempt, now that this is known, would be faster.
+
+**Correction to step 4 of §2 above**: "updating Render's `DATABASE_URL` and `DATABASE_MIGRATOR_URL` environment variables... then redeploying" was already the right instruction — the gotcha this rehearsal found is specifically that *resuming a suspended service is not the same as redeploying it*, and anyone following §2 in a real incident must trigger an explicit deploy (Manual Deploy → Deploy latest commit, or equivalent), not just bring the service back up, or the cutover silently doesn't happen.
+
+GAP-001's Domain 38 finding (production-cutover-rehearsal gap) is now closed. This procedure has never been more thoroughly verified than it is as of this update.
