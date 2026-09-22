@@ -39,6 +39,8 @@ Items are grouped by whether they block employees using Standalone for real work
 
 **Full scope:** `Order-Attachments-Pre-Handover-Scope-2026-09-15.md`, §1–§6 (original scope) and §7 (implementation record).
 
+**Correction, 2026-09-22:** "✅ IMPLEMENTED" above described the backend only, and stayed that way for six days after PHB-1/PHB-2's own frontend gap was closed (2026-09-21) — no frontend ever called `GET`/`POST /orders/:orderId/attachments`, unlike Finance and Inventory Materials. Found via GAP-001's Domain 1 twelfth pass (vault). See the 2026-09-22 status update below for the frontend closure.
+
 ### 3. PHB-5 — Today's Work / Task & Work Board — ✅ IMPLEMENTED, 2026-09-15 (not yet committed)
 
 **Status update:** authorized and implemented in this session, both halves. Task store (§4.1): `POST /work-tasks`, `/assign`, `/block`, `/unblock`, `/complete`, `DELETE /work-tasks/:taskId` (archive), and `GET /work-tasks`, backed by a new `work_tasks` table and a new `TodaysWork` permission module (`workspace: ["read"]`, `tasks: ALL_ACTIONS`). Aggregator (§4.2): `GET /work-tasks/today`, composing the task store with five already-existing read methods across CRM/Orders/Production/Shipping/Customer Approval — each collector independently try/caught, so one unavailable source degrades to a warning rather than breaking the whole feed, matching frozen exactly. The priority-score/due-state logic (`workPriorityScore_`/`workDueState_`) and the aggregator's own sort/metrics logic were ported close to verbatim, including exact score weights and sort order. §4.2's flagged risk — field-level status-vocabulary translation, since Standalone's field names differ from frozen's — was resolved by a dedicated research pass against each source service's actual current code before writing the aggregator, not assumed; full translation table in `Task-Work-Board-Pre-Handover-Scope-2026-09-15.md` §9, including one genuine structural gap found (Customer Approval has no cross-order listing method in Standalone, resolved as a bounded N+1 over Orders already filtered to pending-approval status, not a new port method on a separately-owned module). Full record in that document's §8 (task store) and §9 (aggregator). **Nothing has been committed or pushed.**
@@ -66,6 +68,8 @@ Items are grouped by whether they block employees using Standalone for real work
 ### 5. PHB-4 — Order Notes (structured Comments) — ✅ IMPLEMENTED, 2026-09-15 (not yet committed)
 
 **Status update:** authorized and implemented in this session. `GET`/`POST /orders/:orderId/notes` are built, tested, and typecheck-clean in the working tree — note row and activity-log entry written in one shared transaction, note text required (frozen's one real validation rule), and a new `orders.notes.create`/`.read` permission pair, following the precedent PHB-3 already established for `orders.attachments.*`. Frozen's own `"ON-"` ID prefix carries over unchanged — checked directly and found not to collide with anything, unlike Attachments' `"OA-"`. The `type` field stays free-text defaulting to `"Internal"`, matching frozen exactly, since no enumerated type list was found anywhere in frozen's own client code to base a fixed one on. Full record in `Order-Notes-Pre-Handover-Scope-2026-09-15.md` §8. **Nothing has been committed or pushed.**
+
+**Correction, 2026-09-22:** same as PHB-3 above — "✅ IMPLEMENTED" described the backend only, and no frontend ever called `GET`/`POST /orders/:orderId/notes` until this date. See the 2026-09-22 status update below.
 
 **What's missing (original framing, for record):** Canon names Comments alongside Attachments under Order Domain "Collaboration" (§10.4). Frozen implements a separate, typed, append-only `Order_Notes` collection (`OrderWorkspace.js`) distinct from — and in addition to — the plain scalar `Notes` field already on the Order row itself. Standalone has the scalar field, correctly, and confirmed genuinely live (editable via a textarea on the order edit form, displayed in the order detail view) — but had nothing matching frozen's separate structured collection before this implementation.
 
@@ -397,3 +401,46 @@ document would restate this, not add to it.
 this update; GAP-004 (Reports timezone sensitivity, unchanged, still the
 same failing test); item 10 above (Finance General Ledger / Chart of
 Accounts business decision, unchanged, still pending).
+
+## Status update, 2026-09-22 — Order Attachments and Order Notes employee-facing mutation UI
+
+**Trigger:** GAP-001's Domain 1 twelfth pass (vault) found that PHB-3 (Order
+Attachments) and PHB-4 (Order Notes) — built in the same consolidated
+commit (`50fd3a3`) as PHB-1/PHB-2/PHB-5/PHB-6/PHB-7 — never got the frontend
+closure Finance and Inventory Materials received on 2026-09-21. An
+exhaustive search of `apps/web/src` found no UI for either capability: the
+backend routes existed, were permission-gated, and were completely
+unreachable by any employee. The operator directed closing this the same
+way Finance/Inventory Materials were closed.
+
+**What was built:** both capabilities added to the Order detail modal
+(`apps/web/src/orders.ts`), reusing the existing `gh-order-form` styling and
+modal infrastructure rather than duplicating it:
+
+- **Reads** — `getOrderAttachments`/`getOrderNotes` (`order-api.ts`), fetched
+  in parallel with the order aggregate when the detail modal opens.
+- **Mutations** — `addOrderAttachment`/`addOrderNote` (`order-mutation-api.ts`),
+  reusing the same CSRF-token/`mutateJson` helper already used for Order
+  create/update/archive.
+- **UI** — an Attachments section (list + a URL/File name/Category/Source/
+  Description add-form) and a Notes section (list + a Type/Note add-form),
+  both inside the existing Order detail modal. Category and Note Type are
+  free-text fields with a "known values" hint, matching frozen's own
+  unchecked-string behavior (no enumerated list exists in frozen to
+  validate against) and the same convention this session's own Finance UI
+  work already established for similarly free-form fields.
+
+**Verification:** full monorepo build/typecheck clean. Live-verified in the
+browser against `erp.gifthatke.in` as `support.gifthatke@gmail.com`: added a
+test Attachment (`Design-proof.pdf`, category "Design Proof") and a test
+Note ("First live-verification note for the Order Notes closure.") to order
+`GH-2026-000001`, both rendered immediately after submission, and both were
+confirmed to persist across a full modal close/reopen (re-fetched from the
+API independently, not just an optimistic client-side render).
+
+**Commit:** `27c8756` — `feat(orders): add Attachments and Notes forms to
+Order detail`, pushed to `origin/smp1/production-parity` and deployed.
+
+**This closes out PHB-3 and PHB-4's remaining frontend gap.** Both are now
+in the same state as PHB-1/PHB-2/PHB-5/PHB-6/PHB-7: backend and frontend
+both real, tested, and reachable by an authenticated employee.

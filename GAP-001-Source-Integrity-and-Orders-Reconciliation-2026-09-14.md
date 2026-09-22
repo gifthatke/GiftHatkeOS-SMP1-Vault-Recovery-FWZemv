@@ -1772,3 +1772,19 @@ Checked directly, closing the eleventh pass's own explicit "not established... r
 This is not a correction to the matrix row, which — like Domain 2's — makes no claim about UI reachability that this falsifies. It is also not a closure: unlike every other finding closed today (Domain 6's three items, Domain 7's two items, Domain 2's Material gap), **this one is not closed, and should not be read as closed just because PHB-3/PHB-4 appear in the same "implemented" commit as PHB-1/2/5/6/7.** The eleventh pass's Canon-compliance finding for Attachments is functionally unchanged from an employee's perspective — a backend existing that nobody can reach is not meaningfully different from no backend at all for the purpose Canon §10.4 actually certifies (employees being able to attach files to orders). No new PHB is registered here — PHB-3 and PHB-4 already exist as the correct tracking items and were never formally marked closed in any governance document this pass found; this is a status clarification, not a new finding requiring a new number. Whoever owns the handover decision should treat PHB-3/PHB-4 as **backend-complete, frontend-outstanding** — the same state Finance and Inventory Materials were in before 2026-09-21 — not as fully closed.
 
 GAP-001 remains OPEN / BLOCKING. Domain 1 now has a twelfth pass, and retains its position as the domain with the deepest coverage in this report. This pass adds one honest non-closure (Attachments/Notes frontend still outstanding) and one resolved-negatively question (timeline exposure: confirmed absent, not confirmed present) — consistent with this report's standing discipline of not manufacturing a resolution the source doesn't support.
+
+# Domain 1 — thirteenth pass: the twelfth pass's flagged gap closed the same day, live-verified
+
+Same continuation session, 2026-09-22, a few hours after the twelfth pass. The operator authorized building the frontend the twelfth pass found missing — the same disposition path GAP-001's plan already used for Finance and Inventory Materials on 2026-09-21.
+
+## What was built and verified
+
+`apps/web/src/orders.ts`, `order-api.ts`, and `order-mutation-api.ts` gained an Attachments section and a Notes section inside the existing Order detail modal — a list of existing records plus a small add-form for each, reusing the modal's existing styling and CSRF-mutation pattern rather than introducing new infrastructure. Full build/typecheck clean across the monorepo. Commit `27c8756`, pushed to `origin/smp1/production-parity` and deployed to `erp.gifthatke.in`.
+
+Live-verified directly in the browser, not assumed from the build passing: signed in as `support.gifthatke@gmail.com`, opened order `GH-2026-000001`, added a test Attachment (`Design-proof.pdf`, category "Design Proof", URL `https://example.com/design-proof.pdf`) and a test Note ("First live-verification note for the Order Notes closure."). Both rendered immediately in their respective lists with the correct `createdBy`/`createdAt` metadata. Both were then re-confirmed to persist across a full modal close and reopen — a fresh `GET /orders/:orderId/attachments` and `GET /orders/:orderId/notes` call, not merely an optimistic client-side render still sitting in memory.
+
+## Disposition
+
+The twelfth pass's finding is now closed, the same day it was raised. PHB-3 (Order Attachments) and PHB-4 (Order Notes) are in the same state as PHB-1/PHB-2/PHB-5/PHB-6/PHB-7: backend and frontend both real, tested, and reachable by an authenticated employee. Full implementation and verification record: `GAP-001-Pre-Handover-Implementation-Plan-2026-09-15.md`'s 2026-09-22 status update (vault).
+
+GAP-001 remains OPEN / BLOCKING. Domain 1's own remaining open items are unchanged by this pass: the Canon-to-frozen lifecycle-vocabulary disagreement (eleventh pass) and the still-untouched earlier Canon stages (Stage 2/Stage 4) for a field-level requirement comparison, if a future pass wants it.
