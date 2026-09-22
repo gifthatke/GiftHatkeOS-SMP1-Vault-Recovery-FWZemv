@@ -1,7 +1,7 @@
 # SMP1 GAP-001 — Canon-to-Runtime Lifecycle Vocabulary: Decision Brief
 
 **Date:** 2026-09-22
-**Status:** OPEN — decisions requested below, per domain. Nothing in this brief is authorized, and no code, Canon text, or matrix classification changes as a result of writing it.
+**Status:** DECISIONS RECORDED, 2026-09-22 (Hitendra Chug) — see each domain below. 4 of 8 domains document a mapping (Orders, Production, Shipping, Finance), 4 of 8 amend Canon (Materials, Users, CRM, Products), 0 authorized to build. No code changes result from this brief by design — every decision was (A) or (B), never (C).
 **Origin:** `GAP-001-Source-Integrity-and-Orders-Reconciliation-2026-09-14.md`'s closing statement (2026-09-22), after the 44-domain sweep and this session's three code/infrastructure loose ends (REORDER_POLICIES, OrderItem Category/Product Type, the production-cutover rehearsal) were all closed. That statement named the vocabulary/lifecycle disagreements below as the one category of remaining GAP-001 blocker this read-only reconciliation report was never authorized to resolve on its own.
 
 ## What this brief is, and isn't
@@ -32,7 +32,7 @@ Nothing below recommends one path per domain. The stakes and plausibility differ
 
 **Consideration:** Orders is the domain with the most granular, clearly-purposeful runtime vocabulary of any reviewed (18 distinct operational states, each doing real work in the business — personalization hand-off, QC, dispatch). Path (A) looks like the natural fit; the runtime states almost certainly *are* Canon's abstract stages, just named at operational rather than governance granularity.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Document a mapping.** Certify the 18 runtime statuses satisfy Canon's 5 abstract stages via an explicit Canon-stage → runtime-status table. No code changes.
 
 ---
 
@@ -46,7 +46,7 @@ Nothing below recommends one path per domain. The stakes and plausibility differ
 
 **Consideration:** Unlike Orders, this isn't "the runtime vocabulary is Canon's vocabulary in different words" — a boolean genuinely cannot represent a 7-state lifecycle. Path (A) alone doesn't really work here; it would require deciding that Canon's richer material-governance lifecycle (draft materials under review, formally retired materials kept for audit trail, etc.) simply isn't a GiftHatke business need at current scale — which is closer to path (B), amending Canon to reflect that this level of material governance was never actually required. If it *is* a real need, this is the one candidate in this brief most likely to warrant path (C).
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Amend Canon.** This level of material-governance lifecycle (draft/review/suspend/retire workflow) was never actually required at current scale. Canon's 7-state text to be updated to reflect the boolean model actually built and certified. No implementation authorized.
 
 ---
 
@@ -60,7 +60,7 @@ Nothing below recommends one path per domain. The stakes and plausibility differ
 
 **Consideration:** Some of the "missing" states may be legitimately redundant with Orders' own On Hold/Cancelled (a production job doesn't need its own Cancelled state if cancelling the order it belongs to already halts production) — that's a real path-(A)-shaped argument, but it needs someone who understands the actual production floor workflow to confirm, not just a vocabulary comparison.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Document a mapping.** Certify the 9 runtime stages satisfy Canon's 15, with Order-level On Hold/Cancelled understood to cover the production-level equivalent by inheritance. No code changes.
 
 ---
 
@@ -74,7 +74,7 @@ Nothing below recommends one path per domain. The stakes and plausibility differ
 
 **Consideration:** This is close to a solved case already — path (A) should be close to mechanical here, since most of Canon's named milestones are directly present as recognizable checkpoints. Included in this brief mainly for completeness and as a contrast case to Domain 2.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Document a mapping.** Certify the 17 runtime statuses satisfy Canon's 9, with the 12 India-specific courier-granularity states recorded as refinements layered on top of Canon's milestones. No code changes.
 
 ---
 
@@ -88,7 +88,7 @@ Nothing below recommends one path per domain. The stakes and plausibility differ
 
 **Consideration — the one place in this brief where the stakes are explicitly higher than the others:** Finance is the domain most directly exposed to external scrutiny — tax authorities, lenders, auditors — of any reviewed. The original pass flagged this as a higher-priority item for that reason alone, without taking a position on whether the compressed lifecycle is actually a problem (a single-entry, well-applied transaction log can still produce correct totals). Worth deciding this one with an accountant's input, not just an engineering one, if that's available. Separately and not addressed by any of the three paths above: neither system has Journal Entries, Journal Lines, or General Ledger Accounts at all, which Canon also certifies for this domain — that's a governance-layer-absent finding (the other category this brief excludes), not a vocabulary mismatch, but it lives in the same domain and the same original pass, so it's worth knowing about when this one comes up for decision.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Document a mapping.** Certify the 3-value system (Posted/Pending/Reversed) satisfies Canon's 7-stage transaction lifecycle via an explicit mapping, notwithstanding the real compression. No code changes. (The separate Journal/GL absence — see the companion absent-governance brief — was formally descoped independently.)
 
 ---
 
@@ -102,7 +102,7 @@ Nothing below recommends one path per domain. The stakes and plausibility differ
 
 **Consideration:** Practically, "can an admin deactivate a user account" already exists (the Active/Inactive flag does that job). What's genuinely missing is any notion of an account being *requested but not yet provisioned*, or *verified but not yet active* — onboarding-workflow states, not access-control states. Whether that onboarding granularity matters depends on how user accounts actually get created today (a question about process, not code, that this report didn't investigate).
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Amend Canon.** Onboarding-workflow granularity (requested-but-not-provisioned, verified-but-not-active) was never a real need; the existing Active/Inactive access-control flag is sufficient. Canon's 6-state text to be updated accordingly. No implementation authorized.
 
 ---
 
@@ -116,7 +116,7 @@ Nothing below recommends one path per domain. The stakes and plausibility differ
 
 **Consideration:** This looks like the clearest candidate for path (B) in the whole brief. The frozen funnel isn't a worse or incomplete version of Canon's — it's a different, GiftHatke-specific model built around how this business actually converts leads to paid orders, already CERTIFIED/LIVE/CLOSED as its own thing. Forcing a mapping onto Canon's generic funnel (path A) would likely distort more than it clarifies; the more honest move may be amending Canon's lead-lifecycle text to reflect the funnel that was actually built and that generates real revenue today.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Amend Canon.** Frozen's 9-stage, payment-centric funnel is the deliberate, revenue-generating, GiftHatke-specific model actually in use — not an incomplete version of Canon's generic funnel. Canon's 5-stage text to be updated to reflect it. No implementation authorized.
 
 ---
 
@@ -130,7 +130,7 @@ Nothing below recommends one path per domain. The stakes and plausibility differ
 
 **Consideration:** The lifecycle question here is essentially the same call as Materials (a boolean can't represent an 8-state lifecycle; decide whether that richer governance is a real need or not), but the resource-model question is more solved already than Materials' equivalent — worth deciding them somewhat independently even though they're both filed under "Domain 21."
 
-**Decision:** _______________
+**Decision (lifecycle), 2026-09-22 (Hitendra Chug): Amend Canon.** Same reasoning as Materials — this level of product-governance lifecycle (draft/validated/approved/retired workflow) was never actually required. Canon's 8-state text to be updated to reflect the boolean model actually built. No implementation authorized. (The resource-model question — Category/Product Type on OrderItem — was a separate, already-closed code gap, not part of this decision.)
 
 ---
 
@@ -140,6 +140,6 @@ Following the same standing established for the recovery procedure (`SMP1-Rollba
 
 ## After a decision is recorded
 
-Once decisions are filled in above (all eight, a subset, or none — leaving any blank simply leaves that domain's GAP-001 contribution open), the corresponding entries in `GAP-001-Source-Integrity-and-Orders-Reconciliation-2026-09-14.md` and `docs/governance/smp1-44-domain-parity-matrix-2026-09-13.md` (Standalone repo) get a closing note recording the decision and its rationale, matching the voice and structure already established throughout both documents. Path (A) or (B) decisions close with no code change. A path (C) decision opens new implementation work, scoped and estimated separately once named.
+All eight decisions above are now recorded (2026-09-22, Hitendra Chug). Propagated into `GAP-001-Source-Integrity-and-Orders-Reconciliation-2026-09-14.md` and `docs/governance/smp1-44-domain-parity-matrix-2026-09-13.md` (Standalone repo) as closing notes, matching the voice and structure already established throughout both documents. No code changes result: every decision was (A) document a mapping or (B) amend Canon, never (C) build.
 
-This brief, by itself, decides nothing and closes nothing. GAP-001 remains OPEN / BLOCKING until decisions are recorded here and reflected in the two documents above — and, per the scope note at the top, closing every item in this brief still would not by itself close GAP-001, since the separate governance-layer-absence category is untouched by it.
+**What this brief's completion means for GAP-001**: combined with the companion absent-governance-capabilities brief (also fully decided, 2026-09-22), both categories of GAP-001 blocker this report's closing statement identified are now decided — every remaining item has an explicit, dated, attributed operator decision on record rather than sitting as an open question. Whether that constitutes GAP-001's formal closure is a call for whoever holds that report's own closure authority, not something either brief closes on its own by being filled in.

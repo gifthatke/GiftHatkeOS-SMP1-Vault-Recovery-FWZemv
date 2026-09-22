@@ -2339,3 +2339,22 @@ Same continuation session. Following this report's own closing statement above, 
 **Net result: 11 of 12 items formally descoped or relying on an existing substitute; zero authorized to build; one item (the Reseller-wave scoping question) explicitly deferred as not-currently-active rather than decided.** No code, migration, or implementation work is authorized by any of these decisions. Full rationale for each, including the specific evidence that grounded each domain's finding, lives in the brief itself — this table is a summary record, not a replacement for it.
 
 This closes the entire "absent governance capability" category of GAP-001 blocker with explicit, dated, attributed decisions — not because the capabilities now exist, but because silence about them no longer means "undecided," it means "decided not to build, on this date, by this authority." The companion lifecycle-vocabulary brief's 8 domains remain genuinely open pending the operator's decisions there. **GAP-001 remains OPEN / BLOCKING** until that companion brief is also decided.
+
+## Lifecycle-vocabulary brief: decisions recorded, 2026-09-22 (Hitendra Chug), same day
+
+The companion brief's 8 domains were walked through the same day, same operator.
+
+| Domain | Canon vocabulary | Runtime vocabulary | Decision |
+| --- | --- | --- | --- |
+| 1 — Orders | 5 core stages | 18 statuses, frozen = Standalone | Document a mapping |
+| 2 — Materials | 7 lifecycle states | Boolean Active flag | Amend Canon |
+| 3 — Production | 15 states (10 core + 5 exceptions) | 9 stages, 3 exact matches | Document a mapping (On Hold/Cancelled inherited from Orders) |
+| 5 — Shipping | 9 states | 17 statuses, 5 exact matches, cross-confirmed live | Document a mapping |
+| 6 — Finance transactions | 7 states | 3 values (Posted/Pending/Reversed), 1 exact match | Document a mapping |
+| 8 — Users/Identity | 6 states | Boolean Active/Inactive flag | Amend Canon |
+| 19 — CRM leads | 5 states, generic funnel | 9-stage payment-centric funnel, zero exact matches | Amend Canon |
+| 21 — Products (lifecycle only) | 8 states | Boolean Active flag | Amend Canon |
+
+**Net result: 4 of 8 document a mapping (Orders, Production, Shipping, Finance transactions); 4 of 8 amend Canon (Materials, Users, CRM, Products); zero authorized to build.** No code, migration, or implementation work is authorized by any of these decisions — path (A) decisions require the mapping table itself to be written up as a follow-on documentation task (not yet done as of this entry); path (B) decisions require Canon's own Stage-10 text to be formally amended for those four domains (a Canon-governance action outside this report's own authority, recorded here as the operator's directive to whoever holds that authority). Full rationale, evidence, and per-domain consideration: the brief itself.
+
+**Both decision briefs this report's 2026-09-22 closing statement called for are now fully decided.** Every domain-level Canon-to-frozen/Standalone gap this reconciliation identified across the entire 44-domain sweep — vocabulary mismatches and absent governance capabilities alike — now has an explicit, dated, attributed operator decision on record. No code change is triggered by any of them. What remains as genuinely open follow-on work, not blocking GAP-001's content but not yet executed either: writing up the four Canon-state → runtime-state mapping tables (path A decisions above), and formally amending Canon's own Stage-10 text for the four domains decided as path B (Materials, Users, CRM, Products) plus the absent-governance brief's implicit path-B items. Whether this constitutes GAP-001's formal closure is a call for whoever holds this report's own closure authority — this entry records that every decision has been made, not that the report itself is closed.
