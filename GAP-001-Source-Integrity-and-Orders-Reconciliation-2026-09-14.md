@@ -2055,3 +2055,21 @@ A case-insensitive content search for `OEE`, `overall equipment effectiveness`, 
 No new PHB registered. Domain 34's original "genuinely aspirational" characterization is confirmed, not corrected — this is the second of two spot-checks from the same original filename-only sweep (after Domain 32), and the second to come back clean rather than surfacing something new the way Domain 33 did. Domain 33's finding was real and worth the spot-check pattern, but it is not evidence that every domain in that original sweep is hiding something — two of three checked so far confirm cleanly.
 
 GAP-001 remains OPEN / BLOCKING. Domain 34 now has a second pass, confirming its prior characterization with a more rigorous, content-level check on both sides.
+
+# Domain 40 — second pass: the same content-level spot-check, third in the series — confirmed absent, and the one structural question it raised checked directly too
+
+Same continuation session, 2026-09-22. Domain 40's only prior treatment was a cross-reference to Domain 8's ERP82 Company/ERP83 Organization passes: "real company-identity/branch/scope capability exists on both sides; neither implements true multi-company/intercompany execution — consistent with the prior wave's 'one real company, no intercompany operations' allowance." Third spot-check in today's series (after Domains 32 and 34), and connects naturally to Domain 8's own deep coverage.
+
+## Checked directly, at content level, both sides
+
+A case-insensitive content search for `intercompany`, `multi-company`, `multi-currency`, `multi-region`, and `cross-border` returns zero matches anywhere in Standalone (`packages/domain/src`, `packages/platform/src`, `apps/api/src`) and zero matches anywhere in frozen. Both sides genuinely absent, confirmed at content level.
+
+## One structural question this pass raised and checked directly, rather than left as a loose thread
+
+`packages/domain/src/settings.ts`'s `CompanyProfile` interface includes a `profileId` field and per-profile `timezone`/`currency`/`locale` fields — worth checking directly whether this is genuine structural multi-company support (even if never used) or simply a singleton record's own ID field. Checked: `packages/domain/src/settings-family-service.ts`'s `companyGetProfile(): Promise<CompanyProfile | null>` takes no identifying parameter — a true singleton accessor, the same pattern as this settings family's other single-record entities (Tax, Marketplace). `profileId` is an ordinary row identifier for audit/update purposes, not evidence of multi-company capability. This confirms, rather than merely assumes, that Standalone has no structural multi-company foundation either — unlike Domain 33's `REORDER_POLICIES` finding, checking this specific structural detail did not surface anything beyond what the surface-level absence already indicated.
+
+## Disposition
+
+No new PHB registered. Domain 40's "one real company, no intercompany operations" characterization is confirmed, not corrected — the third of three content-level spot-checks from the same original sweep pattern, and the second to come back clean (after Domain 34; Domain 33 remains the one real find in this series so far).
+
+GAP-001 remains OPEN / BLOCKING. Domain 40 now has a second pass, the first to check both the surface absence and one specific structural question directly rather than resting on the cross-reference to Domain 8.
