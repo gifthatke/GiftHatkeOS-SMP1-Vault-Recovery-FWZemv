@@ -2243,3 +2243,17 @@ The same three terms, plus `maintenance schedule` and `equipment inspection` (br
 No new PHB registered. Domain 26's characterization is confirmed and strengthened on both halves: the Machine-record match is now verified at field level, and the governance-layer absence is now confirmed against Standalone rather than assumed by extension.
 
 GAP-001 remains OPEN / BLOCKING. Domain 26 now has a second pass, the first to check Standalone directly for both of this domain's own findings.
+
+# Domain 27 — second pass: checked against Standalone for the first time — confirmed absent, both sides
+
+Same continuation session, 2026-09-22. Domain 27's only prior treatment (2026-09-14) checked frozen only for `EHS`, `environmental health safety`, `sustainab`, `carbon`, and `safety incident`, found zero matches, and concluded no implementation of any kind exists. Standalone's side was never checked.
+
+## Checked directly against Standalone
+
+The same five terms return zero matches anywhere in `packages/domain/src`, `packages/platform/src`, or `apps/api/src`.
+
+## Disposition
+
+No new PHB registered. Domain 27's "no implementation of any kind exists" characterization is confirmed on both sides, not corrected.
+
+GAP-001 remains OPEN / BLOCKING. Domain 27 now has a second pass, the first to check Standalone directly.
