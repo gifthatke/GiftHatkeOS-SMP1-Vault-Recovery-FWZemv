@@ -2087,3 +2087,17 @@ A case-insensitive content search for `kaizen`, `continuous improvement`, `innov
 No new PHB registered. Domain 35's "genuinely aspirational" characterization is confirmed, not corrected — the fourth spot-check from the same original sweep, and the third to come back clean (Domain 33 remains the one real find in this series).
 
 GAP-001 remains OPEN / BLOCKING. Domain 35 now has a second pass, confirming its prior characterization at content level on both sides.
+
+# Domain 31 — second pass: fifth content-level spot-check — the one shared match traced precisely to already-covered ground, not a new capability
+
+Same continuation session, 2026-09-22. Domain 31's only prior treatment was a cross-reference to Domain 20's finding: "no dedicated pricing/quotation/commission implementation in either system." Fifth spot-check in today's series, using this domain's own more specific named terms rather than Domain 20's broader ones.
+
+## Checked directly, at content level, both sides — one real match, traced precisely
+
+A case-insensitive content search for `price waterfall`, `contribution margin`, `revenue leakage`, `pricing governance`, and `margin leakage` returns one genuine match on each side: Standalone's `apps/api/src/reports-service.ts:1325` ("Low contribution margin") and frozen's `ExecutiveFinanceIntelligenceService.js`/`ExecutiveFinanceIntelligenceConfig.js` (`DEFAULT_CONTRIBUTION_MARGIN_TARGET`, "Low contribution margin"). Traced directly: this is a single diagnostic flag inside Finance's profit-leakage-detection logic — already fully documented as part of Domain 7's own PHB-7 findings (profitability, expense concentration, receivables aging, profit-leakage detection), not a dedicated pricing-governance, price-waterfall, or commercial-intelligence capability in the sense Domain 31 actually names. Both sides mirror each other exactly here (Standalone's is PHB-7's direct port of frozen's own logic), consistent parity, not a gap.
+
+## Disposition
+
+No new PHB registered. Domain 31's "no dedicated pricing/quotation/commission implementation" characterization is confirmed, not corrected — the one shared match found is precisely traced to already-covered ground (Domain 7) rather than left as an unexplained partial hit. Fifth spot-check in this series, fourth to come back clean.
+
+GAP-001 remains OPEN / BLOCKING. Domain 31 now has a second pass, the first to check its own specific named terms rather than resting on Domain 20's broader cross-reference.
