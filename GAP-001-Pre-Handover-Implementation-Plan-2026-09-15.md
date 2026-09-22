@@ -51,6 +51,8 @@ Items are grouped by whether they block employees using Standalone for real work
 
 **Full scope:** `Task-Work-Board-Pre-Handover-Scope-2026-09-15.md`, §1–§7 (original scope), §8 (task-store implementation record), and §9 (aggregator implementation record).
 
+**Correction, 2026-09-22:** "✅ IMPLEMENTED" described the backend only, and — unlike PHB-1/PHB-2 — had no frontend at all until this date, six days later. Worse, live-testing the new frontend found the backend itself was never actually reachable in production: `erp.gifthatke.in`'s static site proxies to the API through a manually-maintained list of rewrite rules, one per route prefix, and no rule was ever added for `/work-tasks` when this item shipped. PHB-5 was not usable by any client at any point between 2026-09-16 and today, regardless of frontend status. Both gaps (frontend, missing rewrite rule) are now closed and live-verified — see the 2026-09-22 status update below.
+
 ### 4. PHB-6 — Executive Dashboard first-screen content — 🟢 FULLY IMPLEMENTED, 2026-09-16 (not yet committed)
 
 **Status update:** authorized and implemented across two sessions, both phases. Phase A (required fields, 7 KPI cards, system health): the Dashboard's existing `GET /dashboard/workspace` route returns an additive `executive` field with the greeting, KPI cards (Today's Sales, Monthly Revenue, Orders Today, Average Order Value, Gross Profit, Net Profit, Cash Position), each module's required counts, and a Healthy/Attention/Critical system-health rollup — composed from five already-existing read methods across Orders/Production/Inventory/Shipping/Finance, each independently try/caught so one module's failure degrades gracefully rather than breaking the whole screen. Phase B (alerts, approvals queue, recent activity, intelligence panel) was authorized once its precondition cleared — PHB-7 is now fully built (all six modules) — and reuses that work directly rather than duplicating it: alerts reuse Operations Risk's own per-module risk generators (zero new I/O, fed by data Phase A already fetches), recent activity is synthesized from bulk data already available per module (order status changes, job completions, inventory movements, shipment events, finance transactions), approvals reuse the exact bounded pattern Today's Work (PHB-5) already established (orders filtered to pending-approval status, then a small bounded loop over Customer Approval), and the intelligence panel consumes PHB-7's Sales Intelligence and Production Intelligence outputs directly. `topProducts` stays unbuilt in the intelligence panel, consistent with Sales Intelligence's own already-documented unbounded-N+1 gap, not a second one. **This closes out PHB-6 — both phases are now complete.** Full record in `Executive-Dashboard-Pre-Handover-Scope-2026-09-15.md` §8 (Phase A) and §9 (Phase B). **Nothing has been committed or pushed.**
@@ -444,3 +446,81 @@ Order detail`, pushed to `origin/smp1/production-parity` and deployed.
 **This closes out PHB-3 and PHB-4's remaining frontend gap.** Both are now
 in the same state as PHB-1/PHB-2/PHB-5/PHB-6/PHB-7: backend and frontend
 both real, tested, and reachable by an authenticated employee.
+
+**Correction, 2026-09-22 (same day, later):** this section's own framing above
+("in the same state as PHB-1/PHB-2/PHB-5/PHB-6/PHB-7") turned out to
+overstate PHB-5's status — at the time this was written, PHB-5 still had no
+frontend at all and, as later discovered, had a separate production routing
+gap on top of that. See the 2026-09-22 status update below, "Today's Work
+employee-facing UI and a production routing defect," for the full, corrected
+record. PHB-3/PHB-4's own closure recorded in this section is unaffected and
+accurate.
+
+## Status update, 2026-09-22 (continued) — Today's Work employee-facing UI and a production routing defect
+
+**Trigger:** GAP-001's Domain 11 third pass (vault) found that PHB-5 (Today's
+Work) — built in the same consolidated commit (`50fd3a3`) as PHB-1/2/3/4/6/7
+— never got a frontend at all, unlike every other item in that commit. The
+operator directed closing this the same way Attachments/Notes were closed
+earlier the same day.
+
+**What was built:** a new Today's Work workspace
+(`apps/web/src/todays-work.ts`, `todays-work-api.ts`,
+`todays-work-mutation-api.ts`, `todays-work.css`), added as a new nav tab
+positioned right after Dashboard — matching frozen's own
+`DEFAULT_MODULE: "TodaysWork"` prioritization, though Dashboard was kept as
+Standalone's own default landing workspace rather than silently changing
+existing behavior. KPI cards, a merged managed/synthetic task list,
+search/module/mine/blocked-only filters, a New Task modal, and a single
+reusable Assign/Block/Complete action modal. Commit `bda434b`.
+
+**A second, more significant defect found during live verification, predating
+this session entirely:** testing the new frontend against `erp.gifthatke.in`
+returned 404 on `GET /work-tasks/today` and `GET /work-tasks` — a genuine
+Fastify "Not Found," not a permission error. After ruling out a stale API
+build (a fresh, cache-cleared rebuild at the latest commit still 404'd) and a
+source-code registration bug (confirmed correct by direct read at the exact
+commit the API was running), the real cause was found: `erp.gifthatke.in` is
+a Render Static Site proxying to the API through a manually-maintained list
+of Redirect/Rewrite rules, one `/prefix` + `/prefix/*` pair per route group.
+**No rule was ever added for `/work-tasks` when it shipped on 2026-09-16.**
+Attachments/Notes worked earlier the same day only because they're nested
+under `/orders/*`, which already had a rule — Today's Work was the first PHB
+item in the whole consolidated commit to introduce a genuinely new top-level
+route prefix, and the routing-rule addition that requires was simply missed.
+**This means PHB-5's backend was never reachable in production by any
+client, at any point, from 2026-09-16 until this fix** — a defect this
+report's own prior passes (which checked source-level route registration,
+not live reachability) had no way of catching.
+
+**Fix:** added `/work-tasks` and `/work-tasks/*` rewrite rules to the
+`gifthatkeos-standalone-v1-web` static site's Redirects/Rewrites
+configuration, matching the exact pattern already used by every other route
+group. Confirmed via `curl` that both routes moved from 404 to 401 (a real,
+correctly permission-gated route) immediately after saving — no further
+deploy was needed, since this is a routing-layer config change, not a code
+change.
+
+**Verification:** full monorepo build/typecheck clean for the frontend.
+Live-verified end to end in the browser as `support.gifthatke@gmail.com`:
+KPI cards and the task list rendered correctly; created a test task via
+"+ New Task"; used "Assign" to assign it to self, confirmed via refresh that
+the assignment persisted and the Unassigned KPI updated; used "Complete" to
+close it out, confirmed via refresh that it correctly disappeared from the
+active-tasks view (matching frozen's `status !== "Completed"` filtering).
+
+**A generalizable lesson, worth recording for whoever owns the deployment
+pipeline going forward:** any future capability that introduces a genuinely
+new top-level API route prefix (not nested under an existing one) needs a
+matching rewrite-rule addition on the static site, or it will 404 in
+production despite being fully correct in source, typechecked, and
+build-verified — none of which catch this, since it's a step outside the
+normal build/typecheck/deploy loop entirely. A candidate for either
+documentation or a CI check (e.g., asserting every top-level route file has a
+matching rewrite-rule pair), though implementing either is an infrastructure
+decision outside this report's own mandate.
+
+**This closes out PHB-5's remaining gaps — both the frontend and, newly
+discovered, the production routing rule.** PHB-1 through PHB-7 are now all
+confirmed backend-complete, frontend-complete, and live-reachable in
+production, not just committed and deployed.
