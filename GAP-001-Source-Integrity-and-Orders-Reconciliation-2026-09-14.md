@@ -2073,3 +2073,17 @@ A case-insensitive content search for `intercompany`, `multi-company`, `multi-cu
 No new PHB registered. Domain 40's "one real company, no intercompany operations" characterization is confirmed, not corrected — the third of three content-level spot-checks from the same original sweep pattern, and the second to come back clean (after Domain 34; Domain 33 remains the one real find in this series so far).
 
 GAP-001 remains OPEN / BLOCKING. Domain 40 now has a second pass, the first to check both the surface absence and one specific structural question directly rather than resting on the cross-reference to Domain 8.
+
+# Domain 35 — second pass: fourth content-level spot-check in the series — confirmed absent, both sides
+
+Same continuation session, 2026-09-22. Domain 35's only prior treatment was a filename-only check ("no matching file, consistent with the prior wave's own 'no matching implementation' finding"). Fourth spot-check in today's series.
+
+## Checked directly, at content level, both sides
+
+A case-insensitive content search for `kaizen`, `continuous improvement`, `innovation pipeline`, `idea management`, `research and development`/`R&D`, and `experiment tracking` returns zero matches anywhere in Standalone (`packages/domain/src`, `packages/platform/src`, `apps/api/src`) and zero matches anywhere in frozen.
+
+## Disposition
+
+No new PHB registered. Domain 35's "genuinely aspirational" characterization is confirmed, not corrected — the fourth spot-check from the same original sweep, and the third to come back clean (Domain 33 remains the one real find in this series).
+
+GAP-001 remains OPEN / BLOCKING. Domain 35 now has a second pass, confirming its prior characterization at content level on both sides.
