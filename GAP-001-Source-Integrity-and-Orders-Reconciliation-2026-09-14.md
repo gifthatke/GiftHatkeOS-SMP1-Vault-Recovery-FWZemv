@@ -2211,3 +2211,17 @@ A case-insensitive content search for `API contract registry`, `consumer registr
 No new PHB registered. Domain 13's overall characterization — no formal API contract governance layer in the fuller Canon-named sense — is confirmed, not corrected: `packages/contracts` does not constitute the consumer/provider-registration/versioning/compatibility-rule system this domain actually names. But it is a real, precise, worth-recording exception to the blanket "no contract layer at all" framing the original generalization implied — Standalone has *something* here, narrowly scoped, that frozen structurally cannot have at all.
 
 GAP-001 remains OPEN / BLOCKING. Domain 13 now has a second pass, the first to check Standalone directly rather than generalizing entirely from a frozen-only finding about a structurally different API model.
+
+# Domain 15 — second pass: checked against Standalone for the first time, two near-matches ruled out precisely — confirmed absent
+
+Same continuation session, 2026-09-22. Domain 15's first pass (2026-09-14) checked frozen only for `shift definition`, `reservation`, and `capacity slot`, found zero matches, and concluded scheduling/capacity is embedded in narrow Production fields (`Scheduled Date`, `Daily Capacity`) rather than a shared cross-domain system. Standalone's side was never checked. Picked following this session's own deep work today building Today's Work (Domain 11), which has its own due-date/scheduling logic worth distinguishing from this domain's actual scope.
+
+## Checked directly against Standalone — two near-matches, both ruled out precisely
+
+A case-insensitive content search for `shift definition`, `reservation`, `capacity slot`, and `resource calendar` returns two matches, both in Inventory: `apps/api/src/inventory-material-service.ts:1188` ("a new MAT reservation") and `packages/domain/src/executive-inventory-intelligence.ts:23`. Checked directly, neither is Domain 15's "Reservations" concept (time/resource-slot booking) — both are about inventory *stock* reservation (allocating on-hand quantity), a different concept entirely, and the second is in fact a negative confirmation: its own comment states explicitly, "Standalone has no separate reservation concept, so 'on hand' and 'available' are the same number." Zero genuine matches for any of this domain's actual named concepts on either side.
+
+## Disposition
+
+No new PHB registered. Domain 15's "narrow embedded fields exist instead of a shared scheduling/resource system" characterization is confirmed on both sides, not corrected. The Task Board's own due-date/priority-scoring logic (PHB-5, Domain 11) remains a narrow, task-level date field, not a scheduling/reservation/capacity-slot system either — consistent with, not a correction to, this domain's finding.
+
+GAP-001 remains OPEN / BLOCKING. Domain 15 now has a second pass, the first to check Standalone directly and precisely rule out two inventory-reservation near-matches rather than leave them as an unexplained partial hit.
