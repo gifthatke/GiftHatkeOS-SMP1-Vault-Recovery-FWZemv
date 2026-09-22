@@ -2115,3 +2115,17 @@ A case-insensitive content search for `partner portal`, `developer portal`, `mar
 No new PHB registered. Domain 43's characterization is confirmed, not corrected — the sixth spot-check from the same original sweep, and the fifth to come back clean (Domain 33 remains the one real find in this series).
 
 GAP-001 remains OPEN / BLOCKING. Domain 43 now has a second pass, confirming its prior characterization at content level with its own specific named terms.
+
+# Domain 44 — second pass: seventh content-level spot-check — confirmed absent, both sides, completing the series across all previously filename-only-checked domains
+
+Same continuation session, 2026-09-22. Domain 44's only prior treatment noted "no Knowledge/Wiki file, consistent with Domain 17's Search finding" (filename-only). Seventh and, for now, final spot-check in today's series — the remaining domains from the original sweep (20, 22, 23) were already checked with real content-level rigor in that same 2026-09-15 pass itself (each got a dedicated paragraph tracing specific frozen/Standalone matches, not just a filename sweep), so they do not need the same re-check this series has applied to Domains 31–35/40/43.
+
+## Checked directly, at content level, both sides
+
+A case-insensitive content search for `knowledge base`, `knowledge graph`, `organizational memory`, `wiki`, and `institutional knowledge` returns zero matches anywhere in Standalone (`packages/domain/src`, `packages/platform/src`, `apps/api/src`) and zero matches anywhere in frozen.
+
+## Disposition
+
+No new PHB registered. Domain 44's characterization is confirmed, not corrected — the seventh spot-check from the same original sweep, and the sixth to come back clean. This closes out the content-level re-check series: of the domains in the original 2026-09-15 filename-only sweep that genuinely relied on filename matching alone (31, 32, 33, 34, 35, 40, 43, 44 — Domains 20, 22, 23 already had deeper treatment in that same pass), one (Domain 33) surfaced a real, previously-missed finding; the other seven confirmed cleanly.
+
+GAP-001 remains OPEN / BLOCKING. Domain 44 now has a second pass, completing today's content-level re-check series across the originally filename-only-checked domains.
