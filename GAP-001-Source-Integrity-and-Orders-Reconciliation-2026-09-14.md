@@ -2225,3 +2225,21 @@ A case-insensitive content search for `shift definition`, `reservation`, `capaci
 No new PHB registered. Domain 15's "narrow embedded fields exist instead of a shared scheduling/resource system" characterization is confirmed on both sides, not corrected. The Task Board's own due-date/priority-scoring logic (PHB-5, Domain 11) remains a narrow, task-level date field, not a scheduling/reservation/capacity-slot system either — consistent with, not a correction to, this domain's finding.
 
 GAP-001 remains OPEN / BLOCKING. Domain 15 now has a second pass, the first to check Standalone directly and precisely rule out two inventory-reservation near-matches rather than leave them as an unexplained partial hit.
+
+# Domain 26 — second pass: the Machine-record match confirmed field-by-field against Standalone for the first time — no Maintenance/Calibration/Facility governance beyond it, either side
+
+Same continuation session, 2026-09-22. Domain 26's first pass (2026-09-14) checked frozen only: `PRODUCTION_MACHINE_HEADERS` (Machine ID, Machine Name, Machine Type, Daily Capacity, Default Operator, Active, Notes) is "a genuine basic Equipment identity record," but a search for `preventive maintenance`, `calibration`, and `facility management` returned zero matches — no Maintenance, Inspection, Calibration, or Facility/Workshop-as-governed-entity system beyond that one Machine master. Standalone's side of either half was never checked. Picked following this session's own deep Production work today and earlier (Domain 3, full depth).
+
+## The Machine-record match, confirmed field-by-field
+
+`packages/domain/src/production.ts`'s `ProductionMachine` interface carries exactly seven fields — `machineId`, `name`, `type`, `dailyCapacity`, `defaultOperator`, `active`, `notes` (plus standard audit fields) — a field-for-field match to frozen's own `PRODUCTION_MACHINE_HEADERS` (Machine ID, Machine Name, Machine Type, Daily Capacity, Default Operator, Active, Notes), confirmed by direct read rather than assumed from the first pass's "a genuine basic Equipment identity record" framing.
+
+## The Maintenance/Calibration/Facility absence, checked against Standalone for the first time
+
+The same three terms, plus `maintenance schedule` and `equipment inspection` (broadening the original pass's set), return zero matches anywhere in `packages/domain/src`, `packages/platform/src`, or `apps/api/src`. No Maintenance, Calibration, or Facility/Workshop governance exists in Standalone either, beyond the same one basic Machine identity record — matching frozen exactly.
+
+## Disposition
+
+No new PHB registered. Domain 26's characterization is confirmed and strengthened on both halves: the Machine-record match is now verified at field level, and the governance-layer absence is now confirmed against Standalone rather than assumed by extension.
+
+GAP-001 remains OPEN / BLOCKING. Domain 26 now has a second pass, the first to check Standalone directly for both of this domain's own findings.
