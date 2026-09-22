@@ -2257,3 +2257,17 @@ The same five terms return zero matches anywhere in `packages/domain/src`, `pack
 No new PHB registered. Domain 27's "no implementation of any kind exists" characterization is confirmed on both sides, not corrected.
 
 GAP-001 remains OPEN / BLOCKING. Domain 27 now has a second pass, the first to check Standalone directly.
+
+# Domain 17 — second pass: checked against Standalone for the first time, including ruling out client-side filter boxes precisely — confirmed absent
+
+Same continuation session, 2026-09-22. Domain 17's only prior treatment (2026-09-14) checked frozen only for `search index`, `search collection`, and `ranking policy`, found zero matches, and concluded "every module's own UI presumably relies on direct spreadsheet/database lookups rather than any shared search/indexing layer" — a presumption about Standalone, never checked.
+
+## Checked directly against Standalone
+
+The same three terms, plus `full text search` and `elasticsearch`, return zero matches anywhere in `packages/domain/src`, `packages/platform/src`, or `apps/api/src`. Checked specifically, not assumed: none of `apps/api/src/routes/*.ts` implements any server-side search/query capability — confirmed by direct grep, zero matches for `search` in any route file. The client-side search boxes this session built or observed today (Today's Work's own `data-tw-search` filter, Orders' `data-order-search`) are confirmed to be exactly what the first pass's "presumably" framing guessed: local, in-browser text filters over already-fetched data, not a query against any server-side index.
+
+## Disposition
+
+No new PHB registered. Domain 17's characterization is confirmed on both sides, not corrected — the first pass's own hedge ("presumably") is now a confirmed fact rather than a reasonable guess.
+
+GAP-001 remains OPEN / BLOCKING. Domain 17 now has a second pass, the first to check Standalone directly and precisely rule out its client-side filter UI as a hidden search capability.
