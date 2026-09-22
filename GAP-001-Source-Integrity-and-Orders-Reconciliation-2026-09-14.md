@@ -2027,3 +2027,17 @@ This is the same "built but disconnected" shape already found today for Domain 3
 No new PHB registered — this is a genuine, real capability gap (a built settings entity never wired to live behavior) but registering it as a pre-handover blocker would be a scope decision outside this report's read-only mandate, the same standing this report has taken for every other "found, not authorized to fix" observation today. Worth flagging precisely to whoever owns Inventory's reorder logic: connecting `REORDER_POLICIES` to `inventory-material-requisition-refresh.ts` (using `safetyStockQuantity`/`leadTimeDays` in the reorder-trigger calculation instead of, or alongside, the current flat `reorderLevel`) would be a genuine enhancement using infrastructure that already exists, not new capability that needs to be built from scratch.
 
 GAP-001 remains OPEN / BLOCKING. Domain 33 now has a second pass, the first to search both codebases at content level for this domain's own specific named terms rather than a filename-only sweep.
+
+# Domain 32 — second pass: the same content-level re-check applied to a sibling domain from the same original sweep — this time, confirmed absent, cleanly
+
+Same continuation session, 2026-09-22. Domain 32's only prior treatment was the same filename-only sweep as Domain 33's ("no Case/Ticket/SLA/Escalation file in frozen"). Picked immediately after Domain 33 specifically to test whether that sweep's methodology (filename search only) had missed something here too, the same way it missed `REORDER_POLICIES` for Domain 33 — not because this domain was known to have a hidden finding, but because the same gap in method could plausibly repeat.
+
+## Checked directly, at content level, against Standalone
+
+A case-insensitive content search for `case ticket`, `support ticket`, `escalation policy`, `SLA breach`, and `service level agreement` returns zero matches anywhere in `packages/domain/src`, `packages/platform/src`, or `apps/api/src`. A broader, more permissive second search for bare `caseId`/`caseNumber`/`caseStatus`, `supportCase`, `ticketId`, and `ticketNumber` patterns also returns zero matches. One partial, precisely-identified near-match exists: `packages/domain/src/settings.ts`'s `NotificationEscalation` type (`escalationId`, `escalationCode`, `escalationLevel`, `delayMinutes`) — but this is the same notification-configuration escalation entity already fully documented in Domain 9's second pass earlier today (governs alert/notification delivery timing, not customer-support case escalation), not a new finding for this domain. Frozen's own side of this check (already established: no Case/Ticket/SLA/Escalation file exists) is unaffected and not re-derived here.
+
+## Disposition
+
+Unlike Domain 33, this content-level re-check does not surface anything the earlier filename-only sweep missed — Domain 32's original "genuinely aspirational" characterization holds, now confirmed at content level rather than filename level, closing the same methodological gap Domain 33's pass identified without assuming every sibling domain in that original sweep has a hidden finding waiting to be found. No new PHB registered.
+
+GAP-001 remains OPEN / BLOCKING. Domain 32 now has a second pass, confirming (not correcting) its prior characterization with a more rigorous check.
