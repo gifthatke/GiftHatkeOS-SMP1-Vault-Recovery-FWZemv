@@ -2179,3 +2179,17 @@ A case-insensitive content search for `feature flag`, `decision table`, `rollout
 No new PHB registered. Domain 16's "split result" characterization is confirmed and strengthened on both halves: the Configuration half's match is now verified at field level rather than asserted, and the Business Rules half's absence is now confirmed against Standalone rather than assumed by extension from frozen alone.
 
 GAP-001 remains OPEN / BLOCKING. Domain 16 now has a second pass, the first to check Standalone directly for both of this domain's named halves.
+
+# Domain 12 — second pass: checked against Standalone for the first time, including a targeted customer-deduplication check — confirmed absent
+
+Same continuation session, 2026-09-22. Domain 12's first pass (2026-09-14) checked frozen only for `steward`, `duplicate prevention`, and `taxonomy`, found zero matches, and concluded "each frozen module owns and manages its own master data independently... no separate centralized MDM layer." Standalone's side was never checked. Picked following this session's own deep work today inside Inventory/Material (Domain 33) and Company (Domain 40) master-data structures.
+
+## Checked directly against Standalone
+
+The original three terms, plus `golden record` and `master data management`/`MDM`, return zero matches anywhere in `packages/domain/src`, `packages/platform/src`, or `apps/api/src`. A further targeted check for the one MDM sub-capability most likely to exist incidentally in an order-taking system — customer duplicate detection or merge logic — also returns zero matches (`duplicate customer`, `merge customer`, `customer matching`, `deduplicat(e/ion)`), confirming this isn't just an absent label but a genuinely absent capability, not something built under different terminology.
+
+## Disposition
+
+No new PHB registered. Domain 12's "each module owns its own master data independently, no centralized MDM layer" characterization is confirmed on both sides, not corrected.
+
+GAP-001 remains OPEN / BLOCKING. Domain 12 now has a second pass, the first to check Standalone directly and the first to specifically rule out customer-deduplication as a hidden partial implementation.
