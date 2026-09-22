@@ -2193,3 +2193,21 @@ The original three terms, plus `golden record` and `master data management`/`MDM
 No new PHB registered. Domain 12's "each module owns its own master data independently, no centralized MDM layer" characterization is confirmed on both sides, not corrected.
 
 GAP-001 remains OPEN / BLOCKING. Domain 12 now has a second pass, the first to check Standalone directly and the first to specifically rule out customer-deduplication as a hidden partial implementation.
+
+# Domain 13 — second pass: checked against Standalone for the first time — a real, narrow contracts package found, precisely distinguished from this domain's fuller named scope
+
+Same continuation session, 2026-09-22. Domain 13's only prior treatment (2026-09-14) generalized directly from the Domain 1 eighth pass's frozen-only finding — every top-level function in every frozen file is directly exposed as a `google.script.run` RPC target, with no intervening route, contract, or version-registry layer of any kind — without independently checking whether Standalone, being a genuine REST API rather than an RPC surface, might have built something different. Picked today following this session's own extensive work on Standalone's actual API/routing architecture (Domain 41).
+
+## Checked directly against Standalone
+
+A case-insensitive content search for `API contract registry`, `consumer registration`, `provider registration`, `API version`, and `compatibility rule` returns one match — `packages/domain/src/diagnostics-registry.ts`'s "Built-in provider registration is intentionally not performed here" — confirmed a false positive by direct read (diagnostics-provider plugin registration, unrelated to API consumer/provider contracts). No OpenAPI/Swagger specification exists anywhere in the repository (checked directly, both by filename and by content reference).
+
+## A real, narrow contracts artifact found, and precisely characterized
+
+`packages/contracts/src/index.ts` (42 lines, read in full) is a genuine, typed, shared package — `@gifthatkeos/contracts` — with its own explicit header comment: "Shared transport contracts for the standalone GiftHatkeOS API. These contracts describe the HTTP boundary only. Business-domain contracts are introduced later through certified Canon-to-standalone implementation work." It defines `HealthResponse`, `DatabaseHealthResponse`, `ApiErrorCode` (a closed union of seven error codes), and `ApiErrorResponse` — real, enforced-at-compile-time shapes, already confirmed wired into live routes (`routes/health.ts`'s own schema validation, checked earlier today). **This is genuinely more than frozen has** (frozen has no equivalent concept at all, an RPC surface with no typed contract layer of any kind) — but its own comment is explicit that it covers only the transport/error/health boundary, not the full business-domain API surface (Orders, Finance, and so on have no equivalent typed contract package). There is still no consumer/provider registration, no version-registry, and no compatibility-rule mechanism for any of it.
+
+## Disposition
+
+No new PHB registered. Domain 13's overall characterization — no formal API contract governance layer in the fuller Canon-named sense — is confirmed, not corrected: `packages/contracts` does not constitute the consumer/provider-registration/versioning/compatibility-rule system this domain actually names. But it is a real, precise, worth-recording exception to the blanket "no contract layer at all" framing the original generalization implied — Standalone has *something* here, narrowly scoped, that frozen structurally cannot have at all.
+
+GAP-001 remains OPEN / BLOCKING. Domain 13 now has a second pass, the first to check Standalone directly rather than generalizing entirely from a frozen-only finding about a structurally different API model.
