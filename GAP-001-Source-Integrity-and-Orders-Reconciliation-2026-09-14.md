@@ -2041,3 +2041,17 @@ A case-insensitive content search for `case ticket`, `support ticket`, `escalati
 Unlike Domain 33, this content-level re-check does not surface anything the earlier filename-only sweep missed — Domain 32's original "genuinely aspirational" characterization holds, now confirmed at content level rather than filename level, closing the same methodological gap Domain 33's pass identified without assuming every sibling domain in that original sweep has a hidden finding waiting to be found. No new PHB registered.
 
 GAP-001 remains OPEN / BLOCKING. Domain 32 now has a second pass, confirming (not correcting) its prior characterization with a more rigorous check.
+
+# Domain 34 — second pass: the same content-level re-check applied to a second sibling domain — confirmed absent, both sides
+
+Same continuation session, 2026-09-22. Domain 34's only prior treatment was the same filename-only sweep as Domains 32/33 ("no OEE/telemetry/machine-downtime file"). Picked next in the same spot-check pattern, and connects naturally to Domain 3 (Production & Manufacturing, full depth this session) the same way Domain 33 connected to Domain 2.
+
+## Checked directly, at content level, both sides
+
+A case-insensitive content search for `OEE`, `overall equipment effectiveness`, `machine downtime`, `loss classification`, `standard work`, and `telemetry` returns, against Standalone, one match — `apps/api/src/order-service.ts:347`, a code comment ("Legacy Apps Script cache/repository performance telemetry") about the application's own caching instrumentation, unrelated to Domain 34's manufacturing-floor telemetry concept, confirmed a false positive by direct read. Against frozen, the same six-term search returns zero matches anywhere. Both sides genuinely absent, confirmed at content level rather than filename level.
+
+## Disposition
+
+No new PHB registered. Domain 34's original "genuinely aspirational" characterization is confirmed, not corrected — this is the second of two spot-checks from the same original filename-only sweep (after Domain 32), and the second to come back clean rather than surfacing something new the way Domain 33 did. Domain 33's finding was real and worth the spot-check pattern, but it is not evidence that every domain in that original sweep is hiding something — two of three checked so far confirm cleanly.
+
+GAP-001 remains OPEN / BLOCKING. Domain 34 now has a second pass, confirming its prior characterization with a more rigorous, content-level check on both sides.
