@@ -1,7 +1,7 @@
 # SMP1 Standalone — Rollback and Recovery Procedure
 
-**Date:** 2026-09-21
-**Status:** DRAFT PROPOSAL — NOT AUTHORIZED, NOT CERTIFIED. Written to close a genuine gap in Phase 4's evidence pack (no rollback/recovery procedure existed anywhere in the corpus, distinct from the already-documented backup/recovery *metadata model*). Starting point for the operator to correct.
+**Date:** 2026-09-21, certified 2026-09-22
+**Status:** CERTIFIED, 2026-09-22 (Hitendra Chug). Originally written as a DRAFT PROPOSAL — see "§2.4 execution notes, 2026-09-22" below for the corrected status: all five of the "Recommended before this procedure is trusted for real" checklist items are now closed, including the production-cutover rehearsal performed for real against live production. §1 (application rollback) and §2 (database recovery) are both procedures this record now certifies as accurate and trustworthy as written, on the same operator authority as that rehearsal itself.
 **Origin:** `Phase-4-Handover-Readiness-Evidence-Pack-2026-09-16.md` §4.
 
 ## What the 2026-09-21 drill verified, and what it didn't
