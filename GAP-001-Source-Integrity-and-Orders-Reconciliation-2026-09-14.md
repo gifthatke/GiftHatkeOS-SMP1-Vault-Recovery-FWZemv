@@ -2161,3 +2161,21 @@ This session's own earlier work (Domain 7's second pass) already established ERP
 No new PHB registered. Domain 24's "no legal, contract, or compliance-tracking system of any kind exists" characterization is confirmed on both sides, not corrected. Closes the "Standalone never independently checked" gap for the last domain in today's compliance/governance cluster.
 
 GAP-001 remains OPEN / BLOCKING. Domain 24 now has a second pass, the first to check Standalone directly and the first to precisely distinguish this domain's own gap from the adjacent, already-closed Tax-calculation finding.
+
+# Domain 16 — second pass: the "Enterprise Configuration" half's genuine match, confirmed field-by-field against Standalone for the first time — and the "Business Rules" half's absence extended to Standalone too
+
+Same continuation session, 2026-09-22. Domain 16's first pass (2026-09-14) found a "split result" checking frozen only: the "Enterprise Configuration" half has "a genuine match" (`ERP81SettingsCatalogue.js`'s `erp81SettingDef_(key, module, displayName, description, valueType, defaultValue, required, environment, validation, sensitive, editable)`), while the "Business Rules / Feature Management" half does not (`BusinessRuleService.js` implements only hardcoded Shipping-specific logic, no generic rule/decision-table engine, no feature-flag/rollout mechanism). Standalone's side of either half was never checked. Picked today following this session's own extensive work inside `packages/domain/src/settings.ts` (Domains 33 and 40).
+
+## The Configuration half, confirmed field-by-field, not just "a match exists"
+
+`packages/domain/src/settings.ts`'s `SettingDefinition` interface — its own code comment explicitly cites "the frozen Apps Script `ERP81SettingsCatalogue.js` reference" as its parity target — carries eleven fields: `settingKey`, `module`, `displayName`, `description`, `valueType`, `defaultValue`, `required`, `environment`, `validationJson`, `sensitive`, `editable`. This is a field-for-field match to frozen's own eleven-parameter `erp81SettingDef_` signature (`key`↔`settingKey`, `validation`↔`validationJson`, every other name identical), confirmed by direct read rather than assumed from the first pass's "a genuine match" framing, which never went to this level of detail against Standalone.
+
+## The Business Rules half, checked against Standalone for the first time — same absence
+
+A case-insensitive content search for `feature flag`, `decision table`, `rollout governance`, and `business rule engine` returns zero matches anywhere in `packages/domain/src`, `packages/platform/src`, or `apps/api/src`. Standalone has no generic business-rule/decision-table/feature-flag capability either, matching frozen's own absence exactly — this is not a migration gap; frozen never built it to migrate.
+
+## Disposition
+
+No new PHB registered. Domain 16's "split result" characterization is confirmed and strengthened on both halves: the Configuration half's match is now verified at field level rather than asserted, and the Business Rules half's absence is now confirmed against Standalone rather than assumed by extension from frozen alone.
+
+GAP-001 remains OPEN / BLOCKING. Domain 16 now has a second pass, the first to check Standalone directly for both of this domain's named halves.
