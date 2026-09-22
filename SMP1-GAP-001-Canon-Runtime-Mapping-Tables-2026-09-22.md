@@ -1,7 +1,7 @@
 # SMP1 GAP-001 — Canon-to-Runtime Lifecycle Mapping Tables
 
 **Date:** 2026-09-22
-**Status:** DRAFT PROPOSAL — not yet reviewed or authorized by the operator. This is the follow-on documentation work the lifecycle-vocabulary decision brief's "document a mapping" decisions (Orders, Production, Shipping, Finance transactions) called for; writing the tables is not itself an authorization to treat them as final.
+**Status:** CERTIFIED, 2026-09-22 (Hitendra Chug). All four tables reviewed and approved as drafted, including the Production sequence-reversal finding (confirmed against the real transition table during review — see that section) and the Finance compression (approved without requiring separate accounting-literate review). This is now the authoritative Canon-to-runtime mapping record for these four domains.
 **Origin:** `SMP1-GAP-001-Canon-Runtime-Lifecycle-Vocabulary-Decision-Brief-2026-09-22.md`, decisions recorded 2026-09-22. Four of that brief's eight domains were decided as "document a mapping" rather than "amend Canon." This is that documentation.
 
 ## How to read these tables, and their real limitation
@@ -32,7 +32,7 @@ Canon's 5 core stages, mapped onto the 18 runtime statuses (frozen = Standalone,
 
 Canon's 10 core states + 5 exceptions, mapped onto the 9 runtime stages (frozen = Standalone).
 
-**A note before the table, worth taking seriously**: Canon's stated core-state order is Requested → Planning → Scheduled → Ready → Released → In Progress → ..., with Scheduled *before* Ready. The runtime's own declared order is Awaiting Handoff, **Ready, Scheduled**, Machine Assigned, In Production, ... — Ready *before* Scheduled, the reverse. `Scheduled` and `Ready` are exact *name* matches (already established in the original pass), but this draft has **not independently confirmed** they play the same *sequence* role — that would need checking against `PRODUCTION_ALLOWED_TRANSITIONS`/`productionRulesCanEnter_` directly, not inferred from two state-name lists. Flagging this explicitly rather than silently assuming name-match implies sequence-match.
+**Confirmed during review, 2026-09-22**: Canon's stated core-state order is Requested → Planning → Scheduled → Ready → Released → In Progress → ..., with Scheduled *before* Ready. Checked directly against `PRODUCTION_ALLOWED_TRANSITIONS` (`packages/domain/src/production.ts:47-77`): the runtime's real primary path is `Awaiting Handoff → Ready → Scheduled → Machine Assigned → In Production`, with `Ready`/`Scheduled`/`Machine Assigned` also cycling back and forth for rescheduling. **`Ready` genuinely comes before `Scheduled` in the runtime, the reverse of Canon's stated order** — this is a real, evidenced sequence mismatch, not a hypothetical risk. Reviewed and accepted as a known, documented difference rather than something requiring a fix: `Scheduled` and `Ready` are still exact *name* matches (as established in the original pass) and both genuinely exist as distinct, meaningful production stages; only their relative ordering diverges from Canon's text. No correction to either system is authorized by this acceptance.
 
 | Canon stage | Runtime stage(s) | Confidence |
 | --- | --- | --- |
@@ -91,6 +91,12 @@ Canon's 7 states, mapped onto the runtime's 3 values (Posted, Pending, Reversed)
 
 ---
 
-## Status and next step
+## Review outcome, 2026-09-22 (Hitendra Chug)
 
-These four tables are a first draft, written to fulfill the specific follow-on task the lifecycle-vocabulary brief's "document a mapping" decisions created — they are not yet reviewed, corrected, or authorized by the operator. Several rows are explicitly flagged as judgment calls or genuinely unmapped rather than presented as settled fact. Once reviewed (corrected, confirmed, or partially revised), this document's status line should be updated to CERTIFIED and it becomes the authoritative Canon-to-runtime mapping record for these four domains, closing the last open procedural step from either GAP-001 decision brief.
+All four tables reviewed and approved as drafted, with one item given its own explicit decision during review:
+
+- **Orders, Shipping**: approved as drafted, no changes.
+- **Production**: approved as drafted. The Scheduled/Ready sequence-order question was resolved with real evidence (see that section) and accepted as a documented, known difference. **Aborted's residual gap was explicitly *not* elevated to its own formally-descope-or-build decision** — accepted as a small, acknowledged gap rather than opened as a new decision item.
+- **Finance**: approved as drafted, including the Initiated/Validated/Approved→Pending and Recognized/Settled→Posted compressions and the Reversed-has-no-Canon-equivalent finding. No separate accounting-literate review was requested before approval.
+
+**This is now the authoritative, certified Canon-to-runtime mapping record for these four domains** — the last open procedural step from either GAP-001 decision brief. Closing notes reflecting this are recorded in `GAP-001-Source-Integrity-and-Orders-Reconciliation-2026-09-14.md` and the Standalone parity matrix.
