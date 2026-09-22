@@ -1664,3 +1664,21 @@ This is a genuinely different kind of finding than most domains in this report h
 No new PHB registered. This pass closes the specific unchecked half of Domain 9's first-pass finding with a clean confirmation, not a new gap. What remains genuinely absent from both systems (per the first pass, unchanged by this one): Conversations, Messages, and Collaboration Workspaces — Canon's named "Collaboration Governance" entities, distinct from the notification/communication-configuration layer this pass covers.
 
 GAP-001 remains OPEN / BLOCKING. Domain 9 now has first-pass-plus-two-follow-up-entries depth, with both the runtime-dispatch and configuration-governance halves of its Canon-certified scope checked directly against both codebases.
+
+# Domain 10 — third pass: the "no generic status route" gap confirmed precisely at the route level; the deliberate-or-accidental question honestly left open
+
+New continuation session, 2026-09-22. Read-only, deliberately narrow scope. Domain 10's "confirmed clean parity, two minor gaps" entry left gap (1) hedged: frozen's generic, any-status, client-callable `personalizationUpdateAssetStatus` has no 1:1 Standalone route, with Approved/Locked transitions instead modeled through a separate Approval-domain-owned port — "which may be a deliberate design choice rather than an oversight."
+
+## Checked directly: `apps/api/src/routes/personalization.ts`'s full route list
+
+`/personalization/workspace`, `/recheck`, `/templates/save`, `/intakes/save`, `/assets` (create), `/assets/:assetId/verified` (a narrow, single-purpose transition — Uploaded → Verified only), `/assets/:assetId` (single-asset read), plus the Cloudinary-signing sub-routes (`status`, `signature`, `register`, `resources`, `test`). None is a generic set-to-any-status endpoint; the only status-mutating route besides `verified` is not present at all — confirming the original finding's structural claim precisely, route-by-route, not just at the port-interface level the first pass characterized it at.
+
+## The "deliberate or accidental" question — checked, not resolved, and this is reported honestly rather than papered over
+
+Searched `packages/domain/src/personalization.ts` and `apps/api/src/customer-approval-service.ts` (where Approved/Locked personalization statuses are actually set) for any comment explaining why these two transitions specifically were routed through the Approval domain rather than a generic Personalization status-update endpoint. None was found. Unlike the Inventory BOM, lead-conversion, and Order-createdAt findings elsewhere in this report — each backed by an explicit "frozen parity, by design" or equivalent comment — this one has no documentary trail either way. The hedge in the original entry ("may be... rather than an oversight") is accurate and remains open; this pass does not manufacture a resolution the source doesn't support.
+
+## Disposition
+
+No new PHB registered. This is a narrow, honest confirmation pass: the structural gap is now precisely characterized at the route level rather than the port-interface level, and the intent question is confirmed genuinely unresolvable from source alone rather than left as an unchecked guess. Gap (2) (frozen's internal performance-diagnostics snapshot, no Standalone equivalent) was not re-investigated — the original pass's own judgment that it is internal/non-employee-facing and not worth pursuing further stands.
+
+GAP-001 remains OPEN / BLOCKING. Domain 10 now has first-pass-plus-two-follow-up-entries depth. Whoever owns Personalization/Customer Approval's design history is better positioned than source-code archaeology to resolve the one remaining open question here.
