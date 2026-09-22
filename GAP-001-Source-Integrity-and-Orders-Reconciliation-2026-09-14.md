@@ -2129,3 +2129,17 @@ A case-insensitive content search for `knowledge base`, `knowledge graph`, `orga
 No new PHB registered. Domain 44's characterization is confirmed, not corrected — the seventh spot-check from the same original sweep, and the sixth to come back clean. This closes out the content-level re-check series: of the domains in the original 2026-09-15 filename-only sweep that genuinely relied on filename matching alone (31, 32, 33, 34, 35, 40, 43, 44 — Domains 20, 22, 23 already had deeper treatment in that same pass), one (Domain 33) surfaced a real, previously-missed finding; the other seven confirmed cleanly.
 
 GAP-001 remains OPEN / BLOCKING. Domain 44 now has a second pass, completing today's content-level re-check series across the originally filename-only-checked domains.
+
+# Domain 29 — second pass: checked against Standalone for the first time, on both its original term set and a fuller set of its own named concepts
+
+Same continuation session, 2026-09-22. Domain 29's only prior treatment was a survey pass (2026-09-14, one of the "large-format" domains sampled rather than read in full) that checked frozen only for `data lineage`, `data steward`, `PII`, `critical data element`, and `business glossary`, found zero matches, and never extended the check to Standalone. Picked next because this session has now done substantial work across the adjacent compliance/governance cluster (Domains 28, 37, 39) and this is the one domain in that cluster whose Standalone side was never independently checked at all.
+
+## Checked directly against Standalone, the original five terms plus five more
+
+The original five terms (`data lineage`, `data steward`, `PII`, `critical data element`, `business glossary`) return zero matches anywhere in `packages/domain/src`, `packages/platform/src`, or `apps/api/src`. A second, broader search covering five more of this domain's own named concepts not in the original pass's search — `retention policy`, `preservation hold`, `authoritative source`, `metadata architecture`, `data disposition` — also returns zero matches. Standalone matches frozen's own established absence exactly, now confirmed directly rather than assumed by extension.
+
+## Disposition
+
+No new PHB registered. Domain 29's "no formal data-governance layer of any kind exists" characterization is confirmed on both sides, not corrected — closing the "Standalone was never independently checked" gap this domain's survey-pass depth had left open, the same gap Domain 25/30's second passes closed for their own domains earlier today.
+
+GAP-001 remains OPEN / BLOCKING. Domain 29 now has a second pass, the first to check Standalone directly for this domain's own named concepts.
