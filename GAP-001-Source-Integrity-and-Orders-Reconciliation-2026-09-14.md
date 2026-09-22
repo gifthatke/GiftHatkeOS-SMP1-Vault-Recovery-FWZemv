@@ -2271,3 +2271,17 @@ The same three terms, plus `full text search` and `elasticsearch`, return zero m
 No new PHB registered. Domain 17's characterization is confirmed on both sides, not corrected — the first pass's own hedge ("presumably") is now a confirmed fact rather than a reasonable guess.
 
 GAP-001 remains OPEN / BLOCKING. Domain 17 now has a second pass, the first to check Standalone directly and precisely rule out its client-side filter UI as a hidden search capability.
+
+# Domain 18 — second pass: checked against Standalone for the first time, including after PHB-7's substantial "Intelligence" build — confirmed absent, precisely distinguished from BI naming
+
+Same continuation session, 2026-09-22. Domain 18's only prior treatment (2026-09-14) checked frozen only for `AI Agent`, `decision model`, and `prediction model`, found zero matches, and concluded "the most purely aspirational domain reviewed so far — Canon names a full AI-governance framework for a system that... is a deterministic rules-and-spreadsheet ERP with no machine-learning or autonomous-agent component anywhere." Standalone's side was never checked — worth doing specifically because PHB-7 (Domain 7, third pass, confirmed live today) built six real "Intelligence" services (Sales Intelligence, Production Intelligence, and so on), and the expanded-scope sweep had already flagged, in passing, that this naming should not be conflated with genuine AI/ML — worth verifying that caution held rather than assuming it by name alone.
+
+## Checked directly against Standalone, including the PHB-7 Intelligence code specifically
+
+The original three terms, plus `recommendation model`, `machine learning`, and `ML model`, return zero matches anywhere in `packages/domain/src`, `packages/platform/src`, or `apps/api/src` — including inside `reports-service.ts`, the file PHB-7's six Intelligence services actually live in (already checked for a different but related question, KPI-lifecycle concepts, during Domain 30's second pass earlier today). "Sales Intelligence," "Production Intelligence," and their five siblings are confirmed, precisely, to be deterministic business-metrics computation and reporting — trend lines, rankings, threshold-based scoring — not any form of AI Agent, trained model, or prediction/recommendation system. The expanded-scope sweep's own caution against conflating the naming is confirmed correct, not merely restated.
+
+## Disposition
+
+No new PHB registered. Domain 18's "most purely aspirational domain" characterization is confirmed on both sides, not corrected — genuinely no AI/ML/autonomous-agent capability of any kind exists in either codebase, even after this session's own substantial build work in the adjacently-named "Intelligence" services.
+
+GAP-001 remains OPEN / BLOCKING. Domain 18 now has a second pass, the first to check Standalone directly and specifically confirm PHB-7's Intelligence build doesn't cross into this domain's actual named scope.
