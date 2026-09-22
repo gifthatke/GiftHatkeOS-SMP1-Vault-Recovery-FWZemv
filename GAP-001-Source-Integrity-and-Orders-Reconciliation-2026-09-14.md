@@ -2143,3 +2143,21 @@ The original five terms (`data lineage`, `data steward`, `PII`, `critical data e
 No new PHB registered. Domain 29's "no formal data-governance layer of any kind exists" characterization is confirmed on both sides, not corrected — closing the "Standalone was never independently checked" gap this domain's survey-pass depth had left open, the same gap Domain 25/30's second passes closed for their own domains earlier today.
 
 GAP-001 remains OPEN / BLOCKING. Domain 29 now has a second pass, the first to check Standalone directly for this domain's own named concepts.
+
+# Domain 24 — second pass: checked against Standalone for the first time — confirmed absent, and precisely distinguished from adjacent Finance/Tax coverage
+
+Same continuation session, 2026-09-22. Domain 24's only prior treatment (2026-09-14) checked frozen only for `contract lifecycle`, `compliance assessment`, and `regulatory change`, found zero matches, and never extended to Standalone. Last domain in today's compliance/governance cluster (alongside 28, 29, 37, 39) needing this specific gap closed.
+
+## Checked directly against Standalone
+
+The same three terms, plus `obligation management` (also named in this domain's own §10 text), return zero matches anywhere in `packages/domain/src`, `packages/platform/src`, or `apps/api/src`.
+
+## One adjacent-domain distinction worth being precise about
+
+This session's own earlier work (Domain 7's second pass) already established ERP84 Sequence/ERP85 Tax/ERP86 Marketplace as clean parity between frozen and Standalone, including real GST-split calculation (CGST/SGST/IGST/cess) and GSTIN format enforcement. Worth stating precisely rather than left ambiguous: **that is tax-calculation correctness, not the regulatory-compliance-governance capability Domain 24 actually names** (contract lifecycle, obligation tracking, compliance assessment, regulatory-change monitoring) — computing the right tax amount on an order is a different kind of capability than tracking which regulations apply and whether the business is compliant with them over time. The two should not be conflated; Domain 24's own gap is genuinely unaffected by Domain 6/7's Tax finding.
+
+## Disposition
+
+No new PHB registered. Domain 24's "no legal, contract, or compliance-tracking system of any kind exists" characterization is confirmed on both sides, not corrected. Closes the "Standalone never independently checked" gap for the last domain in today's compliance/governance cluster.
+
+GAP-001 remains OPEN / BLOCKING. Domain 24 now has a second pass, the first to check Standalone directly and the first to precisely distinguish this domain's own gap from the adjacent, already-closed Tax-calculation finding.
