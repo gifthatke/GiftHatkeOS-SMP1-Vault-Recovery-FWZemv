@@ -2101,3 +2101,17 @@ A case-insensitive content search for `price waterfall`, `contribution margin`, 
 No new PHB registered. Domain 31's "no dedicated pricing/quotation/commission implementation" characterization is confirmed, not corrected — the one shared match found is precisely traced to already-covered ground (Domain 7) rather than left as an unexplained partial hit. Fifth spot-check in this series, fourth to come back clean.
 
 GAP-001 remains OPEN / BLOCKING. Domain 31 now has a second pass, the first to check its own specific named terms rather than resting on Domain 20's broader cross-reference.
+
+# Domain 43 — second pass: sixth content-level spot-check — confirmed absent, both sides
+
+Same continuation session, 2026-09-22. Domain 43's only prior treatment was a cross-reference to this session's own ERP86 Marketplace pass ("real channel-configuration capability, clean parity; no external-partner-identity/credential/consent platform in either system"). Sixth spot-check in today's series, using this domain's own more specific named terms.
+
+## Checked directly, at content level, both sides
+
+A case-insensitive content search for `partner portal`, `developer portal`, `marketplace listing`, `API monetization`, `partner tier`, and `ecosystem partner` returns zero matches anywhere in Standalone (`packages/domain/src`, `packages/platform/src`, `apps/api/src`) and zero matches anywhere in frozen.
+
+## Disposition
+
+No new PHB registered. Domain 43's characterization is confirmed, not corrected — the sixth spot-check from the same original sweep, and the fifth to come back clean (Domain 33 remains the one real find in this series).
+
+GAP-001 remains OPEN / BLOCKING. Domain 43 now has a second pass, confirming its prior characterization at content level with its own specific named terms.
