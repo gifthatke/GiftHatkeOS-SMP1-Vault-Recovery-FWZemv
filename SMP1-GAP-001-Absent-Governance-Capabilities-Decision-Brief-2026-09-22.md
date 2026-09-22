@@ -1,7 +1,7 @@
 # SMP1 GAP-001 — Absent Governance Capabilities: Decision Brief
 
 **Date:** 2026-09-22
-**Status:** OPEN — decisions requested below, per domain. Nothing in this brief is authorized, and no code, Canon text, or matrix classification changes as a result of writing it.
+**Status:** DECISIONS RECORDED, 2026-09-22 (Hitendra Chug) — see each domain below. 11 of 12 items formally descoped, 1 relying on an existing substitute (Domain 9), 0 authorized to build, 1 deferred as not-currently-active (the Domain 23 Reseller wave scoping question). No code changes result from this brief by design — every decision made was (B) or (C), never (A).
 **Origin:** Companion to `SMP1-GAP-001-Canon-Runtime-Lifecycle-Vocabulary-Decision-Brief-2026-09-22.md`, which explicitly scoped out this category and pointed here. Where that brief covers cases where both systems implement an entity but name its lifecycle differently from Canon, this brief covers cases where Canon names an entire governed capability — a domain, a resource-model family, a decision-workflow — that **does not exist as its own thing in either frozen or Standalone at all.**
 
 ## What this brief is, and isn't
@@ -30,7 +30,7 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 
 **Consideration:** The embedded Production QC mechanism may be doing real work already (nothing in this report suggests defective products are shipping) — the question is whether that's sufficient, or whether the business has actually needed CAPA/non-conformance tracking and has been working around its absence some other way (a spreadsheet, a WhatsApp thread) that a real system should replace.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Formally descope.** CAPA/Non-Conformance/Disposition tracking is not a current SMP1 requirement; the embedded Production QC checklist remains the operative mechanism. No implementation authorized.
 
 ---
 
@@ -46,7 +46,7 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 
 **Consideration:** Lower apparent business risk than most items in this brief — this is about *how metrics get defined and published*, not about the metrics being wrong. Worth deciding low on priority relative to the others here unless a specific governance need (e.g., an investor or auditor asking "who certified this KPI definition") has already surfaced.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Formally descope.** A formal KPI definition/certification/publication catalog is not a current requirement; Reports' existing computed metrics stand as-is. No implementation authorized.
 
 ---
 
@@ -60,7 +60,7 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 
 **Consideration:** This is the brief's clearest path-(C) candidate. The notification/escalation/template machinery is real and reasonably complete; only the conversational/threading layer is missing. Worth asking concretely: does anyone on the team currently need in-app comment threads on an Order, or does WhatsApp/email already fill that role well enough that building one would be redundant?
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Rely on the existing substitute.** WhatsApp/email already serve the team's coordination needs; an in-app Conversations/Messages/Collaboration-Workspace layer is not being built. Revisit if that changes.
 
 ---
 
@@ -76,7 +76,7 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 
 **Consideration:** This is the most architecturally ambitious item in this brief — a real generic workflow engine is a substantial build, not a small one. Worth asking whether the actual business need is "more places need a Task-Board-style human-task flow" (a smaller, more tractable ask, closer to extending what Today's Work already does) versus "we need configurable multi-step automation with SLA escalation" (a much bigger one) before deciding a path.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Formally descope.** A generic multi-step Workflow/BPM engine with SLA/escalation policies is not a current requirement; Today's Work already covers the practical human-task need. No implementation authorized.
 
 ---
 
@@ -90,7 +90,7 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 
 **Consideration:** This is the domain in this brief most likely to matter at *scale* rather than at current size — duplicate customer/material records become a real operational cost as headcount and data volume grow, but may not be causing measurable pain today. Worth revisiting this one specifically if/when the business crosses a size threshold, rather than deciding it purely on current-state evidence.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Formally descope, for now.** Not causing measurable operational cost at current size; explicitly flagged to revisit if/when data volume or headcount growth makes duplicate-record cost real — a deferred re-check, not a permanent close.
 
 ---
 
@@ -106,7 +106,7 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 
 **Consideration:** Relevant mainly if/when Standalone grows external integration partners (a mobile app, a third-party marketplace connector, a partner API) — internally, Standalone's own typed request/response interfaces across services already provide some of what formal contracts would, informally. Lower urgency than most items here for a single-tenant internal ERP.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Formally descope.** Formal consumer/provider registration and versioning are not a current requirement for a single-tenant internal ERP; `packages/contracts`' existing narrow transport-shape coverage stands as-is. Revisit if external integration partners appear.
 
 ---
 
@@ -120,7 +120,7 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 
 **Consideration:** Whether this matters depends on whether GiftHatke's pricing is genuinely ad hoc per order today (in which case a Price Book/Commission Plan layer would be new, real capability) or whether informal consistency already exists (a shared pricing spreadsheet, standard rate cards) that just isn't modeled as its own governed entity. The Domain 23 item below (Reseller/Partner Dashboard) touches a closely related margin/pricing concept — worth deciding these two together if that wave gets scoped.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Formally descope.** Ad hoc per-order pricing is working as-is; formal Price Books/Commission Plans/Sales Territories are not a current requirement. No implementation authorized.
 
 ---
 
@@ -134,7 +134,7 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 
 **Consideration:** Likely the lowest-friction "formally descope" candidate in this brief if marketing campaigns aren't currently run through any system at all (i.e., attribution is captured but campaigns themselves live in ad platforms, not GiftHatke's own tooling) — worth a quick factual check before deciding rather than assuming either way.
 
-**Decision:** _______________
+**Decision, 2026-09-22 (Hitendra Chug): Formally descope.** Marketing campaigns run through external ad platforms, not GiftHatke's own tooling; existing Source/Campaign attribution fields on Leads are sufficient. No implementation authorized.
 
 ---
 
@@ -148,8 +148,9 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 
 **Consideration:** Two genuinely separate decisions live under one domain number here. (1) Does GiftHatke need formal upstream supplier governance (qualification, risk scoring, lifecycle tracking) — likely a "formally descope" candidate for a business this size unless supplier risk has caused a real incident. (2) Is the downstream Reseller/Partner Dashboard wave proceeding, and if so, how does it relate to Canon's 44 domains at all — a scoping question for whoever owns that wave, separate from this brief.
 
-**Decision (upstream supplier governance):** _______________
-**Decision (Reseller/Partner Dashboard wave relationship to Canon):** _______________
+**Decision (upstream supplier governance), 2026-09-22 (Hitendra Chug): Formally descope.** No supplier-risk incident has occurred; formal supplier qualification/risk-tracking governance is not a current requirement.
+
+**Decision (Reseller/Partner Dashboard wave relationship to Canon), 2026-09-22 (Hitendra Chug): Not currently active.** The Reseller/Partner Dashboard wave is not being pursued right now. This scoping question (map onto Domain 23 vs. treat as its own addition) stays genuinely open, not resolved — revisit if/when that wave is picked up.
 
 ---
 
@@ -158,9 +159,14 @@ This is also, explicitly, a different *kind* of decision than the companion brie
 Two findings are real absences but sit *inside* an otherwise well-implemented domain, not a whole missing domain — different enough in shape that they don't fit this brief's per-domain format cleanly:
 
 - **Domain 1/5 — Attachments and reverse logistics.** Order Attachments were closed this session (PHB-3, now real and live). Shipping's equivalent — Return Requests, Return Shipments, Reverse Logistics Cases as their own governed entities (Canon §10.5/§10.7) — remains absent in both systems; returns exist only as two status values (`RTO Initiated`, `Returned`) plus two free-text fields on the Shipment row itself.
+
+  **Decision, 2026-09-22 (Hitendra Chug): Formally descope.** The existing status-value-plus-free-text-field approach on the Shipment row is sufficient for current return-handling needs. No implementation authorized.
+
 - **Domain 6 — Journal Entries, Journal Lines, General Ledger Accounts.** Canon certifies formal double-entry bookkeeping structures; neither system has them — what exists instead is a flat, single-entry transaction log (`Finance_Transactions`) that can still produce correct totals if consistently applied, but doesn't debit one account and credit another for a single business event. Given Finance's external-scrutiny exposure (tax, lenders, auditors), this is worth deciding alongside Domain 6's lifecycle-vocabulary item in the companion brief, not in isolation.
 
-If either of these is worth its own decision line, say so and it'll get one; they're recorded here rather than omitted so nothing gets lost.
+  **Decision, 2026-09-22 (Hitendra Chug): Formally descope.** The existing single-entry transaction log is sufficient at current scale/complexity; formal double-entry Journal Entries/Lines/GL Accounts are not a current requirement. Revisit if audit, lending, or compliance requirements change.
+
+Both were asked for and given their own decision line, above, rather than left implicit.
 
 ---
 
@@ -170,6 +176,6 @@ Same standing as the companion brief and the recovery procedure: **Hitendra Chug
 
 ## After a decision is recorded
 
-Same mechanism as the companion brief: decisions get reflected as closing notes in `GAP-001-Source-Integrity-and-Orders-Reconciliation-2026-09-14.md` and the Standalone parity matrix, matching established voice. Path (B) decisions close with no code change — just a recorded, explicit "not building this" that stops it from being silently re-discovered as an open question in some future pass. Path (A) decisions open new, separately-scoped implementation work. Path (C) decisions close with a recorded rationale for why the lighter substitute is sufficient.
+All 12 decision points above are now recorded (2026-09-22, Hitendra Chug). Propagated into `GAP-001-Source-Integrity-and-Orders-Reconciliation-2026-09-14.md` and the Standalone parity matrix as closing notes, matching established voice — see those documents for the consolidated record. No code changes result: every decision was (B) formally descope or (C) rely on an existing substitute, except the Domain 23 Reseller-wave item, which was explicitly deferred (not currently active) rather than decided either way.
 
-Between this brief and the companion vocabulary brief, every remaining category of GAP-001 blocker this report has identified across the full 44-domain sweep is now on record somewhere with a decision requested. Deciding everything in both briefs would close GAP-001's remaining content; deciding nothing leaves it exactly where it stands today — open, blocking, and now fully and precisely enumerated for the first time.
+**What this brief's completion means for GAP-001**: this specific category of blocker — Canon-named governance capabilities absent from both systems — is now closed, in the sense that every item has an explicit, recorded, dated decision rather than sitting as an open question. Combined with the companion vocabulary brief (still awaiting decisions as of this update), these two briefs represent the complete, precise enumeration of what GAP-001's own closing statement identified as remaining. GAP-001 itself does not close until the companion brief's items are also decided.
