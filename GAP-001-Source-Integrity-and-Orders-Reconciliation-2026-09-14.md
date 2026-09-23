@@ -2381,3 +2381,11 @@ This report opened as a continuation of the original SMP1-GAP-001 finding (`smp1
 Full closure record, cross-referenced against the original 2026-09-12 finding and its finding-register control (`SMP1-GAP-001 through SMP1-GAP-013 are preserved without removal, downgrade, merge or resolution` — satisfied here by exactly the authority evidence that control required): `smp1-gap-001-source-integrity-orders-reconciliation-closure-2026-09-22.md` (Standalone repo, `docs/governance/`), with superseding annotations in `smp1-final-finding-register.md` and `smp1-overall-production-parity-gap-analysis.md` (same directory), neither of which is edited in place.
 
 **GAP-001: CLOSED.**
+
+# GAP-012: CLOSED, 2026-09-23 — the domain this report unblocked
+
+SMP1-GAP-012 ("Retained non-core Canon areas have only partial Standalone projections") was recorded elsewhere as blocked "until SMP1-GAP-001 closes." GAP-001's own closure above satisfied that precondition. Performing GAP-012's own required "exact mapping" surfaced one genuine gap in this report's own prior work: Domain 18 (AI, Decision Intelligence & Autonomous Operations) had been checked twice and confirmed genuinely absent from both systems — including a specific re-check after PHB-7's Intelligence build landed, ruling out the naming-similarity false lead — but had never actually been given the same build/descope/substitute decision every other absent-capability domain received in the 2026-09-22 decision brief. Added as an addendum to that brief and decided 2026-09-23 (formally descope) before GAP-012 could close cleanly.
+
+All six of GAP-012's named areas are now exactly mapped to confirmed Canon domain numbers, each with an operator decision on record: Notification/Communication & Collaboration → Domain 9, Document/DAM → Domain 10, Workflow/BPM → Domain 11, AI/Enterprise Intelligence → Domain 18, Platform/Integration → Domain 13, Master Data Governance → Domain 12. Full closure record: `smp1-gap-012-retained-non-core-canon-areas-closure-2026-09-23.md` (Standalone repo, `docs/governance/`).
+
+**GAP-012: CLOSED.**

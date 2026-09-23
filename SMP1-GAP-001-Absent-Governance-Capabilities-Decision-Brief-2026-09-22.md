@@ -1,7 +1,7 @@
 # SMP1 GAP-001 — Absent Governance Capabilities: Decision Brief
 
-**Date:** 2026-09-22
-**Status:** DECISIONS RECORDED, 2026-09-22 (Hitendra Chug) — see each domain below. 11 of 12 items formally descoped, 1 relying on an existing substitute (Domain 9), 0 authorized to build, 1 deferred as not-currently-active (the Domain 23 Reseller wave scoping question). No code changes result from this brief by design — every decision made was (B) or (C), never (A).
+**Date:** 2026-09-22, addendum 2026-09-23
+**Status:** DECISIONS RECORDED, 2026-09-22 (Hitendra Chug) — see each domain below. 12 of 13 items formally descoped, 1 relying on an existing substitute (Domain 9), 0 authorized to build, 1 deferred as not-currently-active (the Domain 23 Reseller wave scoping question). No code changes result from this brief by design — every decision made was (B) or (C), never (A). **Addendum, 2026-09-23**: Domain 18 (AI/Enterprise Intelligence) added and decided — see below — after being found genuinely absent-from-both but never actually given a decision here, while cross-referencing this brief against SMP1-GAP-012's own named area list.
 **Origin:** Companion to `SMP1-GAP-001-Canon-Runtime-Lifecycle-Vocabulary-Decision-Brief-2026-09-22.md`, which explicitly scoped out this category and pointed here. Where that brief covers cases where both systems implement an entity but name its lifecycle differently from Canon, this brief covers cases where Canon names an entire governed capability — a domain, a resource-model family, a decision-workflow — that **does not exist as its own thing in either frozen or Standalone at all.**
 
 ## What this brief is, and isn't
@@ -170,12 +170,26 @@ Both were asked for and given their own decision line, above, rather than left i
 
 ---
 
+## Addendum, 2026-09-23 — Domain 18 (Artificial Intelligence, Decision Intelligence & Autonomous Operations)
+
+Found and added while cross-referencing this brief against SMP1-GAP-012's own named list of retained non-core areas needing exact mapping — Domain 18 belongs in this same category (an entire Canon-named capability, absent from both systems), but was never actually given one of this brief's decisions on 2026-09-22, an omission rather than a deliberate exclusion.
+
+**Canon (§10.4–§10.7):** AI Agents, Decision Models, Prediction Models, Recommendation Models, Machine Learning Models, and autonomous operational decision-making as governed, certified capabilities.
+
+**What exists:** Nothing, in either system — checked twice this session, the second time specifically after PHB-7's substantial six-service "Executive/Business Intelligence" build landed (Sales, Production, Inventory, Shipping, Customer, Operations Risk trend/ranking/scoring analytics): zero matches for AI Agent/decision model/prediction model/recommendation model/machine learning/ML model, including inside the exact files PHB-7 lives in. Confirmed directly: PHB-7's "Intelligence" naming is deterministic business-metrics computation (trend lines, rankings, threshold-based scoring) — not AI, not ML, not autonomous decision-making of any kind. The naming similarity between "Business Intelligence" (real, built) and "AI/Decision Intelligence" (Canon's actual Domain 18 content) is coincidental, not evidence of overlap.
+
+**Consideration:** The clearest possible "genuinely absent, cleanly confirmed, nothing adjacent to lean on" case in either brief — unlike Domain 13 (which at least has `packages/contracts`) or Domain 9 (which has real Notification governance), there is no partial credit here in either codebase.
+
+**Decision, 2026-09-23 (Hitendra Chug): Formally descope.** No AI Agent/decision-model/ML capability is a current requirement. No implementation authorized.
+
+---
+
 ## Decision authority
 
 Same standing as the companion brief and the recovery procedure: **Hitendra Chug**, sole operator, no delegation or secondary approver.
 
 ## After a decision is recorded
 
-All 12 decision points above are now recorded (2026-09-22, Hitendra Chug). Propagated into `GAP-001-Source-Integrity-and-Orders-Reconciliation-2026-09-14.md` and the Standalone parity matrix as closing notes, matching established voice — see those documents for the consolidated record. No code changes result: every decision was (B) formally descope or (C) rely on an existing substitute, except the Domain 23 Reseller-wave item, which was explicitly deferred (not currently active) rather than decided either way.
+All 13 decision points above are now recorded (12 on 2026-09-22, Domain 18 added and decided 2026-09-23). Propagated into `GAP-001-Source-Integrity-and-Orders-Reconciliation-2026-09-14.md` and the Standalone parity matrix as closing notes, matching established voice — see those documents for the consolidated record. No code changes result: every decision was (B) formally descope or (C) rely on an existing substitute, except the Domain 23 Reseller-wave item, which was explicitly deferred (not currently active) rather than decided either way.
 
-**What this brief's completion means for GAP-001**: this specific category of blocker — Canon-named governance capabilities absent from both systems — is now closed, in the sense that every item has an explicit, recorded, dated decision rather than sitting as an open question. Combined with the companion vocabulary brief (still awaiting decisions as of this update), these two briefs represent the complete, precise enumeration of what GAP-001's own closing statement identified as remaining. GAP-001 itself does not close until the companion brief's items are also decided.
+**What this brief's completion means for GAP-001**: this specific category of blocker — Canon-named governance capabilities absent from both systems — is now closed, in the sense that every item has an explicit, recorded, dated decision rather than sitting as an open question. Combined with the companion vocabulary brief, these two briefs represent the complete, precise enumeration of what GAP-001's own closing statement identified as remaining; GAP-001 itself closed 2026-09-22 on that basis. **This addendum's Domain 18 finding was surfaced by, and now feeds directly into, SMP1-GAP-012's own exact-mapping work** — see `smp1-gap-012-retained-non-core-canon-areas-closure-2026-09-23.md` (Standalone repo).
