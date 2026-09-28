@@ -1,7 +1,7 @@
 # SMP1 Standalone — Support and Escalation Ownership
 
-**Date:** 2026-09-21
-**Status:** DRAFT PROPOSAL — NOT AUTHORIZED, NOT CERTIFIED. This is fundamentally an organizational decision, not a technical one — this draft exists so there's something concrete to correct rather than a blank page, not because it can be determined from the codebase or governance corpus.
+**Date:** 2026-09-21, core decisions accepted the same day, status header corrected 2026-09-28
+**Status:** ACCEPTED, 2026-09-21 (Hitendra Chug). The document's own "Resolved, 2026-09-21" section below already records the operator's actual decisions — single-operator scale confirmed, Tier 2 (code/deployment support) confirmed as unowned beyond the operator himself and explicitly accepted as a known risk rather than something to solve immediately. This status line was never updated to match at the time, unlike its companion `SMP1-Rollback-Recovery-Procedure-DRAFT-2026-09-21.md`, which got the equivalent treatment the next day. The remaining "Still open" items below (Tier 3 credential ownership, response-time expectations, a formal ticketing system, support budget) are genuinely undecided, but the document's own words already frame them as non-urgent and deferred at the operator's discretion, not blocking gaps — this status line reflects that, rather than claiming a false full closure.
 **Origin:** `Phase-4-Handover-Readiness-Evidence-Pack-2026-09-16.md` §4.
 
 ## What's actually known vs. assumed
